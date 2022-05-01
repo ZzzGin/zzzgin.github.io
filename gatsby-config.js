@@ -1,7 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `zzzgin.github.io`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://zzzgin.github.io`,
   },
-  plugins: [],
+  plugins: [
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-image`,
+  ],
 }
