@@ -1,0 +1,114 @@
+:root {
+    --spin-duration: 40000ms
+}
+
+.e {
+    fill: #383838;
+}
+
+.spin {
+    animation-name: spin;
+    animation-duration: var(--spin-duration);
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes spin {
+    from {
+    transform: rotate(0deg);
+    }
+
+    to {
+    transform: rotate(-360deg);
+    }
+}
+
+.slice0 {
+    animation-name: rblinker;
+    animation-duration: var(--spin-duration);
+    animation-iteration-count: infinite;
+    opacity: 0;
+}
+
+.slice1 {
+    animation-name: blinker;
+    animation-duration: var(--spin-duration);
+    animation-iteration-count: infinite;
+    animation-delay: calc(var(--spin-duration) / 8 * 0);
+}
+
+.slice2 {
+    animation-name: blinker;
+    animation-duration: var(--spin-duration);
+    animation-iteration-count: infinite;
+    animation-delay: calc(var(--spin-duration) / 8 * 1);
+}
+
+.slice3 {
+    animation-name: blinker;
+    animation-duration: var(--spin-duration);
+    animation-iteration-count: infinite;
+    animation-delay: calc(var(--spin-duration) / 8 * 2);
+}
+
+.slice4 {
+    animation-name: blinker;
+    animation-duration: var(--spin-duration);
+    animation-iteration-count: infinite;
+    animation-delay: calc(var(--spin-duration) / 8 * 3);
+}
+
+.slice5 {
+    animation-name: blinker;
+    animation-duration: var(--spin-duration);
+    animation-iteration-count: infinite;
+    animation-delay: calc(var(--spin-duration) / 8 * 4);
+}
+
+.slice6 {
+    animation-name: blinker;
+    animation-duration: var(--spin-duration);
+    animation-iteration-count: infinite;
+    animation-delay: calc(var(--spin-duration) / 8 * 5);
+}
+
+.slice7 {
+    animation-name: blinker;
+    animation-duration: var(--spin-duration);
+    animation-iteration-count: infinite;
+    animation-delay: calc(var(--spin-duration) / 8 * 6);
+}
+
+@keyframes blinker {
+    0% {
+    opacity: 1;
+    }
+
+    12.5% {
+    opacity: 0;
+    }
+
+    17.5% {
+    opacity: 0;
+    }
+
+    27.5% {
+    opacity: 1;
+    }
+}
+
+@keyframes rblinker {
+    5% {
+    opacity: 0;
+    }
+
+    12.5% {
+    opacity: 1;
+    }
+
+    87.5% {
+    opacity: 1;
+    }
+}
