@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react"
 import "../svg-css/main_logo.css"
-import { useScroll } from "../../components/hooks/useScroll"
-import { linearScaler } from "../../components/scalers/linearScaler"
-import { useSize } from "../../components/hooks/useSize"
+import { useScroll } from "../../../../../../components/hooks/useScroll"
+import { linearScaler } from "../../../../../../components/scalers/linearScaler"
+import { useSize } from "../../../../../../components/hooks/useSize"
 
 const MainLogo = () => {
     const scrollInfo = useScroll();
@@ -16,7 +16,7 @@ const MainLogo = () => {
         setMainLogo_width(`${linearScaler([0, 3], [70, 10], scrollInfo.percentage)}%`);
         setMainLogo_top(linearScaler([0, 3], [size.height*0.4, size.width*0.015+5], scrollInfo.percentage));
         setMainLogo_left(linearScaler([3, 6], [size.width*0.5, size.width*0.05+5], scrollInfo.percentage));
-    }, [scrollInfo]);
+    }, [scrollInfo, size]);
 
     return (
         <>
