@@ -1,1 +1,0 @@
-{"version":3,"file":"component---src-pages-index-js-e9eda29fa15d62941fdb.js","mappings":"4IAQA,UANkB,WAChB,OACE","sources":["webpack://zzzgin.github.io/./src/pages/index.js"],"sourcesContent":["import * as React from \"react\"\n\nconst IndexPage = () => {\n  return (\n    <div>Hello World!</div>\n  )\n}\n\nexport default IndexPage\n"],"names":[],"sourceRoot":""}
