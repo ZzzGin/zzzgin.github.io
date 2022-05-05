@@ -1,30 +1,23 @@
 import { useState, useEffect } from 'react'
-
-function getWindowDimensions() {
-
-    let width, height;
-    if (typeof window === 'undefined') {
-        width = 0;
-        height = 0;
-    } else {
-        width = window.innerWidth;
-        height = window.innerHeight;
-    }
-    return { width, height };
-}
+import { window } from "browser-monads";
 
 export const useSize = () => {
-    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+  const [windowSize, setWindowSize] = useState({
+    width: undefined,
+    height: undefined,
+  });
 
-    useEffect(() => {
-        function handleResize() {
-            setWindowDimensions(getWindowDimensions());
-        }
+  useEffect(() => {
+    function handleResize() {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    }
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
-        if (typeof window !== 'undefined') 
-            window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    });
-
-    return windowDimensions;
+  return windowSize;
 }
