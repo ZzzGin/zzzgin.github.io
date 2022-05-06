@@ -1,22 +1,25 @@
 import React, { useEffect, useState } from "react"
 import "../svg-css/main_logo.css"
-import { useScroll } from "../../../../../../components/hooks/useScroll"
+import { useWindowScroll } from "react-use"
 import { scale, sinScaler } from "../../../../../../components/scalers/scale"
 import { useSize } from "../../../../../../components/hooks/useSize"
+import { document } from "browser-monads"
 
 const MainLogo = () => {
-    const scrollInfo = useScroll();
+    const scrollInfo = useWindowScroll();
     const size = useSize();
     
     const [mainLogo_top, setMainLogo_top] = useState(size.height*0.4);
     const [mainLogo_left, setMainLogo_left] = useState(size.width*0.5);
     const [mainLogo_width, setMainLogo_width] = useState("70%");
+    const pageHeight = document.documentElement.offsetHeight;
 
     useEffect(() => {
-        setMainLogo_width(`${scale([0, 3], [70, 20], scrollInfo.percentage, sinScaler)}%`);
-        setMainLogo_top(scale([0, 3], [size.height*0.4, size.width*0.03+10], scrollInfo.percentage, sinScaler));
-        setMainLogo_left(scale([2, 6], [size.width*0.5, size.width*0.1+10], scrollInfo.percentage, sinScaler));
-    }, [scrollInfo, size]);
+        let percentage = scrollInfo.y/(pageHeight-size.height)*100;
+        setMainLogo_width(`${scale([0, 3], [70, 20], percentage, sinScaler)}%`);
+        setMainLogo_top(scale([0, 3], [size.height*0.4, size.width*0.03+10], percentage, sinScaler));
+        setMainLogo_left(scale([2, 6], [size.width*0.5, size.width*0.1+10], percentage, sinScaler));
+    }, [scrollInfo, size, pageHeight]);
 
     return (
         <>
