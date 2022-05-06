@@ -4,7 +4,7 @@ import { useWindowScroll } from "react-use"
 import { scale, linearScaler } from "../../../../../../components/scalers/scale"
 import { useSize } from "../../../../../../components/hooks/useSize"
 import { document } from "browser-monads"
-import Anime, { anime } from 'react-animejs-wrapper'
+import anime from 'animejs'
 
 const DesignLogo = () => {
     const scrollInfo = useWindowScroll();
@@ -18,6 +18,19 @@ const DesignLogo = () => {
         setDesignLogo_opa(scale([2, 5, 7, 10], [0, 1, 1, 0], percentage, linearScaler))
     }, [scrollInfo, pageHeight, size]);
 
+    const animationRef = React.useRef(null);
+    useEffect(() => {
+        animationRef.current = anime({
+            targets: 'path.stroke',
+            easing: 'easeInOutSine',
+            delay: anime.stagger(250),
+            loop: true,
+            direction: "alternate",
+            strokeDashoffset: [anime.setDashoffset, 0],
+            duration: 2000,
+        });
+    }, []);
+
     return (
         <>
         <div className="designLogo" style={{
@@ -28,17 +41,6 @@ const DesignLogo = () => {
             transform: "translate(-50%, -50%)",
             opacity: designLogo_opa
         }}>
-            <Anime
-                config={{
-                    targets: 'path.stroke',
-                    strokeDashoffset: [anime.setDashoffset, 0],
-                    easing: 'easeInOutSine',
-                    duration: 2000,
-                    delay: function(el, i) { return i * 250 },
-                    direction: 'alternate',
-                    loop: true,
-                }}
-            >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 313.07 313.07">
                 <g id="a"/>
                     <g id="b">
@@ -123,7 +125,6 @@ const DesignLogo = () => {
                 </g>
             </g>
                 </svg>
-            </Anime>
         </div>
         </>
     )

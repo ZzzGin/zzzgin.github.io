@@ -16,6 +16,7 @@
     "deploy": "npm run build && gh-pages -d public"
   },
   "dependencies": {
+    "animejs": "^3.2.1",
     "browser-monads": "^1.0.0",
     "gatsby": "^4.13.0",
     "gatsby-plugin-image": "^2.13.0",
