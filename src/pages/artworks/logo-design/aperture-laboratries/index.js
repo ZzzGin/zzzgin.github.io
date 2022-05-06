@@ -8,7 +8,7 @@ const ApertureLaboratries = () => {
     <>
       <MainLogo />
       <DesignLogo />
-      <div style={{"height": "10000px"}}></div>
+      <div className="timeline" style={{"height": "10000px"}}></div>
       
     </>
   )

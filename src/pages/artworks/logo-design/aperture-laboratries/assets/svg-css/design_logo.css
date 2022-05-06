@@ -1,11 +1,11 @@
 .e1{stroke-dasharray:0 0 1.99 1.99;}
-.e1,.f,.g,.h,.i,.j,.k,.l,.m,.n,.o,.p,.q,.r,.s,.t{fill:none;}
-.e1,.f,.g,.h,.i,.j,.l,.m,.n,.o,.p,.q,.r,.s,.t{stroke:#333;}
+.e1,.f,.g,.stroke,.i,.j,.k,.l,.m,.n,.o,.p,.q,.r,.s,.t{fill:none;}
+.e1,.f,.g,.stroke,.i,.j,.l,.m,.n,.o,.p,.q,.r,.s,.t{stroke:#333;}
 .e1,.f,.g,.i,.j,.k,.l,.m,.n,.o,.p,.q,.u,.r,.s,.t{stroke-width:.3px;}
 .e1,.f,.g,.i,.j,.l,.m,.n,.o,.p,.q,.r,.s,.t{stroke-miterlimit:10;}
 .f{stroke-dasharray:0 0 1.99 1.99;}
 .g{stroke-dasharray:0 0 2 2;}
-.h{stroke-width:3px;}
+.stroke{stroke-width:3px;}
 .h,.k,.u{stroke-linejoin:round;}
 .i{stroke-dasharray:0 0 1.99 1.99;}
 .j{stroke-dasharray:0 0 1.99 1.99;}
