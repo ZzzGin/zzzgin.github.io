@@ -14,16 +14,16 @@ const CharDesign = () => {
 
     useEffect(() => {
         let percentage = scrollInfo.y/(pageHeight-size.height)*100;
-        setCharDesign_opa(scale([27, 30, 32, 35], [0, 1, 1, 0], percentage, linearScaler))
+        setCharDesign_opa(scale([27, 30, 35, 37], [0, 1, 1, 0], percentage, linearScaler))
     }, [scrollInfo, pageHeight, size]);
 
     return (
         <>
         <div className="charDesign" style={{
-            width: "50%",
+            width: "70%",
             position: "fixed",
             left: "50%",
-            top: "75%",
+            top: "80%",
             transform: "translate(-50%, -50%)",
             opacity: charDesign_opa,
             

@@ -14,6 +14,13 @@ const MainLogo = () => {
     const [mainLogo_width, setMainLogo_width] = useState("70%");
     const pageHeight = document.documentElement.offsetHeight;
 
+    const goToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    };
+
     useEffect(() => {
         let percentage = scrollInfo.y/(pageHeight-size.height)*100;
         setMainLogo_width(`${scale([0, 3], [70, 20], percentage, sinScaler)}%`);
@@ -28,8 +35,9 @@ const MainLogo = () => {
             top: mainLogo_top,
             left: mainLogo_left,
             width: mainLogo_width,
+            zIndex: 99,
             transform: "translate(-50%, -50%)"
-        }}>
+        }} onClick={ goToTop } onKeyDown={ goToTop } role = "button" tabIndex={0}>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 398.77 108.29">
             <g id="a" />
             <g id="b">

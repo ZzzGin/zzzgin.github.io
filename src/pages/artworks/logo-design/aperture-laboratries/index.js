@@ -8,6 +8,7 @@ import CharDesign from "./assets/svg-components/char_design"
 
 // markup
 const ApertureLaboratries = () => {
+
   return (
     <>
       <MainLogo />

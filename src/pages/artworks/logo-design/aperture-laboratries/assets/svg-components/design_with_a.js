@@ -16,8 +16,8 @@ const DesignWithALogo = () => {
 
     useEffect(() => {
         let percentage = scrollInfo.y/(pageHeight-size.height)*100;
-        setDesignWithALogo_opa(scale([21, 25, 32, 35], [0, 1, 1, 0], percentage, linearScaler));
-        setDesignWithALogo_width(scale([21, 25], [0, 120], percentage, sinScaler)+"%");
+        setDesignWithALogo_opa(scale([21, 25, 35, 37], [0, 1, 1, 0], percentage, linearScaler));
+        setDesignWithALogo_width(scale([21, 25, 27, 30], [0, 120, 120, 80], percentage, sinScaler)+"%");
         setDesignWithALogo_top(scale([27, 30], [50, 40], percentage, sinScaler)+"%")
     }, [scrollInfo, pageHeight, size]);
 
