@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import "../svg-css/ring_logo.css"
 import { useWindowScroll } from "react-use"
-import { scale, linearScaler } from "../../../../../../components/scalers/scale"
+import { scale, linearScaler, sinScaler} from "../../../../../../components/scalers/scale"
 import { useSize } from "../../../../../../components/hooks/useSize"
 import { document } from "browser-monads"
 
@@ -11,22 +11,23 @@ const RingLogo = () => {
     const pageHeight = document.documentElement.offsetHeight;
 
     const [ringLogo_opa, setRingLogo_opa] = useState(0);
+    const [ringLogo_width, setRingLogo_width] = useState("50%");
 
     useEffect(() => {
         let percentage = scrollInfo.y/(pageHeight-size.height)*100;
-        setRingLogo_opa(scale([12, 16], [0, 1], percentage, linearScaler))
+        setRingLogo_opa(scale([12, 16, 21, 23], [0, 1, 1, 0], percentage, linearScaler));
+        setRingLogo_width(scale([20, 23], [50, 200], percentage, sinScaler)+"%");
     }, [scrollInfo, pageHeight, size]);
 
     return (
         <>
         <div className="ringLogo" style={{
-            width: "50%",
+            width: ringLogo_width,
             position: "fixed",
             left: "50%",
             top: "50%",
             transform: "translate(-50%, -50%)",
-            opacity: ringLogo_opa,
-            
+            opacity: ringLogo_opa   
         }}>
            <svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 246.42 246.42">
                 <g>

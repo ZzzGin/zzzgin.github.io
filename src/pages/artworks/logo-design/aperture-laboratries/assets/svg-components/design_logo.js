@@ -15,7 +15,7 @@ const DesignLogo = () => {
 
     useEffect(() => {
         let percentage = scrollInfo.y/(pageHeight-size.height)*100;
-        setDesignLogo_opa(scale([2, 5, 7, 10], [0, 1, 1, 0], percentage, linearScaler))
+        setDesignLogo_opa(scale([2, 5, 8, 12], [0, 1, 1, 0], percentage, linearScaler))
     }, [scrollInfo, pageHeight, size]);
 
     const animationRef = React.useRef(null);
