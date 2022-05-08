@@ -15,8 +15,8 @@ const RingLogo = () => {
 
     useEffect(() => {
         let percentage = scrollInfo.y/(pageHeight-size.height)*100;
-        setRingLogo_opa(scale([12, 16, 21, 23], [0, 1, 1, 0], percentage, linearScaler));
-        setRingLogo_width(scale([20, 23], [50, 200], percentage, sinScaler)+"%");
+        setRingLogo_opa(scale([12, 16, 21, 23, 58, 60, 62, 64], [0, 1, 1, 0, 0, 1, 1, 0], percentage, linearScaler));
+        setRingLogo_width(scale([20, 23, 24], [50, 200, 50], percentage, sinScaler)+"%");
     }, [scrollInfo, pageHeight, size]);
 
     return (

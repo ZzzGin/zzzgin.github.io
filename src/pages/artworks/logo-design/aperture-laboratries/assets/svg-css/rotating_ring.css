@@ -1,0 +1,25 @@
+.rotating-ring-b{fill:none;}
+.rotating-ring-c{fill:#333;}
+
+:root {
+    --spin-duration-fast: 1000ms
+}
+
+.fastspin {
+    animation-name: fastspin;
+    animation-duration: var(--spin-duration-fast);
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes fastspin {
+    from {
+    transform: rotate(0deg);
+    }
+
+    to {
+    transform: rotate(-360deg);
+    }
+}
