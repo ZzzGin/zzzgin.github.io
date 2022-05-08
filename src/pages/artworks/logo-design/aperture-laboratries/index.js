@@ -12,6 +12,7 @@ import LessBlurredRing from "./assets/svg-components/less_blurred_ring"
 import SmallRingLogo from "./assets/svg-components/small_ring"
 import RotatingRingLogo from "./assets/svg-components/rotating_ring"
 import ColorPalette from "./assets/svg-components/color_palette"
+import WheatleyLogo from "./assets/svg-components/wheatley_logo"
 
 const ApertureLaboratries = () => {
 
@@ -30,6 +31,7 @@ const ApertureLaboratries = () => {
       <SmallRingLogo />
       <RotatingRingLogo />
       <ColorPalette />
+      <WheatleyLogo />
       <div className="timeline" style={{"height": "10000px"}}></div>
       
     </>
