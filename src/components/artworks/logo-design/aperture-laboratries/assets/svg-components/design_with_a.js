@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react"
 import "../svg-css/design_with_a.css"
 import { useWindowScroll } from "react-use"
-import { scale, linearScaler, sinScaler} from "../../../../../../components/scalers/scale"
-import { useSize } from "../../../../../../components/hooks/useSize"
+import { scale, linearScaler, sinScaler} from "../../../../../scalers/scale"
+import { useSize } from "../../../../../hooks/useSize"
 import { document } from "browser-monads"
 
 const DesignWithALogo = () => {

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react"
 import "../svg-css/still_vertical_logo.css"
 import { useWindowScroll } from "react-use"
-import { scale, linearScaler } from "../../../../../../components/scalers/scale"
-import { useSize } from "../../../../../../components/hooks/useSize"
+import { scale, linearScaler } from "../../../../../scalers/scale"
+import { useSize } from "../../../../../hooks/useSize"
 import { document } from "browser-monads"
 
 const StillVerticalLogo = () => {
