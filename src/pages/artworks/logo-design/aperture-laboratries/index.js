@@ -11,6 +11,7 @@ import StillCharLogo from "./assets/svg-components/still_character_logo"
 import LessBlurredRing from "./assets/svg-components/less_blurred_ring"
 import SmallRingLogo from "./assets/svg-components/small_ring"
 import RotatingRingLogo from "./assets/svg-components/rotating_ring"
+import ColorPalette from "./assets/svg-components/color_palette"
 
 const ApertureLaboratries = () => {
 
@@ -28,6 +29,7 @@ const ApertureLaboratries = () => {
       <LessBlurredRing />
       <SmallRingLogo />
       <RotatingRingLogo />
+      <ColorPalette />
       <div className="timeline" style={{"height": "10000px"}}></div>
       
     </>

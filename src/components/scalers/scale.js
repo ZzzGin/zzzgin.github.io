@@ -2,7 +2,7 @@ export const scale = (inputScale, outputScale, input, scaler) => {
     if (input < inputScale[0]) {
         return outputScale[0];
     }
-    else if (input > inputScale[inputScale.length-1]) {
+    else if (input >= inputScale[inputScale.length-1]) {
         return outputScale[outputScale.length-1];
     }
     else {

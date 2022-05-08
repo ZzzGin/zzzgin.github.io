@@ -24,7 +24,7 @@ const MainLogo = () => {
     useEffect(() => {
         let percentage = scrollInfo.y/(pageHeight-size.height)*100;
         setMainLogo_width(`${scale([0, 3], [70, 20], percentage, sinScaler)}%`);
-        setMainLogo_top(scale([0, 3], [size.height*0.4, size.width*0.03+10], percentage, sinScaler));
+        setMainLogo_top(scale([0, 3, 86, 90], [size.height*0.4, size.width*0.03+10, size.width*0.03+10, -size.width], percentage, sinScaler));
         setMainLogo_left(scale([2, 6], [size.width*0.5, size.width*0.1+10], percentage, sinScaler));
     }, [scrollInfo, size, pageHeight]);
 
