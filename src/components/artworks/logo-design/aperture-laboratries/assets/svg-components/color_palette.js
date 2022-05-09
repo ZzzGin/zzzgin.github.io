@@ -34,10 +34,10 @@ const ColorPalette = () => {
         <>
         <div style={{
             backgroundColor: background_color,
-            width: "105%",
-            height: "105%",
+            width: "150%",
+            height: "150%",
             position: "fixed",
-            transform: "translate(-2%, -2%)",
+            transform: "translate(-20%, -20%)",
             zIndex: -1
         }}>
 

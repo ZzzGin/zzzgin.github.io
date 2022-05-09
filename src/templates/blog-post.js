@@ -6,8 +6,11 @@ import { BiChevronRight } from '@react-icons/all-files/bi/BiChevronright'
 import Link from "../components/blog-components/Link"
 import '../components/blog-components/css/blog-post.css'
 import '../components/blog-components/css/github-markdown.css'
+import "@fontsource/noto-serif"
+import "@fontsource/noto-sans"
 require(`katex/dist/katex.min.css`)
 require("prismjs/themes/prism-solarizedlight.css")
+
 
 
 export default function Template(props) {
@@ -22,9 +25,9 @@ export default function Template(props) {
       <Helmet title={`${post.frontmatter.title}`} />
       <article className="blog-post">
 
-        <h1 className="title">{post.frontmatter.title}</h1>
+        <div className="title">{post.frontmatter.title}</div>
 
-        <h2 className="date">{post.frontmatter.date}</h2>
+        <div className="date">{post.frontmatter.date}</div>
 
         <div
           className="blog-post-content"

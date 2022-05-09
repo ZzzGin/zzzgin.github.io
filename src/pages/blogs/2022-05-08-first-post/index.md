@@ -4,9 +4,11 @@ date: "2022-05-08T21:10:00.063Z"
 title: "First Post"
 tags: ["blog"]
 ---
-[TOC]
 
-# Heading level 1
+```toc
+
+```
+
 Hello world!
 This is the second line
 
@@ -14,7 +16,7 @@ This is the second line
 This will be **bold**.
 This will be *italic*.
 
-### Heading level 3
+### Heading level 3 - very very long and long and long and long 
 > This is a quate.
 
 > Quate
@@ -23,6 +25,7 @@ This will be *italic*.
 #### Heading level 4
 1. first
     1. first-first
+    2. first-second
 2. second
 3. third
 5. forth
@@ -34,11 +37,14 @@ This will be *italic*.
 ##### Heading level 5
 ```python
 print("hellow world")
+for i in range(10):
+    # what am i doing?
+    print("hi")
 ```
 
 ---
 ###### Heading level 6
-[google](www.google.com)
+[google](http://www.google.com)
 
 | Syntax      | Description |
 | ----------- | ----------- |
@@ -53,3 +59,21 @@ $$
 p(H=h|Y=y)=\dfrac{p(H=h)p(Y=y|H=h)}{p(Y=y)} \\
 p(h|y)p(y)=p(h)p(y|h)=p(h,y)
 $$
+
+### Heading level 3 - very very long and long and long and long 
+
+### Heading level 3 - very very long and long and long and long 
+
+### Heading level 3 - very very long and long and long and long 
+
+### Heading level 3 - very very long and long and long and long 
+
+### Heading level 3 - very very long and long and long and long 
+
+### Heading level 3 - very very long and long and long and long 
+
+### Heading level 3 - very very long and long and long and long 
+
+### Heading level 3 - very very long and long and long and long 
+
+### Heading level 3 - very very long and long and long and long 
