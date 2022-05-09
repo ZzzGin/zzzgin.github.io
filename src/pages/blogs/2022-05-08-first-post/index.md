@@ -2,7 +2,7 @@
 path: "/blogs/first-post"
 date: "2022-05-08T21:10:00.063Z"
 title: "First Post"
-tags: []
+tags: ["blog"]
 ---
 [TOC]
 
@@ -22,8 +22,10 @@ This will be *italic*.
 
 #### Heading level 4
 1. first
+    1. first-first
 2. second
 3. third
+5. forth
 
 * first
 * second
@@ -47,7 +49,7 @@ If the cdf $P$ is **strictly monotonically increasing**, it has an inverse, call
 
 $$\mathbb[\sum^n_{i=1}X_i]=\sum^n_{i=1}\mathbb{V}[X_i]$$
 
-```math
+$$
 p(H=h|Y=y)=\dfrac{p(H=h)p(Y=y|H=h)}{p(Y=y)} \\
 p(h|y)p(y)=p(h)p(y|h)=p(h,y)
-```
+$$
