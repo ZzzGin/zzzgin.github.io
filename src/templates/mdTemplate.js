@@ -1,9 +1,6 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import { graphql } from "gatsby"
-import { BiChevronLeft } from '@react-icons/all-files/bi/BiChevronLeft'
-import { BiChevronRight } from '@react-icons/all-files/bi/BiChevronright'
-import Link from "../components/blog-components/Link"
 import '../components/blog-components/css/blog-post.css'
 import '../components/blog-components/css/github-markdown.css'
 import "@fontsource/noto-serif"
@@ -15,9 +12,10 @@ require("prismjs/themes/prism-solarizedlight.css")
 
 export default function Template(props) {
 
-  const { data, pageContext } = props;
+  // const { data, pageContext } = props;
+  const { data } = props;
   const { markdownRemark: post } = data;
-  const { next, prev } = pageContext;
+  // const { next, prev } = pageContext;
 
   return (
     <>
@@ -36,7 +34,7 @@ export default function Template(props) {
 
         {/* <Tags list={post.frontmatter.tags || []} /> */}
 
-        <div className="navigation">
+        {/* <div className="navigation">
             {prev &&
               <Link className="link prev" to={prev.frontmatter.path}>
                 <BiChevronLeft /> {prev.frontmatter.title}
@@ -45,7 +43,7 @@ export default function Template(props) {
               <Link className="link next" to={next.frontmatter.path}>
                 {next.frontmatter.title} <BiChevronRight />
               </Link>}
-          </div>
+          </div> */}
 
       </article>
     </div>

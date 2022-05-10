@@ -7,11 +7,19 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-image`,
+    `gatsby-remark-images`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `blogs`,
         path: `${__dirname}/src/pages/blogs/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `readings`,
+        path: `${__dirname}/src/pages/readings/`,
       },
     },
     "gatsby-plugin-catch-links",
@@ -53,6 +61,12 @@ module.exports = {
                 global: false,
               },
               escapeEntities: {},
+            },
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 980,
             },
           },
         ]
