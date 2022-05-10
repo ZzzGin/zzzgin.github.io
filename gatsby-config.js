@@ -1,10 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: `zzzgin design`,
+    title: `zzz design`,
     siteUrl: `https://zzzgin.github.io`,
   },
   plugins: [
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        icon: `src/images/zzz-icon.svg`
+      }
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-image`,
     `gatsby-remark-images`,
