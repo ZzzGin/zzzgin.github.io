@@ -11,17 +11,17 @@ const Navbar = () => {
         <div className='navbar'>
             <div className='navbar-body'>
                 <div className='navbar-home-icon left'>
-                    <img src={ ZzzHomeIcon } alt="home" style={{height: "50px"}}/>
+                    <img src={ ZzzHomeIcon } alt="home" style={{height: "2em"}}/>
                 </div>
                 <div style={{flex: "auto"}}></div>
                 <div className='navbar-engineer-icon right'>
-                    <img src={ ZzzEngineerIcon } alt="engineer" style={{height: "50px"}} />
+                    <img src={ ZzzEngineerIcon } alt="engineer" style={{height: "2em"}} />
                 </div>
                 <div className='navbar-design-icon right' >
-                    <img src={ ZzzDesignIcon } alt="design" style={{height: "50px"}} />
+                    <img src={ ZzzDesignIcon } alt="design" style={{height: "2em"}} />
                 </div>
                 <div className='navbar-io-icon right' >
-                    <img src={ ZzzIoIcon } alt="io" style={{height: "50px"}} />
+                    <img src={ ZzzIoIcon } alt="io" style={{height: "2em"}} />
                 </div>
             </div>
         </div>

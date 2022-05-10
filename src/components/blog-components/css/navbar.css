@@ -1,8 +1,7 @@
 .navbar {
     position: relative;
-    height: 50px;
-    border-bottom: 3px solid #cccccc;
-    padding: 12px;
+    
+    padding: 5px
 }
 
 .navbar-body {
@@ -12,6 +11,7 @@
     margin: 0 auto;
     font-size: 20px;
     display: flex;
+    border-bottom: 3px solid #cccccc;
 }
 
 .left {
