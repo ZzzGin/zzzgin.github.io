@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-templates-blog-post-js",
-    "path": "/blogs/2-nd-post",
-    "result": {"data":{"markdownRemark":{"html":"<p>Your next, great blog post goes here</p>","frontmatter":{"date":"May 09, 2022","path":"/blogs/2-nd-post","tags":[],"title":"2 Nd Post"}}},"pageContext":{}},
-    "staticQueryHashes": []}
