@@ -1,16 +1,24 @@
 import React, { useEffect  } from "react"
 import anime from 'animejs'
 import "../svg-css/zzzgin_logo_animation.css"
+import { window, document } from "browser-monads"
 
 const ZzzLogoAnimation = () => {
 
+    const getLoss = (element) => {
+        const style = window.getComputedStyle(element);
+        const matrix = new DOMMatrixReadOnly(style.transform);
+        let offset = -element.offsetWidth/2;
+        return (matrix.m41-offset)**2 + (matrix.m42-offset)**2;
+    }
+
     const animationRef = React.useRef(null);
+    const [loss, setLoss] = React.useState(0);
     useEffect(() => {
         animationRef.current = anime.timeline(
             {
                 targets: '.logo-parts',
                 loop: true,
-                // delay: (el, i) => i*50+anime.random(-300, 300),
                 delay: (el, i) => i*10+anime.random(0, 300),
                 easing: 'spring(1, 100, 10, 20)', // Can be inherited
                 duration: 1000,
@@ -49,7 +57,17 @@ const ZzzLogoAnimation = () => {
             scale: 0,
             translateX: (el, i) => 5+anime.random(-1200, 1200),
             translateY: (el, i) => 5+anime.random(-1200, 1200),
-        })
+        });
+
+        setInterval(() => {
+            const collection = document.getElementsByClassName("center");
+            let loss = 0;
+            for (let i = 0; i < collection.length; i++) {
+                loss += getLoss(collection[i])
+            }
+            setLoss(loss);
+            console.log(loss);
+        }, 10);
     }, []);
 
     return (
@@ -57,7 +75,7 @@ const ZzzLogoAnimation = () => {
         <div className="zzginLogoAnimation">
             <div className="circle-container">
                 <div className="circle void" style={{ width: "100.0%", height: "100.0%", left: "50.0%", top: "50.0%", transform: "translate(-50%, -50%)"}}></div>
-                <div className="circle redgreenblue logo-parts" style={{ width: "11.358473%", height: "11.358473%", left: "50%", top: "50%", transform: "translate(-50%, -50%)"}}></div>
+                <div className="circle redgreenblue logo-parts center" style={{ width: "11.358473%", height: "11.358473%", left: "50%", top: "50%", transform: "translate(-50%, -50%)"}}></div>
                 <div className="circle red logo-parts" style={{ width: "10.79054975%", height: "10.79054975%", left: "59.83643798%", top: "44.32076329%", transform: "translate(-50%, -50%)"}}></div>
                 <div className="circle green logo-parts" style={{ width: "10.790549750%", height: "10.790549750%", left: "40.163562017%", top: "44.320763289%", transform: "translate(-50%, -50%)"}}></div>
                 <div className="circle blue logo-parts" style={{ width: "10.790549750%", height: "10.790549750%", left: "50.0%", top: "61.358473421%", transform: "translate(-50%, -50%)"}}></div>
@@ -101,8 +119,9 @@ const ZzzLogoAnimation = () => {
                 <div className="circle green logo-parts" style={{ width: "4.5433893684%", height: "4.5433893684%", left: "59.836437982%", top: "55.679236710%", transform: "translate(-50%, -50%)"}}></div>
                 <div className="circle red logo-parts" style={{ width: "4.5433893684%", height: "4.5433893684%", left: "40.163562017%", top: "55.679236710%", transform: "translate(-50%, -50%)"}}></div>
             </div>
-            
+            <div className="loss-number">{parseInt(loss)}</div>
         </div>
+        
         </>
     )
 }
