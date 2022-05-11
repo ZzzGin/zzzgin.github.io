@@ -10,23 +10,40 @@ const ZzzLogoAnimation = () => {
             {
                 targets: '.logo-parts',
                 loop: true,
-                delay: (el, i) => i*50+anime.random(-300, 300),
-                duration: 1300,
+                // delay: (el, i) => i*50+anime.random(-300, 300),
+                delay: (el, i) => i*10+anime.random(0, 300),
+                easing: 'spring(1, 100, 10, 20)', // Can be inherited
+                duration: 1000,
+                direction: 'reverse',
             }
         ).add({
             scale: [0, 1],
         }).add({
             scale: 0.8,
-            translateX: (el, i) => 5+anime.random(-10, 10),
-            translateY: (el, i) => 5+anime.random(-10, 10),
         }).add({
             scale: 1,
             translateX: (el, i) => 5+anime.random(-10, 10),
             translateY: (el, i) => 5+anime.random(-10, 10),
         }).add({
+            scale: 0.8,
+            translateX: (el, i) => 5+anime.random(-30, 30),
+            translateY: (el, i) => 5+anime.random(-30, 30),
+        }).add({
+            scale: 1,
+            translateX: (el, i) => 5+anime.random(-75, 75),
+            translateY: (el, i) => 5+anime.random(-75, 75),
+        }).add({
+            scale: 0.8,
+            translateX: (el, i) => 5+anime.random(-150, 150),
+            translateY: (el, i) => 5+anime.random(-150, 150),
+        }).add({
+            scale: 1,
+            translateX: (el, i) => 5+anime.random(-300, 300),
+            translateY: (el, i) => 5+anime.random(-300, 300),
+        }).add({
             scale: 0,
-            translateX: (el, i) => 5+anime.random(-10, 10),
-            translateY: (el, i) => 5+anime.random(-10, 10),
+            translateX: (el, i) => 5+anime.random(-600, 600),
+            translateY: (el, i) => 5+anime.random(-600, 600),
         })
     }, []);
 
