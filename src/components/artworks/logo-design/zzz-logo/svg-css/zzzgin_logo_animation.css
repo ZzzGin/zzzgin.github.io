@@ -1,0 +1,45 @@
+.zzzlogo-b{fill:none;}
+.zzzlogo-c{fill:#ef476f;}
+.zzzlogo-d{fill:#806991;}
+.zzzlogo-e{fill:#118ab2;}
+.zzzlogo-f{fill:#06d6a0;}
+.zzzlogo-g{fill:#0cb0a9;}
+.zzzlogo-h{fill:#578d96;}
+.zzzlogo-i{fill:#7b8f88;}
+
+.zzginLogoAnimation {
+    position: relative;
+}
+.circle-container {
+    width: 100%;
+    padding-bottom: 100%;
+}
+.circle {
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute
+}
+.red {
+    background-color: #ef476f;
+}
+.green {
+    background-color: #06d6a0;
+}
+.blue {
+    background-color: #118ab2;
+}
+.redgreen {
+    background-color: #7b8f88;
+}
+.redblue {
+    background-color: #806991;
+}
+.greenblue {
+    background-color: #0cb0a9;
+}
+.redgreenblue {
+    background-color: #578d96;
+}
+.void {
+    background-color: none;
+}
