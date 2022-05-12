@@ -5,7 +5,7 @@ const ZzzLogo = () => {
 
   return (
     <>
-        <ZzzLogoAnimation />
+      <ZzzLogoAnimation />
     </>
   )
 }

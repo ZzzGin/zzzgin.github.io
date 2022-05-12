@@ -1,0 +1,35 @@
+.index-body {
+    box-sizing: border-box;
+    min-width: 200px;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 45px;
+}
+
+.title-container {
+    margin-top: 30px;
+    display: block;
+    position: relative;
+}
+
+.zzz-container {
+    width: min(20vw, 200px);
+    clear: both;
+    float: right;
+    color: #a0a0a0;
+    font-size:medium;
+    font-family: "Noto Serif", serif;
+    text-align: right;
+    font-weight: bold;
+}
+
+.slogan-container {
+    float: right;
+    clear: both;
+}
+
+.slogan {
+    font-family: "Noto Serif", serif;
+    font-size: min(3.7vw, 40px);
+    font-weight: 700;
+}

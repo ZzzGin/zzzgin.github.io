@@ -2,8 +2,8 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import { graphql } from "gatsby"
 import Navbar from '../components/blog-components/Navbar'
-import '../components/blog-components/css/blog-post.css'
-import '../components/blog-components/css/github-markdown.css'
+import '@components/css/blog-post.css'
+import '@components//css/github-markdown.css'
 import "@fontsource/noto-serif"
 import "@fontsource/noto-sans"
 require(`katex/dist/katex.min.css`)

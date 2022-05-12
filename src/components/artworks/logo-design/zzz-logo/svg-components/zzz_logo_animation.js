@@ -11,7 +11,7 @@ const ZzzLogoAnimation = () => {
         const style = window.getComputedStyle(element);
         const matrix = new DOMMatrixReadOnly(style.transform);
         let offset = -element.offsetWidth/2;
-        return (matrix.m41-offset)**2 + (matrix.m42-offset)**2;
+        return Math.sqrt((matrix.m41-offset)**2 + (matrix.m42-offset)**2);
     }
 
     const animationRef = React.useRef(null);
