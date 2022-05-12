@@ -10,9 +10,12 @@ const Navbar = () => {
     <>
         <div className='navbar'>
             <div className='navbar-body'>
-                <div className='navbar-home-icon left'>
-                    <img src={ ZzzHomeIcon } alt="home" style={{height: "2em"}}/>
-                </div>
+                <a href="/">
+                    <div className='navbar-home-icon left' >
+                        <img src={ ZzzHomeIcon } alt="home" style={{height: "2em"}}/>
+                    </div>
+                </a>
+                
                 <div style={{flex: "auto"}}></div>
                 <div className='navbar-engineer-icon right'>
                     <img src={ ZzzEngineerIcon } alt="engineer" style={{height: "2em"}} />

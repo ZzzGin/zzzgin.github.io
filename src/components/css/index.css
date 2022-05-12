@@ -33,3 +33,9 @@
     font-size: min(3.7vw, 40px);
     font-weight: 700;
 }
+
+@media (max-width: 767px) {
+    .index-body {
+        padding: 5px;
+    }
+}
