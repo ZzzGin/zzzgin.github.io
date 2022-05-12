@@ -2,6 +2,8 @@ import React, { useEffect  } from "react"
 import anime from 'animejs'
 import "../svg-css/zzzgin_logo_animation.css"
 import { window, document } from "browser-monads"
+import katex from "katex"
+import 'katex/dist/katex.min.css';
 
 const ZzzLogoAnimation = () => {
 
@@ -66,7 +68,6 @@ const ZzzLogoAnimation = () => {
                 loss += getLoss(collection[i])
             }
             setLoss(loss);
-            console.log(loss);
         }, 10);
     }, []);
 
@@ -119,7 +120,10 @@ const ZzzLogoAnimation = () => {
                 <div className="circle green logo-parts" style={{ width: "4.5433893684%", height: "4.5433893684%", left: "59.836437982%", top: "55.679236710%", transform: "translate(-50%, -50%)"}}></div>
                 <div className="circle red logo-parts" style={{ width: "4.5433893684%", height: "4.5433893684%", left: "40.163562017%", top: "55.679236710%", transform: "translate(-50%, -50%)"}}></div>
             </div>
-            <div className="loss-number">{parseInt(loss)}</div>
+            <div className="loss-number"
+                dangerouslySetInnerHTML={{__html: katex.renderToString("\\Delta:"+parseInt(loss), {throwOnError: false, displayMode: true})}}
+            >
+            </div>
         </div>
         
         </>
