@@ -17,9 +17,9 @@
 .left {
     position:inherit;
     left: 0;
-    margin: 0 30px;
+    margin: 0 min(30px, 3vw);
 }
 
 .right {
-    margin: 0 30px;
+    margin: 0 min(30px, 3vw);
 }
