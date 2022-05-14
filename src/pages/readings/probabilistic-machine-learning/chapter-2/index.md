@@ -2,6 +2,7 @@
 path: "/readings/probabilistic-machine-learning-2"
 date: "2022-05-10T01:40:59.782Z"
 title: "Probabilistic Machine Learning: CP2 - Probability: Univariate Models"
+description: "This chapter discussed how to describe continuous and discrete random variables. For RV, we have Mean(E) and Variance(V). Bayes' theorem is to the theory of probability what Pythagoras's theorem is to geometry. -- Sir Harold Jeffreys, 1973"
 tags: ["readings", "Probabilistic Machine Learning", "math"]
 ---
 

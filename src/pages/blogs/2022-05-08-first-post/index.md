@@ -2,14 +2,14 @@
 path: "/blogs/first-post"
 date: "2022-05-08T21:10:00.063Z"
 title: "First Post"
+description: "Hello world! This is description. What we need to put here? I don't know. But this should be a very interesting things to do. Let's do it."
 tags: ["blog"]
 ---
 
 ```toc
 
 ```
-
-Hello world!
+If the cdf PP is strictly monotonically increasing, it has an inverse, called the inverse cdf, or percent point function (ppf), or quantile function.
 This is the second line
 
 ## Heading level 2

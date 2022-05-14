@@ -6,6 +6,7 @@ import '@components/css/blog-post.css'
 import '@components//css/github-markdown.css'
 import "@fontsource/noto-serif"
 import "@fontsource/noto-sans"
+import Description from "../components/blog-components/Description"
 require(`katex/dist/katex.min.css`)
 require("prismjs/themes/prism-okaidia.css")
 
@@ -28,6 +29,8 @@ export default function Template(props) {
 
         <div className="date">{post.frontmatter.date}</div>
 
+        <Description description={post.frontmatter.description} tags={post.frontmatter.tags || []}/>
+        
         <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: post.html }}
@@ -61,6 +64,7 @@ export const pageQuery = graphql`
         path
         tags
         title
+        description
       }
     }
   }

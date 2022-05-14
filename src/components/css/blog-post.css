@@ -4,6 +4,16 @@ html {
     scroll-behavior: smooth;
 }
 
+:root {
+    --red: #EF476F;
+    --organe: #F78C6B;
+    --yellow: #FFD166;
+    --green: #FFD166;
+    --blue: #118AB2;
+    --dark: #073B4C;
+    --light: #FCFCFC;
+}
+
 @media (max-width: 500px) {
     html {
       font-size: 12px;
@@ -34,7 +44,7 @@ html {
 
 .blog-post .date {
     color: #999;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     font-size: 1.25rem;
     border-bottom: 3px solid #cccccc;
 }
