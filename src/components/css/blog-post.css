@@ -81,6 +81,7 @@ html {
     .table-of-contents {
         position: fixed;
         left: 30px;
+        top: 20%;
         border-right: 3px solid #cccccc;
         padding: 10px 30px 10px 2px;
         max-width: 190px;
