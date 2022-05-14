@@ -3,7 +3,8 @@ import { Helmet } from "react-helmet"
 import { graphql } from "gatsby"
 import Navbar from '../components/blog-components/Navbar'
 import '@components/css/blog-post.css'
-import '@components//css/github-markdown.css'
+import '@components/css/github-markdown.css'
+import '@components/css/priority-markers.css'
 import "@fontsource/noto-serif"
 import "@fontsource/noto-sans"
 import Description from "../components/blog-components/Description"

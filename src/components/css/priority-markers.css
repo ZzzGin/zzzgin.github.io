@@ -1,0 +1,47 @@
+critical-marker::before {
+    color: var(--light);
+    background-color: var(--purple);
+    content: "Critical";
+    padding: 2px 6px 2px 6px;
+    border-radius: 3px;
+}
+
+high-marker::before {
+    color: var(--light);
+    background-color: var(--red);
+    content: "High";
+    padding: 2px 6px 2px 6px;
+    border-radius: 3px;
+}
+
+medium-marker::before {
+    color: var(--dark);
+    background-color: var(--orange);
+    content: "Medium";
+    padding: 2px 6px 2px 6px;
+    border-radius: 3px;
+}
+
+low-marker::before {
+    color: var(--dark);
+    background-color: var(--yellow);
+    content: "Low";
+    padding: 2px 6px 2px 6px;
+    border-radius: 3px;
+}
+
+done-marker::before {
+    color: var(--light);
+    background-color: var(--green);
+    content: "Done";
+    padding: 2px 6px 2px 6px;
+    border-radius: 3px;
+}
+
+idea-marker::before {
+    color: var(--light);
+    background-color: var(--blue);
+    content: "Idea";
+    padding: 2px 6px 2px 6px;
+    border-radius: 10px 10px;
+}

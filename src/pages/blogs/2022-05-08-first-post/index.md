@@ -2,7 +2,7 @@
 path: "/blogs/first-post"
 date: "2022-05-08T21:10:00.063Z"
 title: "First Post"
-description: "Hello world! This is description. What we need to put here? I don't know. But this should be a very interesting things to do. Let's do it."
+description: "HELLO world! This is description. What we need to put here? I don't know. But this should be a very interesting things to do. Let's do it."
 tags: ["blog"]
 ---
 

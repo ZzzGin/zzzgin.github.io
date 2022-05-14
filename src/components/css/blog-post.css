@@ -6,10 +6,11 @@ html {
 
 :root {
     --red: #EF476F;
-    --organe: #F78C6B;
+    --orange: #F78C6B;
     --yellow: #FFD166;
-    --green: #FFD166;
+    --green: #06d6a0;
     --blue: #118AB2;
+    --purple: #960D92;
     --dark: #073B4C;
     --light: #FCFCFC;
 }
