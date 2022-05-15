@@ -30,7 +30,7 @@ export const query = graphql`
                 date(formatString: "MMMM DD, YYYY")
                 featuredimage {
                 childImageSharp {
-                    gatsbyImageData(placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP, AVIF])
+                    gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
                 }
                 }
                 description

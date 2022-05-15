@@ -17,6 +17,9 @@ const ArticleListView = ({ edges }) => {
                                 { edge.node.frontmatter.title }
                             </div>
                             </a>
+                            <div className="article-tile-date">
+                                { edge.node.frontmatter.date }
+                            </div>
                             <div className="article-tile-image-description-wrapper">
                                 {
                                     edge.node.frontmatter.featuredimage && 

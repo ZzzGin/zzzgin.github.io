@@ -34,3 +34,15 @@
 
 .article-description-text {
 }
+
+.gatsby-image-wrapper {
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.article-tile-date {
+    color: #999;
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-top: 0.7rem;
+}
