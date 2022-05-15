@@ -9,14 +9,14 @@ featuredimageAlt: "I love it when a plan comes together"
 ---
 
 ## Features List
-1. <critical-marker /> `tags` management page
+1. <done-marker /> `tags` management page
     1. a `/tags/` page to list all tags of the website
         1. this page will sort the tags by alphabetical order
     2. `/tags/{tag-name}` to list all articles related to the `tag-name`
 2. <done-marker /> `articles-list-view` component
     1. takes a list of posts as input and renders them in a list view
     2. post object includes title, data, description and feature-image.
-3. <high-marker /> `time-line` component
+3. <critical-marker /> `time-line` component
     1. one blog idea is to display a timeline of certain events. 
     2. For exmample, to track the timeline of job transfering, we need to have relative timeline. 
     3. Another example is, social media hot news. I want to keep those in mind and learn fron history.
