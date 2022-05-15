@@ -10,6 +10,7 @@
     margin: 0 10px 10px 0;
     text-decoration: none;
     transition: color 0.2s;
+    font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
   }
   
   .tag::before {

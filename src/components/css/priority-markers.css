@@ -1,4 +1,5 @@
 critical-marker::before {
+    font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
     color: var(--light);
     background-color: var(--purple);
     content: "Critical";
@@ -7,6 +8,7 @@ critical-marker::before {
 }
 
 high-marker::before {
+    font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
     color: var(--light);
     background-color: var(--red);
     content: "High";
@@ -15,6 +17,7 @@ high-marker::before {
 }
 
 medium-marker::before {
+    font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
     color: var(--dark);
     background-color: var(--orange);
     content: "Medium";
@@ -23,6 +26,7 @@ medium-marker::before {
 }
 
 low-marker::before {
+    font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
     color: var(--dark);
     background-color: var(--yellow);
     content: "Low";
@@ -31,6 +35,7 @@ low-marker::before {
 }
 
 done-marker::before {
+    font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
     color: var(--light);
     background-color: var(--green);
     content: "Done";
@@ -39,6 +44,7 @@ done-marker::before {
 }
 
 idea-marker::before {
+    font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
     color: var(--light);
     background-color: var(--blue);
     content: "Idea";

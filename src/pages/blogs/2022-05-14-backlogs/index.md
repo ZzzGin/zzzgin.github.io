@@ -2,7 +2,7 @@
 path: "/blogs/backlogs"
 date: "2022-05-14T16:52:47.372Z"
 title: "Backlogs"
-description: "PLAN. Plan, plan, plan. I love to see when a plan comes to true."
+description: "PLAN. Plan, plan, plan! I love it when a plan comes together."
 tags: ["blog", "backlog"]
 ---
 
@@ -10,11 +10,11 @@ tags: ["blog", "backlog"]
 ```
 
 ## Features List
-1. <high-marker /> `tags` management page
+1. <critical-marker /> `tags` management page
     1. a `/tags/` page to list all tags of the website
         1. this page will sort the tags by alphabetical order
     2. `/tags/{tag-name}` to list all articles related to the `tag-name`
-2. <critical-marker /> `articles-list-view` component
+2. <done-marker /> `articles-list-view` component
     1. takes a list of posts as input and renders them in a list view
     2. post object includes title, data, description and feature-image.
 3. <high-marker /> `time-line` component
