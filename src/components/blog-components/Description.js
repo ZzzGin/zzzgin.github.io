@@ -1,5 +1,6 @@
 import React from 'react';
 import '@components/css/description.css';
+import Tag from './Tag';
 
 const Description = ( {description, tags} ) => {
 
@@ -15,13 +16,8 @@ const Description = ( {description, tags} ) => {
                 (tags !== undefined && tags.length !== 0) && 
                     <div className='tag-container'>
                         {
-                            tags.map(tag => 
-                                <div className='tag'>
-                                    {tag}
-                                </div>
-                            )
+                            tags.map(tag => <Tag text={tag} />)
                         }
-                        
                     </div>
             }
         </div>

@@ -4,15 +4,15 @@ module.exports = {
     siteUrl: `https://zzzgin.github.io`,
   },
   plugins: [
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
         icon: `src/images/zzz-icon.svg`
       }
     },
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     `gatsby-remark-images`,
     {
       resolve: `gatsby-source-filesystem`,
