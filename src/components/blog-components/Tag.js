@@ -1,12 +1,16 @@
 import React from "react";
 import "@components/css/tag.css";
 
-const Tag = ({ text }) => {
+const Tag = ({ content }) => {
     return (
-        <div className="tag">
-            { text }
-        </div>
+        <a href={"/tags/"+content.trim().toLowerCase().replaceAll(' ', '-')}>
+            <div className="tag">
+                { content.trim().toLowerCase() }
+            </div>
+        </a>
+        
     )
 }
+
 
 export default Tag;

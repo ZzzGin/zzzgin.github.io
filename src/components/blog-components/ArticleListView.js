@@ -38,7 +38,7 @@ const ArticleListView = ({ edges }) => {
                                     <div className="article-description-tags">
                                         {
                                             edge.node.frontmatter.tags && 
-                                            edge.node.frontmatter.tags.map((t) => <Tag text={t} />)
+                                            edge.node.frontmatter.tags.map((t) => <Tag content={t} />)
                                         }
                                     </div>
                                 </div>

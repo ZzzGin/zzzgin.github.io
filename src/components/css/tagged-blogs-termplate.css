@@ -1,4 +1,4 @@
-.tags-manager-body {
+.tagged-blogs-template-body {
     box-sizing: border-box;
     min-width: 200px;
     max-width: 980px;
@@ -7,27 +7,12 @@
 }
 
 @media (max-width: 767px) {
-    .tags-manager-body {
+    .tagged-blogs-template-body {
         padding: 5px;
     }
 }
 
-.tags-initiate-wrapper {
-    display: block;
-    padding-bottom: 1rem;
-    border-bottom:2px solid #aaa;
-    margin-bottom: 0.5rem;
-    margin-top: 3rem;
-}
-
-.tags-initiate {
-    font-size: 4rem;
-    text-align: left;
-    text-transform: capitalize;
-    font-family: 'zzz-font';
-}
-
-.tags-manager-title {
+.tagged-blogs-template-tag-name {
     font-family: "Noto Serif", serif;
     text-align: right;
     margin: 0;
@@ -35,4 +20,12 @@
     font-size: 3rem;
     margin-bottom: 1rem;
     text-shadow: 1px 1px 2px #cccccc;
+}
+
+.back-to-tags {
+    color: #666;
+    font-weight: 700;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1rem;
+    text-align: right;
 }

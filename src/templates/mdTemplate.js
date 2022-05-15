@@ -23,7 +23,7 @@ export default function Template(props) {
     <>
     <Navbar />
     <div className="blog-post-container markdown-body">
-      <Helmet title={`${post.frontmatter.title}`} />
+      <Helmet title={ `zzz - ${post.frontmatter.title}`} />
       <article className="blog-post">
 
         <div className="title">{post.frontmatter.title}</div>

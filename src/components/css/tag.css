@@ -39,6 +39,7 @@
   .tag:hover {
     background-color: var(--red);
     color: white;
+    cursor: pointer;
   }
   
   .tag:hover::after {

@@ -16,7 +16,7 @@ const Description = ( {description, tags} ) => {
                 (tags !== undefined && tags.length !== 0) && 
                     <div className='tag-container'>
                         {
-                            tags.map(tag => <Tag text={tag} />)
+                            tags.map(tag => <Tag content={tag} />)
                         }
                     </div>
             }
