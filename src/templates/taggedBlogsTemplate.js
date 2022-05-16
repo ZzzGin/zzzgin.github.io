@@ -8,8 +8,6 @@ import "@components/css/tagged-blogs-termplate.css"
 
 const TaggedBlogsTemplate = (props) => {
 
-    console.log(props);
-
     return (
         <>
             <Helmet title={"tag: "+ props.pageContext.tag}/>
