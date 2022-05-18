@@ -45,11 +45,11 @@ const TagsManager = (props) => {
 
     return (
         <>
-            <Helmet title="zzz Tags" />
+            <Helmet title="zzz - Tags" />
             <Navbar />
             <div className="tags-manager-body">
                 <div className="tags-manager-title">
-                    Tags:
+                    Tags
                 </div>
                 {
                     sortedTags.map((el, i) => 

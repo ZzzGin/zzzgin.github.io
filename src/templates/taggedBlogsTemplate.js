@@ -10,7 +10,7 @@ const TaggedBlogsTemplate = (props) => {
 
     return (
         <>
-            <Helmet title={"tag: "+ props.pageContext.tag}/>
+            <Helmet title={"zzz - Tag: "+ props.pageContext.tag}/>
             <Navbar />
             <div className="tagged-blogs-template-body">
                 <a href="/tags">

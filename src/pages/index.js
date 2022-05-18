@@ -9,7 +9,7 @@ import "@components/css/index.css"
 const IndexPage = () => {
     return (
         <>
-            <Helmet title="cubic z" />
+            <Helmet title="zzz" />
             <Navbar />
             <div className="index-body">
                 <ZzzLogoAnimation />

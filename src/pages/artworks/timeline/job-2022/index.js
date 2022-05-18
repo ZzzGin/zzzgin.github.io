@@ -339,10 +339,7 @@ const JobTimeline_2022 = () => {
             svg.setAttribute("viewBox", "0 0 680 6295")
         }, 1000);
         
-
-        return () => {
-            document.body.removeChild(graphContainer);
-        }
+        return; 
     }, []);
 
     

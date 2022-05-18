@@ -22,4 +22,12 @@
   
 .tags li {
     float: left; 
-}  
+}
+
+.description-container {
+    display: block;
+    border-top: 3px solid #cccccc;
+    padding: 1rem 1rem 0.3rem 1rem;
+    background-color: var(--light);
+    margin-bottom: 1rem;
+}

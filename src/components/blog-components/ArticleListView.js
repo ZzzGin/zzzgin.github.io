@@ -12,21 +12,31 @@ const ArticleListView = ({ edges }) => {
                 {
                     edges.map((edge, i) => 
                         <div className="article-tile-container" key={i.toString()}>
+                            <div className="article-tile-top-wrapper">
+                                <div className="article-tile-category">
+                                    { edge.node.frontmatter.path.split("/")[1].charAt(0).toUpperCase()
+                                        +edge.node.frontmatter.path.split("/")[1].slice(1)}
+                                </div>
+                                <div className="article-tile-date">
+                                    { edge.node.frontmatter.date }
+                                </div>
+                                
+                            </div>
                             <a href={ edge.node.frontmatter.path }>
                             <div className="article-tile-title">
                                 { edge.node.frontmatter.title }
                             </div>
                             </a>
-                            <div className="article-tile-date">
-                                { edge.node.frontmatter.date }
-                            </div>
+                            
                             <div className="article-tile-image-description-wrapper">
                                 {
                                     edge.node.frontmatter.featuredimage && 
+                                        <a href={ edge.node.frontmatter.path }>
                                         <GatsbyImage 
                                             image={ edge.node.frontmatter.featuredimage.childImageSharp.gatsbyImageData } 
                                             alt={ edge.node.frontmatter.featuredimageAlt }
                                         />
+                                        </a>
                                 }
                                 <div className="article-description-wrapper">
                                     <div className="article-description-text">
