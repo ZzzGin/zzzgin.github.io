@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tagged-blogs-template-js",
+    "path": "/tags/checkout-dash-b",
+    "result": {"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"date":"May 19, 2022","featuredimage":null,"description":"Amplify是一个非常有活力的社区。在我看来，作为毕业生且面向软件工程师找工作的你，如果没有接触过它，尝试它会有非常新奇的体验。这种体验既可以帮助你构建作为软件工程师的‘品味’；又可以‘加速’你奇思妙想的实现；最关键的是它可以带动你去了解当下工业界的一些流行的解决方案……","featuredimageAlt":null,"path":"/blogs/why-you-really-need-to-know-amplify","tags":["blog","checkout dash b","ng project","aws","amplify"],"title":"AWS的新手大礼包——Amplify"}}}]}},"pageContext":{"tag":"checkout dash b"}},
+    "staticQueryHashes": []}
