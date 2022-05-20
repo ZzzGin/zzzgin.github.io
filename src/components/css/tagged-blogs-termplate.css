@@ -13,7 +13,7 @@
 }
 
 .tagged-blogs-template-tag-name {
-    font-family: "Noto Serif", serif;
+    font-family: "Noto Serif", "Noto Serif SC", serif;
     text-align: right;
     margin: 0;
     padding: 0;
@@ -24,8 +24,8 @@
 
 .back-to-tags {
     color: #666;
-    font-weight: 700;
-    font-family: "Noto Sans", sans-serif;
+    font-family: "Noto Sans", 'Noto Sans SC', sans-serif;
     font-size: 1rem;
     text-align: right;
+    text-decoration: underline;
 }

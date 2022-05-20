@@ -1,5 +1,5 @@
 import React from 'react';
-import '@components/css/navbar.css';
+import "@components/css/main.css"
 import ZzzHomeIcon from "../../images/zzz-icon.svg"
 import ZzzEngineerIcon from "../../images/zzz-engineer-icon.svg"
 import ZzzIoIcon from "../../images/zzz-io-icon.svg"

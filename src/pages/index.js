@@ -3,8 +3,7 @@ import Navbar from "../components/blog-components/Navbar"
 import ZzzLogoAnimation from "../components/artworks/logo-design/zzz-logo/svg-components/zzz_logo_animation"
 import zzzTextLogo from "../images/zzz.svg"
 import { Helmet } from "react-helmet"
-import "@components/css/index.css"
-
+import "@components/css/main.css"
 
 const IndexPage = () => {
     return (

@@ -1,12 +1,11 @@
 .description {
     margin-bottom: 1rem;
     font-size: 1.2rem;
-    font-weight: bold;
-    font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+    font-family: 'Noto Serif', "Noto Serif SC", serif, sans-serif;
 }
 
 .description::first-letter {
-    font-family: "zzz-font", "Noto Serif", serif;
+    font-family: "zzz-font", "Noto Serif", "Noto Serif SC", serif;
     font-size: 6rem;
     margin: 0 3px 0 0;
     line-height: 1;

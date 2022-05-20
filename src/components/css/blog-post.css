@@ -1,5 +1,3 @@
-@import "../css/typography.css";
-
 html {
     scroll-behavior: smooth;
 }
@@ -37,7 +35,7 @@ html {
 
 .blog-post .title,
 .blog-post .date {
-    font-family: "Noto Serif", serif;
+    font-family: "Noto Serif", "Noto Serif SC", serif;
     text-align: right;
     margin: 0;
     padding: 0;
@@ -67,7 +65,9 @@ html {
     padding: 45px;
 }
 
-
+.blog-post-content {
+    font-family: "Noto Sans", 'Noto Sans SC', sans-serif;
+}
 
 @media (max-width: 1424px) {
     .table-of-contents {

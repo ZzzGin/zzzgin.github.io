@@ -1,5 +1,5 @@
 import React from 'react';
-import '@components/css/description.css';
+import "@components/css/main.css"
 import Tag from './Tag';
 
 const Description = ( {description, tags} ) => {

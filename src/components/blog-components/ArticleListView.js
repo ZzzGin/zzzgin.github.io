@@ -1,5 +1,5 @@
 import * as React from "react"
-import "@components/css/article-list-view.css"
+import "@components/css/main.css"
 import { GatsbyImage } from "gatsby-plugin-image"
 import Tag from "./Tag";
 

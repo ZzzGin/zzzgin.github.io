@@ -2,8 +2,8 @@
 path: "/blogs/backlogs"
 date: "2022-05-14T16:52:47.372Z"
 title: "Backlogs: 2022 Q2"
-description: "PLAN. Plan, plan, plan! 'I love it when a plan comes together.'"
 tags: ["blog", "backlog"]
+description: "PLAN. Plan, plan, plan! 'I love it when a plan comes together.'"
 featuredimage: images/67a5053270f4ce868f22d34c4e4f5a8efad9225b6ae04705a1cf0cee7c0c2079.png
 featuredimageAlt: "I love it when a plan comes together"
 ---

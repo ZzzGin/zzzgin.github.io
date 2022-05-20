@@ -3,7 +3,7 @@ import Navbar from "@components/blog-components/Navbar"
 import { Helmet } from "react-helmet"
 import ArticleListView from "@components/blog-components/ArticleListView"
 import { graphql } from "gatsby"
-import "@components/css/tagged-blogs-termplate.css"
+import "@components/css/main.css"
 
 
 const TaggedBlogsTemplate = (props) => {

@@ -2,8 +2,8 @@ import * as React from "react"
 import Navbar from "@components/blog-components/Navbar"
 import { Helmet } from "react-helmet"
 import { graphql } from "gatsby"
-import "@components/css/tags-manager.css"
 import StaticTag from "../../components/blog-components/StaticTag"
+import "@components/css/main.css"
 
 
 const TagsManager = (props) => {

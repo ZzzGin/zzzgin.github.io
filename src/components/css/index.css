@@ -18,9 +18,8 @@
     float: right;
     color: #a0a0a0;
     font-size:medium;
-    font-family: "Noto Serif", serif;
+    font-family: "Noto Serif", "Noto Serif SC", serif;
     text-align: right;
-    font-weight: bold;
 }
 
 .slogan-container {
@@ -29,9 +28,9 @@
 }
 
 .slogan {
-    font-family: "Noto Serif", serif;
+    font-family: "Noto Serif", "Noto Serif SC", serif;
     font-size: min(3.7vw, 40px);
-    font-weight: 700;
+    font-weight: 400;
 }
 
 @media (max-width: 767px) {
