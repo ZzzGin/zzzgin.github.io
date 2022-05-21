@@ -55,8 +55,9 @@ featuredimageAlt: "I love it when a plan comes together"
 5. Projects
     1. Homemade docker
     2. AWS interesting technology hands-on: Amplify - [Udemy](https://www.udemy.com/course/serverless-react-with-aws-amplify/)
-    3. [Build your own x](https://github.com/codecrafters-io/build-your-own-x)
-    4. [Reddit](https://www.reddit.com/r/csMajors/comments/uowh05/people_who_got_good_jobsinternships_share_your/?utm_source=share&utm_medium=ios_app&utm_name=iossmf)
+    3. 个人博客的瑞士军刀 - Gatsby
+    5. [Build your own x](https://github.com/codecrafters-io/build-your-own-x)
+    6. [Reddit](https://www.reddit.com/r/csMajors/comments/uowh05/people_who_got_good_jobsinternships_share_your/?utm_source=share&utm_medium=ios_app&utm_name=iossmf)
 6. How to write resume
     1. HTML is one way to do it, pros and cons
     2. STAR
