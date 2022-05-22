@@ -69,6 +69,10 @@ html {
     margin: 1rem 0 1rem 0;
 }
 
+.blog-post-content {
+    font-family: "Noto Sans", 'Noto Sans SC', sans-serif;
+}
+
 @media (max-width: 1424px) {
     .table-of-contents {
         position: relative;
@@ -76,9 +80,9 @@ html {
         padding: 0px 0px 30px 0px;
     } 
 
-    .blog-post-content {
-        font-family: "Noto Sans", 'Noto Sans SC', sans-serif;
-        font-size: 1.2rem;
+    .blog-post-content > p {
+        font-size: 1.3rem;
+        line-height: 2.3rem;
     }
 }
 
@@ -91,13 +95,13 @@ html {
         padding: 10px 30px 10px 2px;
         max-width: 190px;
         max-height: 60%;
-        overflow-y:auto;
+        overflow-y: auto;
         font-size: 14px;
     }
 
-    .blog-post-content {
-        font-family: "Noto Sans", 'Noto Sans SC', sans-serif;
+    .blog-post-content > p {
         font-size: 1.1rem;
+        line-height: 2.0rem;
     }
 }
 
