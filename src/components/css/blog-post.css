@@ -84,6 +84,10 @@ html {
         font-size: 1.3rem;
         line-height: 2.3rem;
     }
+
+    .blog-post-content > ol {
+        font-size: 1.3rem;
+    }
 }
 
 @media (min-width: 1425px) {
@@ -102,6 +106,10 @@ html {
     .blog-post-content > p {
         font-size: 1.1rem;
         line-height: 2.0rem;
+    }
+
+    .blog-post-content > ol {
+        font-size: 1.1rem;
     }
 }
 

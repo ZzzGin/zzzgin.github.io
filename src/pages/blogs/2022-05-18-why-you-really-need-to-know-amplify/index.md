@@ -16,7 +16,7 @@ featuredimageAlt: "Amplify Logo"
 > 
 > *-- Amazon VP, CTO, Werner Vogels*
 
-我总持有一个观点，一个健康的环境下，软件工程师不应该担心因为技术迭代而导致自己被淘汰。这不是什么“计算机从业者应该持续不断地学习”这种成词滥调，而是基于一个不言自明的事实：“新技术取代旧技术永远是因为新技术从根本上更易理解、更易上手”。“旧技术”复杂的原因是往往是其更贴近“本源”。而有了对于“本源”知识的理解，新技术的上手大部分也就是个Udemy上4个小时教程的事情。什么样的技术社区会去刻意追求复杂呢？或许没有，但我听闻一种断言是，在北美，律师、医生通过复杂性来提高入门门槛稳固体系。且不论这种断言的合理性，但软件工程，绝不属于这个行列。
+我总持有一个观点，一个健康的环境下，软件工程师不应该担心因为技术迭代而导致自己被淘汰。这不是什么“计算机从业者应该持续不断地学习”这种成词滥调，而是基于一个不言自明的事实：“新技术取代旧技术永远是因为新技术从根本上更易理解、更易上手”。“旧技术”的复杂性往往由于其更贴近“本源”。而有了对于“本源”知识的理解，新技术的上手大部分也就是个Udemy上4个小时教程的事情。什么样的技术社区会去刻意追求复杂呢？或许没有，但我听闻一种断言是，在北美，律师、医生通过复杂性来提高入门门槛稳固体系。且不论这种断言的合理性，但软件工程，绝不属于这个行列。
 
 而[AWS Amplify](https://aws.amazon.com/amplify/)则是这个观点的绝佳例证。AWS的[Serverless（无服务）](https://aws.amazon.com/serverless/)理念推行着[“业务逻辑”才是第一生产力的观点](https://betterprogramming.pub/all-the-code-you-will-ever-write-is-business-logic-2dc0acf47cef)，即作为AWS的使用者，你只需要写和你自己的业务相关的代码（比如网站页面，怎么支付订单）就可以了，不需要参与背后服务器的配置和维护。为此，它创造出了一大溜以“技术需求”为核心的服务。比如，我想让“key-value”形式的数据能有更多读取模式，我可以选择[DynamoDB](https://aws.amazon.com/dynamodb/)；我想处理流数据，可以选择[Kinesis](https://aws.amazon.com/kinesis/data-firehose/)；我需要一个消息队列，[SQS](https://aws.amazon.com/sqs/)是上乘之选。这种设计极大得提升了技术的复用性，一个**功能**，只需要合理组合、配置这些组件就可以了！太方便了！但这到极限了吗？Amplify的出现带领“业务至上”这一理念迈进了一步。
 
@@ -35,10 +35,179 @@ Amplify的使用者，关注“功能需求”，而非“技术需求”。我�
 | 买食材包，下锅一炒即刻上桌 | 思考菜单，购买食材，洗切后下锅 | 
 | ... | ... |
 
-这一章，将是一次“强势安利”，我将从不同角度介绍Amplify作为一种技术，为什么值得初入软件工程的新手了解和尝试。而作为这一节的总结，正如标题所说，Amplify是AWS这个“大型手游”的新手大礼包。相当合适的学习成本，你就能上手一众AWS的明星服务。从新手的角度来说，”大礼包“功能强大，能迅速拉开与不充值玩家实力的差距；而对于老玩家，”大礼包“也物超所值，你会发现总有一些小东西，用Amplify实现能做得很漂亮，很方便。而怎么拉开差距，怎么漂亮，怎么方便，且听我慢慢道来。
+这一章，将是一次“强势安利”，我将从不同角度介绍Amplify作为一种技术，为什么值得初入软件工程的新手了解和尝试。而作为这一节的总结，正如标题所说，Amplify是AWS这个“大型手游”的新手大礼包。相当合适的学习成本，你就能上手一众AWS的明星服务。从新手的角度来说，”大礼包“功能强大，能迅速拉开与不充值玩家实力的差距；而对于老玩家，”大礼包“也物超所值，你会发现总有一些小东西，用Amplify实现能做得很漂亮，很方便。而怎么拉开差距，怎么漂亮，怎么方便，且跟我一齐探索。
 
 ## 管中窥豹
-Todo: 展示一个demo，演示Amplify如何加速一个项目的创建。
+多说无益，show me the code。
+
+我们将用30分钟完成一个网页应用——[Diode](https://en.wikipedia.org/wiki/Diode)，向默默地为这个世界的运转做贡献的二极管们致敬。以下是这个网页应用的需求列表：
+1. 每个人都可以当二极管，一人一号，互不干扰；
+2. 二极管有且仅有两个状态，on/off，随时切换；
+3. 同个账号的二极管在多设备上实时同步，多屏协同；
+4. 部署至因特网，面向全球二极管，有足够的扩容性；
+5. 快捷流水线部署，push完代码快速看到结果，做最敏捷的二极管；
+6. 自定义域名，SSL证书签名，成为互相信任的二极管。
+
+这个是最后的结果：[diode.zzzgin.com](https://diode.zzzgin.com/)。源码：[github.com/ZzzGin/diode](https://github.com/ZzzGin/diode)。
+
+**Demo步骤：**
+1. 前往：https://diode.zzzgin.com/;
+![picture 21](images/3f4de8a176ffb8dd651950b5cdbf5580f60b8df2fb21e70905fee7c75d67ac85.png)
+
+2. 创建账号，可使用这类[10分钟临时邮箱](https://10minutemail.com/);
+3. 登陆成为二极管！
+![picture 22](images/203ea3bf8b77c7bfce1267a79959821fd4b4f725d1de0b2583ca217161d2044c.png)
+
+4. 点击页面，切换二极管通断；
+![picture 23](images/d2b00052a6a425d8d2ca8ecbd2194a26513870f15b825ebcaf53d378a91a55ea.png)
+
+5. 使用其他设备登陆相同页面，相同账号登陆，点击页面切换二极管通断，可以观察到多屏协同；
+6. 点击“点此链接不当二极管”退出二极管。
+
+**暂停，我们想一想这个app背后的技术需求：**
+1. 前端应用我们可以使用React框架实现。可能需要host在一台服务器上，如果未来流量增加，可能需要多台服务器并实现负载均衡。当然这里可以使用云服务提供商的存储服务，比如S3，然后用Cloudfront实现CDN加速；
+2. 后端如果不知道一些技术，设计可能会比较复杂了。首先，这是一个实时的状态更新，websocket server要维护链接表，Oh no，如果流量上去了，怎么同步多服务器的链接表呢？其实这类数据同步可以使用AWS的AppSync，GCP的Firebase也有这种功能。
+3. 用户还有登陆系统，关系数据库看起来绕不过去了。哦对不用，AWS有Cognito可以直接提供API来实现用户登陆、账号创建！用它！
+4. 还要实现“CI/CD（持续集成/持续交付）”，还要搞个部署流水线？AWS CodeCommit和Pipeline得整上。要不就去Github找找插件。
+5. 还要域名和证书？行吧，Route 53可以购买域名；AWS Certificate Manager可以解决证书。
+
+**设计齐活，开始整活儿！且慢，让我们看看，一个Amplify开发者怎么看到这个应用：**
+1. 前端React写吧。
+2. 需要用户登陆是吧，那要有一个Amplify Auth组件；
+3. 多屏同步，说明需要个API来获取别的设备的更新，那要有一个Amplify API组件；
+4. 要域名是吧，Route 53买一个域名，然后鼠标设置一下就行；
+5. 什么？你问怎么保持链接主动更新别的设备？还有交付流水线？哦，前者API组件直接提供；后者Apmlify本来就有。
+
+从上面系统设计的角度来说，Amplify已经人如其名了。掌握了Amplify，我们思考实现的思路是“需要什么功能”-“对应什么Amplify提供的组件”。反之，我们的思路是“这个功能背后的技术需求”-“对应的技术”-“有没有技术陷阱，有没有更好的选项”。要知道，技术是有盲点的，如果你不知道某个技术，你还是要花时间和同事聊天、或者网上找资料去学。而Amplify，文档就在那里，一个组件对应一个功能，你看与不看，它都在那里。
+
+**下面，是实现这个应用的全部步骤，笔者耗时半个小时。吹毛求疵一点，鉴于之前我提到“Amplify的设计目标是仅写业务逻辑”，我们来看看使用Amplify实现这个应用，要写多少行非业务代码。**
+
+（⚠️注意，以下步骤并不是设计给读者按照步骤操作的，仅是提供一个Amplify开发应用的步骤的概念。我在接下去的章节会介绍一些可行的学习路线。⚠️）
+
+1. Github上新建一个空白项目，clone到本地；
+2. `npx create-react-app .`创建一个React应用；`npm i -g @aws-amplify/cli`安装Amplify的CLI工具链（用于第三步）；
+3. 使用Amplify命令行工具`amplify init`初始化，其间会问你一些问题，用方向键、回车键选择即可；
+    1. “键入应用名称” - 默认diode，直接敲回车；
+    2. “确认一下是否用上列默认选项？” - 默认Yes，回车；
+    3. “你想如何链接到AWS账户？” - 默认“AWS profile”，回车（哦对，忘了说了，Amplify需要AWS账号）；
+    4. 然后Amplify就会根据你的选择在云上初始化你的App环境。
+    ![picture 13](images/4e21191167eeaa08f4ea1fcc5e993bb24e95cd3cbf0f188ca844eed527f8d705.png)  
+
+4. 稍等5分钟，传来“successfully”的消息。可以继续了。对，我们需要一个API，依然是用命令行输入，然后方向键选择：`amplify add api`
+    1. “想使用什么类型的API？” - GraphQl，因为这个支持实时同步；
+    2. “API名称” - 默认diode，但是我觉得API是动词，应该用toggle；
+    3. “如何认证你的API？” - 我是需要用户登陆的，那就Cognito吧；
+    4. “你希望用户使用什么字段登陆呢？” - 默认是邮箱，也可以选用户名；
+    5. “想设置高级选项吗？” - No；
+    6. “除了Cognito还需要什么认证手段吗？” - No；
+    7. “我们提供了一系列数据schema的模版，挑一个吧” - 默认；
+    8. “想现在就定义数据吗？” - 好；
+    9. 自动弹出新创建好的`schema.graphql`文件供我定义数据。
+    ![picture 15](images/91d11429059f4b553e0d0404f89fea059a108e1c3298e9427cf3a859d8d61ed2.png)  
+
+5. 到此为止，我还一行代码没写呢！现在终于开始了，7行以定义我要在数据库里存储的数据：
+```graphql
+type Diode # 我要存的数据类型定义diode-二极管
+  @model # 声明这是一个数据模型，下面的每个field都是二极管的数据列
+  @auth(rules: [{ allow: owner }]) { # 这个数据模型只有登陆的用户是所有者的时候才可以被使用
+  id: ID! # ID，感叹号指必须存在的值
+  state: Boolean! # 通/断布尔值
+  owner: String # 所有者用户名
+}
+```
+
+6. 数据定义好了，下面要创建数据库和API了，命令行运行`amplify push`然后方向键选择:
+    1. “你确认要继续吗？继续的话会‘真的’创建云上资源” - “确认”；
+    2. “你想要创建用于读取GraphQL API的代码吗？” - “Yes”，这一步Amplify工具链会根据上一步的数据模型，创建几个方便与API交互的文件；
+    3. “使用什么语言创建文件？” - “javascript”
+    4. “确认在这里创建文件吗？” - “确认”
+    5. “确实想创建吗？” - “确认”
+    6. “最大递归数？” - 默认值“2”，回车，这个暂时不用管，默认值就OK
+    7. 接下来，Amplify命令行工具将会创建所有辅助代码，并在AWS创建DynamoDB数据库和AppSync GraphQL API，要等个5分钟。
+
+7. `npm i aws-amplify aws-amplify-react @aws-amplify/ui-react`安装完必要的包，然后就是第二个写代码的机会了！在`index.js`里添加代码：
+```javascript
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+// 上面都是本来就有的和React相关代码
+import { Amplify } from "@aws-amplify/core" 
+import aws_exports from "./aws-exports";
+import { Authenticator } from '@aws-amplify/ui-react';
+// 上面三行都是import
+Amplify.configure(aws_exports);
+// 上一行是必须要添加的，用自动生成的设置文件`./aws-exports.js`来配置Amplify
+
+const root = ReactDOM.createRoot(document.getElementById('root')); // 本来就有
+root.render( // 本来就有
+  <Authenticator>  // 一行代码添加所有和用户登陆相关功能，比如用户登陆页面，创建账号页面等等
+    {({ signOut, user }) => ( // 将退出登陆回调函数和用户名传入App组件
+      <App signOut={signOut} user={user}/>  // 传入App组件
+    )}
+  </Authenticator> // 好吧，两行！
+);
+```
+
+8. 然后就是实现前端页面了，改动`App.js`文件。下面是部分改动：
+```javascript
+// 省略imports
+
+function App(props) {
+
+  const [turnedOn, setTurnedOn] = useState({ id: "", state: true }); // React的state，用来存储二极管状态和ID
+
+  const onClick = () => {
+    API.graphql(graphqlOperation(updateDiode, { // 通过内部函数，update二极管状态
+      input: {id: turnedOn.id, state: !turnedOn.state}
+    }))
+  }
+
+  useEffect(() => {
+    API.graphql(graphqlOperation(listDiodes, {})).then(({ data }) => {
+      const diodes = data.listDiodes.items
+      if (diodes.length === 0) { // 如果用户第一次登陆，create一个二极管状态
+        API.graphql(graphqlOperation(createDiode, {input: {state: true} })).then(({ data }) => {
+          setTurnedOn({
+            id: data.createDiode.id,
+            state: data.createDiode.state
+          });
+        })
+        return;
+      }
+
+      setTurnedOn({
+        id: diodes[0].id,
+        state:diodes[0].state
+      });
+    });
+
+    Auth.currentAuthenticatedUser().then((data) => {
+      // 创建一个持续的链接，如果数据库发生变动，更新页面
+      API.graphql(graphqlOperation(onUpdateDiode, { owner: data.username })).subscribe({
+        next: data => {
+          setTurnedOn({
+            id: data.value.data.onUpdateDiode.id,
+            state: data.value.data.onUpdateDiode.state
+          });
+        }
+      })
+    });
+  }, []);
+
+  return (
+    // 前端页面略
+  );
+}
+```
+
+9. 说来你可能不信，但是确实已经完成了！总计，90行代码不到。此时可以`npm run start`在本地测试代码。
+10. 要部署这个代码，只需要commit后push到Github。然后前往AWS Amplify页面设置到App代码的branch即可。部署流水线也帮你准备完毕：
+![picture 18](images/34dbd48fd6e8468ece71397b73bb2b3b09a4deda7c066117b207deec133ba8fc.png)
+
+11. 当你拥有了部署流水线，未来你对页面做的修改，只需要本地测试以后，push到github，代码就会自动编译并部署到云端；
+12. 此时，应用是Amplify的默认URL，比如这样：https://main.d3pq3bg1mrhpp5.amplifyapp.com/ 。依然是通过鼠标点击网页上的“设置”来自定义链接，Amplify会为你自动生成证书。于是https://diode.zzzgin.com/ 正式上线！
+
+回顾一下上面的步骤没有对于技术选择的纠结，没有配置的烦躁，一切行云如流水。回头看一下我们写的代码，没有一行是与业务逻辑不相关的，透彻！接下来，让我们再走进一些，看看这些步骤后面都发生了什么。
 
 ## 穷千里目
 Todo: 简单从比较专业的角度介绍这个技术
