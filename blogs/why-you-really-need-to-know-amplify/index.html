@@ -63,7 +63,7 @@
 <p><em>-- Amazon VP, CTO, Werner Vogels</em></p>
 </blockquote>
 <p>我总持有一个观点，一个健康的环境下，软件工程师不应该担心因为技术迭代而导致自己被淘汰。这不是什么“计算机从业者应该持续不断地学习”这种成词滥调，而是基于一个不言自明的事实：“新技术取代旧技术永远是因为新技术从根本上更易理解、更易上手”。“旧技术”的复杂性往往由于其更贴近“本源”。而有了对于“本源”知识的理解，新技术的上手大部分也就是个Udemy上4个小时教程的事情。什么样的技术社区会去刻意追求复杂呢？或许没有，但我听闻一种断言是，在北美，律师、医生通过复杂性来提高入门门槛稳固体系。且不论这种断言的合理性，但软件工程，绝不属于这个行列。</p>
-<p>而<a href="https://aws.amazon.com/amplify/">AWS Amplify</a>则是这个观点的绝佳例证。AWS的<a href="https://aws.amazon.com/serverless/">Serverless（无服务）</a>理念推行着<a href="https://betterprogramming.pub/all-the-code-you-will-ever-write-is-business-logic-2dc0acf47cef">“业务逻辑”才是第一生产力的观点</a>，即作为AWS的使用者，你只需要写和你自己的业务相关的代码（比如网站页面，怎么支付订单）就可以了，不需要参与背后服务器的配置和维护。为此，它创造出了一大溜以“技术需求”为核心的服务。比如，我想让“key-value”形式的数据能有更多读取模式，我可以选择<a href="https://aws.amazon.com/dynamodb/">DynamoDB</a>；我想处理流数据，可以选择<a href="https://aws.amazon.com/kinesis/data-firehose/">Kinesis</a>；我需要一个消息队列，<a href="https://aws.amazon.com/sqs/">SQS</a>是上乘之选。这种设计极大得提升了技术的复用性，一个<strong>功能</strong>，只需要合理组合、配置这些组件就可以了！太方便了！但这到极限了吗？Amplify的出现带领“业务至上”这一理念迈进了一步。</p>
+<p>而<a href="https://aws.amazon.com/amplify/">AWS Amplify</a>则是这个观点的绝佳例证。AWS的<a href="https://aws.amazon.com/serverless/">Serverless（无服务）</a>理念推行着<a href="https://betterprogramming.pub/all-the-code-you-will-ever-write-is-business-logic-2dc0acf47cef">“业务逻辑”才是第一生产力的观点</a>，即作为AWS的使用者，你只需要写和你自己的业务相关的代码（比如网站页面，怎么支付订单）就可以了，不需要参与背后服务器的配置和维护。为此，它创造出了一大溜以“技术需求”为核心的服务。比如（嘿，不要被下面的专有名词吓到，这是写作手法，先抑后扬、故意的：），我想让“key-value”形式的数据能有更多读取模式，我可以选择<a href="https://aws.amazon.com/dynamodb/">DynamoDB</a>；我想处理流数据，可以选择<a href="https://aws.amazon.com/kinesis/data-firehose/">Kinesis</a>；我需要一个消息队列，<a href="https://aws.amazon.com/sqs/">SQS</a>是上乘之选。这种设计极大得提升了技术的复用性，一个<strong>功能</strong>，只需要合理组合、配置这些组件就可以了！太方便了！但这到极限了吗？Amplify的出现带领“业务至上”这一理念迈进了一步。</p>
 <p><span
       class="gatsby-resp-image-wrapper"
       style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 599px; "
@@ -118,10 +118,10 @@
 </tr>
 <tr>
 <td>订购家具</td>
-<td>定做家具</td>
+<td>订做家具</td>
 </tr>
 <tr>
-<td>买食材包，下锅一炒即刻上桌</td>
+<td>买食材包，下锅热炒即刻上桌</td>
 <td>思考菜单，购买食材，洗切后下锅</td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@
 </tr>
 </tbody>
 </table>
-<p>这一章，将是一次“强势安利”，我将从不同角度介绍Amplify作为一种技术，为什么值得初入软件工程的新手了解和尝试。而作为这一节的总结，正如标题所说，Amplify是AWS这个“大型手游”的新手大礼包。相当合适的学习成本，你就能上手一众AWS的明星服务。从新手的角度来说，”大礼包“功能强大，能迅速拉开与不充值玩家实力的差距；而对于老玩家，”大礼包“也物超所值，你会发现总有一些小东西，用Amplify实现能做得很漂亮，很方便。而怎么拉开差距，怎么漂亮，怎么方便，且跟我一齐探索。</p>
+<p>这一章，将是一次“强势安利”，我将从不同角度介绍Amplify作为一种技术，为什么值得初入软件工程的新手了解和尝试。而作为这一节的总结，正如标题所说，Amplify是AWS这个“大型手游”的新手大礼包。相当合适的学习成本，你就能上手一众AWS的明星服务。从新手的角度来说，”大礼包“功能强大，能迅速拉开与不充值玩家实力的差距；而对于老玩家，”大礼包“也物超所值，你会发现总有一些小东西，用Amplify实现能做得很漂亮，很方便。而怎么拉开差距，怎么漂亮，怎么方便，且跟随我一齐探索。</p>
 <h2 id="管中窥豹" style="position:relative;"><a href="#%E7%AE%A1%E4%B8%AD%E7%AA%A5%E8%B1%B9" aria-label="管中窥豹 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>管中窥豹</h2>
 <p>多说无益，show me the code。</p>
 <p>我们将用30分钟完成一个网页应用——<a href="https://en.wikipedia.org/wiki/Diode">Diode</a>，向默默地为这个世界的运转做贡献的二极管们致敬。以下是这个网页应用的需求列表：</p>
@@ -245,8 +245,8 @@
   </a>
     </span></p>
 <ol start="5">
-<li>使用其他设备登陆相同页面，相同账号登陆，点击页面切换二极管通断，可以观察到多屏协同；</li>
-<li>点击“点此链接不当二极管”退出二极管。</li>
+<li>使用其他设备点击相同链接，同账号登陆，点击页面切换二极管通断，可以观察到多屏协同；</li>
+<li>点击“点此链接不当二极管”退出登陆，不当二极管。</li>
 </ol>
 <p><strong>暂停，我们想一想这个app背后的技术需求：</strong></p>
 <ol>
@@ -256,7 +256,7 @@
 <li>还要实现“CI/CD（持续集成/持续交付）”，还要搞个部署流水线？AWS CodeCommit和Pipeline得整上。要不就去Github找找插件。</li>
 <li>还要域名和证书？行吧，Route 53可以购买域名；AWS Certificate Manager可以解决证书。</li>
 </ol>
-<p><strong>设计齐活，开始整活儿！且慢，让我们看看，一个Amplify开发者怎么看到这个应用：</strong></p>
+<p><strong>设计齐活，开始整活儿！且慢，让我们看看，一个Amplify开发者怎么看待这个应用：</strong></p>
 <ol>
 <li>前端React写吧。</li>
 <li>需要用户登陆是吧，那要有一个Amplify Auth组件；</li>
@@ -264,7 +264,7 @@
 <li>要域名是吧，Route 53买一个域名，然后鼠标设置一下就行；</li>
 <li>什么？你问怎么保持链接主动更新别的设备？还有交付流水线？哦，前者API组件直接提供；后者Apmlify本来就有。</li>
 </ol>
-<p>从上面系统设计的角度来说，Amplify已经人如其名了。掌握了Amplify，我们思考实现的思路是“需要什么功能”-“对应什么Amplify提供的组件”。反之，我们的思路是“这个功能背后的技术需求”-“对应的技术”-“有没有技术陷阱，有没有更好的选项”。要知道，技术是有盲点的，如果你不知道某个技术，你还是要花时间和同事聊天、或者网上找资料去学。而Amplify，文档就在那里，一个组件对应一个功能，你看与不看，它都在那里。</p>
+<p>从上面系统设计的角度来说，Amplify已经人如其名了。掌握了Amplify，我们思考实现的思路是“需要什么功能”-“对应什么Amplify提供的组件”。反之，我们的思路是“这个功能背后的技术需求”-“对应的技术”-“有没有技术陷阱，有没有更好的选项”。要知道，技术是有盲点的，如果你不知道某个技术，你还是要花时间和同事聊天、或者网上找资料去学。而Amplify，已经为你做好了技术选型，配置得当，并且文档就在那里，一个组件对应一个功能，你看与不看，它都在那里。</p>
 <p><strong>下面，是实现这个应用的全部步骤，笔者耗时半个小时。吹毛求疵一点，鉴于之前我提到“Amplify的设计目标是仅写业务逻辑”，我们来看看使用Amplify实现这个应用，要写多少行非业务代码。</strong></p>
 <p>（⚠️注意，以下步骤并不是设计给读者按照步骤操作的，仅是提供一个Amplify开发应用的步骤的概念。我在接下去的章节会介绍一些可行的学习路线。⚠️）</p>
 <ol>
@@ -384,7 +384,7 @@
 </ol>
 </li>
 <li>
-<p><code class="language-text">npm i aws-amplify aws-amplify-react @aws-amplify/ui-react</code>安装完必要的包，然后就是第二个写代码的机会了！在<code class="language-text">index.js</code>里添加代码：</p>
+<p><code class="language-text">npm i aws-amplify @aws-amplify/api @aws-amplify/auth @aws-amplify/core @aws-amplify/ui-react</code>安装完必要的包，然后就是第二个写代码的机会了！在<code class="language-text">index.js</code>里添加代码：</p>
 </li>
 </ol>
 <div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
@@ -394,7 +394,7 @@
 <span class="token keyword">import</span> <span class="token punctuation">{</span> Amplify <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"@aws-amplify/core"</span> 
 <span class="token keyword">import</span> aws_exports <span class="token keyword">from</span> <span class="token string">"./aws-exports"</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> <span class="token punctuation">{</span> Authenticator <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@aws-amplify/ui-react'</span><span class="token punctuation">;</span>
-<span class="token comment">// 上面三行都是import</span>
+<span class="token comment">// 上面三行是新的import</span>
 Amplify<span class="token punctuation">.</span><span class="token function">configure</span><span class="token punctuation">(</span>aws_exports<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token comment">// 上一行是必须要添加的，用自动生成的设置文件`./aws-exports.js`来配置Amplify</span>
 
@@ -494,9 +494,9 @@ root<span class="token punctuation">.</span><span class="token function">render<
     </span></p>
 <ol start="11">
 <li>当你拥有了部署流水线，未来你对页面做的修改，只需要本地测试以后，push到github，代码就会自动编译并部署到云端；</li>
-<li>此时，应用是Amplify的默认URL，比如这样：<a href="https://main.d3pq3bg1mrhpp5.amplifyapp.com/">https://main.d3pq3bg1mrhpp5.amplifyapp.com/</a> 。依然是通过鼠标点击网页上的“设置”来自定义链接，Amplify会为你自动生成证书。于是<a href="https://diode.zzzgin.com/">https://diode.zzzgin.com/</a> 正式上线！</li>
+<li>此时，应用使用Amplify的默认URL，比如这样：<a href="https://main.d3pq3bg1mrhpp5.amplifyapp.com/">main.d3pq3bg1mrhpp5.amplifyapp.com</a> 。我们需要自定义域名，通过鼠标点击网页上的“设置”来选择自己的域名，Amplify会为你自动生成证书。等待证书配置完成，<a href="https://diode.zzzgin.com/">https://diode.zzzgin.com/</a> 正式上线！</li>
 </ol>
-<p>回顾一下上面的步骤没有对于技术选择的纠结，没有配置的烦躁，一切行云如流水。回头看一下我们写的代码，没有一行是与业务逻辑不相关的，透彻！接下来，让我们再走进一些，看看这些步骤后面都发生了什么。</p>
+<p>回顾一下上面的步骤，没有对于技术选择的纠结，没有配置的烦躁，一切行云如流水。回头看一下我们写的代码，没有一行是与业务逻辑不相关的，透彻！接下来，让我们再走近一些，看看这些步骤后面都发生了什么。</p>
 <h2 id="穷千里目" style="position:relative;"><a href="#%E7%A9%B7%E5%8D%83%E9%87%8C%E7%9B%AE" aria-label="穷千里目 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>穷千里目</h2>
 <p>Todo: 简单从比较专业的角度介绍这个技术</p>
 <h2 id="求职建议" style="position:relative;"><a href="#%E6%B1%82%E8%81%8C%E5%BB%BA%E8%AE%AE" aria-label="求职建议 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>求职建议</h2>
@@ -714,4 +714,4 @@ root<span class="token punctuation">.</span><span class="token function">render<
 <td>...</td>
 </tr>
 </tbody>
-</table></div></article></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/blogs/why-you-really-need-to-know-amplify";window.___webpackCompilationHash="915242cfedd6c768538c";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-ffca68986aee126bf6b5.js"],"app":["/app-0e3811ae98b7a77b5f62.js"],"component---src-pages-404-js":["/component---src-pages-404-js-06cdb2023491fe9ab968.js"],"component---src-pages-artworks-logo-design-aperture-laboratries-index-js":["/component---src-pages-artworks-logo-design-aperture-laboratries-index-js-6490d0d21e56ab9b0b98.js"],"component---src-pages-artworks-logo-design-zzz-logo-index-js":["/component---src-pages-artworks-logo-design-zzz-logo-index-js-16206f4e7f62a35978c9.js"],"component---src-pages-artworks-timeline-job-2022-index-js":["/component---src-pages-artworks-timeline-job-2022-index-js-7e63a4454b3559a02e12.js"],"component---src-pages-index-js":["/component---src-pages-index-js-e064054121dd1bc5214d.js"],"component---src-pages-tags-index-js":["/component---src-pages-tags-index-js-6d8568929808ce09789e.js"],"component---src-templates-md-template-js":["/component---src-templates-md-template-js-6516384914dd5cf06ed2.js"],"component---src-templates-tagged-blogs-template-js":["/component---src-templates-tagged-blogs-template-js-4b4545d29400617b2d36.js"]};/*]]>*/</script><script src="/polyfill-ffca68986aee126bf6b5.js" nomodule=""></script><script src="/component---src-templates-md-template-js-6516384914dd5cf06ed2.js" async=""></script><script src="/8898f61fcd996c7561985b4f6aa8bc7c8719537c-917f20ac15f872059fa9.js" async=""></script><script src="/91922e92cca8c6f21fb3ebfceb289c7583865774-df5563495041cc2dc26d.js" async=""></script><script src="/app-0e3811ae98b7a77b5f62.js" async=""></script><script src="/framework-dd3dbd39427d6f3d1b32.js" async=""></script><script src="/webpack-runtime-61aced8893107307abb3.js" async=""></script></body></html>
+</table></div></article></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/blogs/why-you-really-need-to-know-amplify";window.___webpackCompilationHash="77e592d3a28f47389373";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-ffca68986aee126bf6b5.js"],"app":["/app-0e3811ae98b7a77b5f62.js"],"component---src-pages-404-js":["/component---src-pages-404-js-06cdb2023491fe9ab968.js"],"component---src-pages-artworks-logo-design-aperture-laboratries-index-js":["/component---src-pages-artworks-logo-design-aperture-laboratries-index-js-6490d0d21e56ab9b0b98.js"],"component---src-pages-artworks-logo-design-zzz-logo-index-js":["/component---src-pages-artworks-logo-design-zzz-logo-index-js-16206f4e7f62a35978c9.js"],"component---src-pages-artworks-timeline-job-2022-index-js":["/component---src-pages-artworks-timeline-job-2022-index-js-7e63a4454b3559a02e12.js"],"component---src-pages-index-js":["/component---src-pages-index-js-e064054121dd1bc5214d.js"],"component---src-pages-tags-index-js":["/component---src-pages-tags-index-js-6d8568929808ce09789e.js"],"component---src-templates-md-template-js":["/component---src-templates-md-template-js-6516384914dd5cf06ed2.js"],"component---src-templates-tagged-blogs-template-js":["/component---src-templates-tagged-blogs-template-js-4b4545d29400617b2d36.js"]};/*]]>*/</script><script src="/polyfill-ffca68986aee126bf6b5.js" nomodule=""></script><script src="/component---src-templates-md-template-js-6516384914dd5cf06ed2.js" async=""></script><script src="/8898f61fcd996c7561985b4f6aa8bc7c8719537c-917f20ac15f872059fa9.js" async=""></script><script src="/91922e92cca8c6f21fb3ebfceb289c7583865774-df5563495041cc2dc26d.js" async=""></script><script src="/app-0e3811ae98b7a77b5f62.js" async=""></script><script src="/framework-dd3dbd39427d6f3d1b32.js" async=""></script><script src="/webpack-runtime-61aced8893107307abb3.js" async=""></script></body></html>
