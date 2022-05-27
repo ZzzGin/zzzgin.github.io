@@ -51,6 +51,7 @@ module.exports = {
               className: "table-of-contents"
             },
           },
+          'gatsby-remark-mermaid',
           `gatsby-remark-autolink-headers`,
           {
             resolve: `gatsby-remark-prismjs`,

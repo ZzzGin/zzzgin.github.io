@@ -73,6 +73,10 @@ html {
     font-family: "Noto Sans", 'Noto Sans SC', sans-serif;
 }
 
+li > p {
+    margin-bottom: 0.3rem;
+}
+
 @media (max-width: 1424px) {
     .table-of-contents {
         position: relative;
