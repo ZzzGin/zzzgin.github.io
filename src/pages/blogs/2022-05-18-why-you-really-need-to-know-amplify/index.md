@@ -278,11 +278,11 @@ Amplfiy框架本身是开源免费的，但是因为后端是部署在AWS上，�
 
 | 底层需求 | 比如 | Amplify | AWS |
 | ----------- | ----------- | ----------- | ----------- |
-| 数据存储 | 商品信息/博客文章/数据表怎么存？存在哪儿？| [API组件](https://docs.amplify.aws/lib/graphqlapi/getting-started/q/platform/js/) | AppSync (DynamoDB/Aurora/AES) |
+| 数据存储 | 商品信息/博客文章/数据表怎么存？存在哪儿？| [API组件](https://docs.amplify.aws/lib/graphqlapi/getting-started/q/platform/js/) | AppSync (DynamoDB / Aurora / AES) |
 | 数据同步 | 微信聊天，我发消息如何**同步**给其他用户？| [API组件](https://docs.amplify.aws/lib/graphqlapi/getting-started/q/platform/js/) | AppSync (DynamoDB) |
 | 数据搜索 | 搜索框输入商品名，索引提供结果。怎么**索引**？| [API组件](https://docs.amplify.aws/lib/graphqlapi/getting-started/q/platform/js/) | AppSync (AES) |
 | 文件存储 | 用户上传的照片，怎么存？存在哪儿？| [Storage组件](https://docs.amplify.aws/lib/storage/getting-started/q/platform/js/) | S3 |
-| 逻辑控制与计算 | 我想自定义API功能 | [API组件](https://docs.amplify.aws/lib/restapi/getting-started/q/platform/js/) | Appsync/API Gateway (Lambda/ECS/EC2) |
+| 逻辑控制与计算 | 我想自定义API功能 | [API组件](https://docs.amplify.aws/lib/restapi/getting-started/q/platform/js/) | Appsync / API Gateway (Lambda / ECS / EC2) |
 
 | 中层需求 | 比如 | Amplify | AWS |
 | ----------- | ------ | ----------- | ----------- |
