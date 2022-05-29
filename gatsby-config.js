@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `zzz design`,
-    siteUrl: `https://zzzgin.github.io`,
+    title: `zzz`,
+    siteUrl: `https://www.zzzgin.com`,
   },
   plugins: [
     {
