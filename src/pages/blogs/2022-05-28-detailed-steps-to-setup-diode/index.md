@@ -3,7 +3,7 @@ path: "/blogs/detailed-steps-to-setup-diode"
 date: "2022-05-28T23:43:24.503Z"
 title: "Sandbox: Diode - An Amplify Hands-on Project"
 tags: ["blog", "checkout dash b", "ng project", "aws", "amplify", "sandbox"]
-description: "A detailed instruction targeting to provide seamless hands-on experience to readers with no knowledge of the framwork - Amplify."
+description: "A detailed instruction targeting to provide seamless hands-on experience to readers with zero knowledge of the framwork - Amplify."
 featuredimage: images/411607f2250fcac40516c496fa024de16d96c3600521e9b4799b640a6ef71d65.png
 featuredimageAlt: "Diode App"
 ---
@@ -13,7 +13,7 @@ featuredimageAlt: "Diode App"
 
 ## 1. Minimum Prerequisites
 1. Operating System: Windows (TODO: difference in XOS is minimal, will update when available)
-2. Amplify is an service hosted on AWS. An AWS account requires a credit card / bank account and phone number to be registered. No charge is expected if you are following this instruction as AWS has [a free-tier policy](https://aws.amazon.com/amplify/pricing/) for the first year. At the end of this instruction, I will also illustrate how to delete the app. 
+2. Amplify is an service hosted on AWS. An AWS account requires a credit card / bank account and phone number to be registered. No charge is expected if you are following this instruction as AWS has [a free-tier policy](https://aws.amazon.com/amplify/pricing/) for the first year. At the end of this instruction, I will also illustrate how to delete the app from your account.
 3. A Github account.
 4. 30 mins free time.
 

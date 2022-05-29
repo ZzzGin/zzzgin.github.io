@@ -11,12 +11,12 @@ featuredimageAlt: "Amplify Logo"
 ``` toc
 ```
 
-## 何许人也
+## **何许人也**：方便与灵活的折衷
 > So what does the future look like? - **ALL THE CODE YOU EVER WRITE IS BUSINESS LOGIC.**
 > 
 > *-- Amazon VP, CTO, Werner Vogels*
 
-我总持有一个观点，一个健康的环境下，软件工程师不应该担心因为技术迭代而导致自己被淘汰。这不是什么“计算机从业者应该持续不断地学习”这种成词滥调，而是基于一个不言自明的事实：“新技术取代旧技术永远是因为新技术从根本上更易理解、更易上手”。“旧技术”的复杂性往往由于其更贴近“本源”。而有了对于“本源”知识的理解，新技术的上手大部分也就是个Udemy上4个小时教程的事情。什么样的技术社区会去刻意追求复杂呢？或许没有，但我听闻一种断言是，在北美，律师、医生通过复杂性来提高入门门槛稳固体系。且不论这种断言的合理性，但软件工程，绝不属于这个行列。
+我总持有一个观点，一个健康的环境下，软件工程师不应该担心因为技术迭代而导致自己被淘汰。这不是什么“计算机从业者应该持续不断地学习”这种成词滥调，而是基于一个不言自明的事实：“新技术取代旧技术永远是因为新技术从根本上更易理解、更易上手”。“旧技术”的复杂性往往由于其更贴近“本源”。而有了对于“本源”知识的理解，新技术的上手大部分也就是个Udemy上4个小时教程的事情。什么样的技术社区会去刻意追求复杂呢？或许没有，尽管我听闻一种断言是，在北美，律师、医生通过复杂性来提高入门门槛稳固体系。且不论这种断言的合理性，但软件工程，绝不属于这个行列。
 
 而[AWS Amplify](https://aws.amazon.com/amplify/)则是这个观点的绝佳例证。AWS的[Serverless（无服务）](https://aws.amazon.com/serverless/)理念推行着[“业务逻辑”才是第一生产力的观点](https://betterprogramming.pub/all-the-code-you-will-ever-write-is-business-logic-2dc0acf47cef)，即作为AWS的使用者，你只需要写和你自己的业务相关的代码（比如网站页面，怎么支付订单）就可以了，不需要参与背后服务器的配置和维护。为此，它创造出了一大溜以“技术需求”为核心的服务。比如（嘿，不要被下面的专有名词吓到，这是写作手法，先抑后扬、故意的：），我想让“key-value”形式的数据能有更多读取模式，我可以选择[DynamoDB](https://aws.amazon.com/dynamodb/)；我想处理流数据，可以选择[Kinesis](https://aws.amazon.com/kinesis/data-firehose/)；我需要一个消息队列，[SQS](https://aws.amazon.com/sqs/)是上乘之选。这种设计极大得提升了技术的复用性，一个**功能**，只需要合理组合、配置这些组件就可以了！太方便了！但是……这到极限了吗？Amplify在AWS领域带领“业务至上”这一理念迈进了一步。
 
@@ -37,12 +37,13 @@ Amplify的使用者，关注“功能需求”，而非“技术需求”。我�
 
 这一章，将是一次“强势安利”，我将介绍Amplify作为一种技术，为什么值得所有软件工程从业者工具箱中的一部分。作为这一节的总结，正如标题所说，Amplify是AWS这个“大型手游”的新手大礼包。相当合适的学习成本，你就能上手一众AWS的明星服务。从新手的角度来说，”大礼包“功能强大，能迅速拉开与不充值玩家实力的差距；而对于老玩家，”大礼包“也物超所值，你会发现总有一些小东西，用Amplify实现能做得很漂亮，很方便。而怎么拉开差距，怎么漂亮，怎么方便，且跟随我一齐探索。
 
-## 管中窥豹
-多说无益，show me the code。
+## **管中窥豹**：一个简单实例体验Amplify开发流
 
-我们将完成一个网页应用——[Diode](https://en.wikipedia.org/wiki/Diode)，向默默地为这个世界的运转做贡献的二极管们致敬。以下是这个网页应用的需求列表：
+> 多说无益，**放码过来**。
+
+我们将完成一个网页应用——[Diode](https://en.wikipedia.org/wiki/Diode)，向默默地为这个世界的运转做贡献的二极管们致敬。以下是这个网页应用的需求：
 1. 每个人都可以当二极管，一人一号，互不干扰；
-2. 二极管有且仅有两个状态，on/off，随时切换；
+2. 二极管有且仅有两个状态，通/断，随时切换；
 3. 同个账号的二极管在多设备上实时同步，多屏协同；
 4. 部署至因特网，面向全球二极管，有足够的扩容性；
 5. 快捷流水线部署，push完代码快速看到结果，做最敏捷的二极管；
@@ -50,7 +51,9 @@ Amplify的使用者，关注“功能需求”，而非“技术需求”。我�
 
 这个是最后的结果：[diode.zzzgin.com](https://diode.zzzgin.com/)。源码：[github.com/ZzzGin/diode](https://github.com/ZzzGin/diode)。
 
-**Demo步骤：**
+> **特此申明**: 正常的二极管含义是单一方向——**通**，另一个方向——**断**。并不是只有通和断，而没有中间状态。我这里指的是**不正常**的二极管。并且，我也知道二极管和发光二极管的区别。
+
+**最终结果demo：**
 1. 前往：https://diode.zzzgin.com/;
 ![登陆界面](images/3f4de8a176ffb8dd651950b5cdbf5580f60b8df2fb21e70905fee7c75d67ac85.png)
 
@@ -66,15 +69,15 @@ Amplify的使用者，关注“功能需求”，而非“技术需求”。我�
 
 **暂停，我们想一想这个app背后的技术需求：**
 1. 前端应用我们可以使用React框架实现。可能需要host在一台服务器上，如果未来流量增加，可能需要多台服务器并实现负载均衡。当然这里可以使用云服务提供商的存储服务，比如S3，然后用Cloudfront实现CDN加速；
-2. 后端如果不知道一些技术，设计可能会比较复杂了。首先，这是一个实时的状态更新，websocket server要维护链接表，Oh no，如果流量上去了，怎么同步多服务器的链接表呢？其实这类数据同步可以使用AWS的AppSync，GCP的Firebase也有这种功能。
+2. 后端如果不知道一些技术，设计可能会比较复杂了。首先，这是一个实时的状态更新，websocket server要维护链接表，Oh no，如果流量上去了，怎么同步多服务器的链接表呢？其实，这类数据同步可以使用AWS的AppSync，GCP的Firebase也有这种功能。
 3. 用户还有登陆系统，关系数据库看起来绕不过去了。哦对不用，AWS有Cognito可以直接提供API来实现用户登陆、账号创建！用它！
 4. 还要实现“CI/CD（持续集成/持续交付）”，还要搞个部署流水线？AWS CodeCommit和Pipeline得整上。要不就去Github找找插件。
 5. 还要域名和证书？行吧，Route 53可以购买域名；AWS Certificate Manager可以解决证书。
 
 **设计齐活，开始整活儿！且慢，让我们看看，一个Amplify开发者怎么看待这个应用：**
-1. 前端用React写吧。
+1. 前端用React写；
 2. 需要用户登陆，看起来需要导入一个Amplify Auth组件；
-3. 多屏同步，说明需要个API来同步不同设备的更新，那要有一个Amplify API组件；
+3. 多屏同步，说明需要API来同步不同设备的实时更新，那要有一个Amplify API组件；
 4. 要域名是吧，Route 53买一个域名，然后鼠标在管理页面上设置一下就行；
 5. 什么？你问交付流水线？这个不是Apmlify自带的功能吗？
 
@@ -82,12 +85,12 @@ Amplify的使用者，关注“功能需求”，而非“技术需求”。我�
 
 **下面，是这个应用的开发流程。让我们吹毛求疵一点，鉴于之前我提到“Amplify的设计目标是仅写业务逻辑”，我们来看看使用Amplify实现这个应用，要写多少行非业务代码。**
 
-> 注意，以下步骤并不是设计给读者按照步骤操作的，如果想要实际上手尝试使用Amplify开发应用，请看我的这个blog：[Sandbox: Diode - An Amplify Hands-on Project](/blogs/detailed-steps-to-setup-diode)，这里有这个应用非常详细的开发过程。
+> 想要**实际上手**开发diode尝试Amplify？请前往这个blog：[Sandbox: Diode - An Amplify Hands-on Project](/blogs/detailed-steps-to-setup-diode)。
 
 1. Github上新建一个空白项目，clone到本地；
 2. `npx create-react-app .`创建一个React应用；`npm i -g @aws-amplify/cli`安装Amplify的CLI工具链（用于第三步）；
-3. 使用Amplify命令行工具运行`amplify init`初始化，其间会以一问一答的形式给你选项让你对这个项目做一定的配置；
-4. 使用AMplify命令行工具运行`amplify add api`添加一个GraphQL API，同样，一问一答配置这个API；
+3. 使用Amplify命令行工具运行`amplify init`初始化，其间会以一问一答的形式给你选项让你对这个项目作配置，这个过程非常简便，只需要方向键上下选择，回车键确认；
+4. 使用AMplify命令行工具运行`amplify add api`添加一个GraphQL API，同样，一问一答配置这个API；同时，Auth组件也会被添加；
 5. 到此为止，一行代码没写呢！接下来，更随着Amplify的引导，我们要写7行代码定义数据库的数据结构：
 ```graphql
 type Diode # 要存的数据类型定义名为diode
@@ -189,15 +192,13 @@ sequenceDiagram
 ```
 
 9. 好了，说来你可能不信，但是我们的二极管应用确实已经完成了！包括了css，一共写了90行代码不到！此时可以`npm run start`在本地测试代码。
-10. 要部署这个代码，只需要commit后push到Github。然后前往AWS Amplify页面设置到App代码的branch即可。部署流水线也自动创建：
-![部署流水线](images/34dbd48fd6e8468ece71397b73bb2b3b09a4deda7c066117b207deec133ba8fc.png)
-
+10. 要部署这个代码，只需要commit后push到Github。然后前往AWS Amplify页面设置到App代码的branch即可。部署流水线也会被自动创建。
 11. 流水线可以自动化你新版本部署，你今后对应用的更新，push到Github，代码就会自动编译并部署到云端；
 12. 最后一步，应用当前使用Amplify的默认域名[main.d3pq3bg1mrhpp5.amplifyapp.com](https://main.d3pq3bg1mrhpp5.amplifyapp.com/) 。通过鼠标点击网页上的“设置”选择自己的域名，Amplify会为你自动生成证书。等待证书配置完成后，https://diode.zzzgin.com/ 正式上线！
 
 回顾一下上面的步骤，没有对于技术选择的纠结，没有配置的烦躁，一切行云如流水。回头看一下我们写的代码，**没有一行**是与业务逻辑不相关的，透彻！接下来，让我们再走近一些，看看这些步骤后面都发生了什么。
 
-## 穷千里目：Amplify如何帮助开发者实现效率提升
+## **穷千里目**：Amplify如何帮助开发者实现效率提升
 你可能会有疑问，怎么定义“业务逻辑相关代码”和“不相关代码”呢？这种简单的应用，难道不就是90行代码的量吗？“业务逻辑”比较好定义，即“与业务相关的代码”。比如我是咖啡店店长，我的网上订单应用需要用户选择咖啡豆的种类，这个就是我咖啡店业务的代码。用diode举例，我在数据库里存的“二极管”的数据类型、以及UI的设计与功能，就是应用的“业务”。
 
 而“与业务逻辑不相关的代码”，具体来说，有三类：
@@ -234,11 +235,11 @@ Amplify在这一点做了很多作为一个框架该做的事，比如提供方�
 
 > 我本将心向明月，奈何明月照沟渠。有人要DevOps，Amplify给了，你用不用，那是另一回事了。
 
-## 初极狭，才通人：对于“为什么要推荐它”的回应
+## **初极狭，才通人**：对于“为什么要推荐它”的回应
 实现“写一个应用”这种需求的技术和框架，在这个时代，那可真是海了去了。“所以你鼓吹Amplify是什么居心？是恰了饭，还是单纯的亚麻吹？什么屌框架我听都没听说过！”——且听我从两个方面为自己狡辩：
 
 ### 一、技术不是终点
-不了解软件开发的人往往有一种误解，认为软件从业者是靠“技术”吃饭的。他们会说“你用的这种语言，这种框架**落伍**了”；他们会说“后端开发的困难度大于前端，所以从事后端更加有**保障**”；他们会在简历中用大段篇幅一一罗列自己接触过的技术名词。我以为，和所有所谓“技术工种”一样，软件工程的核心诉求是“解决问题”。习惯了软件工程工作模式的人会这么说“你要解决的这个问题，已经**落伍**了”，“前端后端都有其要解决的问题，从复杂度上来说不分伯仲”，简历上罗列的是解决**过**的问题和如何解决问题。
+不了解软件开发的人往往有一种误解，认为软件从业者是靠“技术”吃饭的。他们会说“你用的这种语言，这种框架**落伍**了”；他们会说“后端开发的困难度大于前端，所以从事后端更加有**保障**”；他们会在简历中用大段篇幅一一罗列自己接触过的技术名词。我以为，和所有所谓“技术工种”一样，软件工程的核心诉求是“解决问题”。习惯了软件工程工作模式的人会这么说“你要解决的这个问题，已经**落伍**了”，“前端后端都有其要解决的问题，从复杂度上来说不分伯仲”，简历上罗列的是解决**过**的问题和**如何**解决问题。
 
 至于解决问题过程中使用的工具、技术、框架、语言、过程或者随便叫什么，根本不重要，那些是你解决了这一类问题时获得的奖励，奖励你在未来面对相同问题时抽刀断水。
 
@@ -254,7 +255,7 @@ Amplify在这一点做了很多作为一个框架该做的事，比如提供方�
   * 即便我不说，相信读者也明白AWS在云服务提供商中的地位。回到“充实简历”这一点，就算为了填充简历上的空隙要列举技术名，Amplify也可能为你提供一长溜一听就很酷的技术名——DynamoDB！AppSync！OpenSearch！Aurora！S3！Lambda！唇齿间说出来，就够时髦！
   * 光知道这些时髦名字是干什么的、怎么用的、特性是什么，已经是对于新手技术的一次巨大提升。如果你再花一些功夫去了解这些服务从原理上的技术实现，从而了解系统设计方面的知识，那Amplify于你可以等同于九阴真经之于郭靖的存在了。总之，即便还无法那么深入，Amplify至少给你提供了研究的方向。
 * 对于优秀“技术品味”的初尝。
-  * 相比于上两点，这一点显得比较抽象了，并且也仅是我个人的看法。Amplify向初入软件工程的你，介绍了一种“技术品味”比较优秀的开发工作流，比如创建、管理、开发、测试、部署一个项目的流程。这种工作流虽然不一定和你以后上班一模一样，但是概念上大概率有相似之处。因此，了解Amplify可以让你预先体验企业的开发环境，这既可以用于自我预热，又可以自我评估。
+  * 相比于上两点，这一点显得比较抽象了，并且也仅是我个人的看法。Amplify向初入软件工程的你，介绍了一种“技术品味”比较优秀的开发工作流，比如创建、管理、开发、测试、部署一个项目的流程。这种工作流虽然不一定和你以后上班一模一样，但是概念上大概率有相似之处。因此，了解Amplify可以让你预先体验企业的开发环境，这既可以用于**自我预热**，又可以**自我评估**。
 
 #### 2. 软件工程从业者
 * 个人浅见，Amplify好处是提供了一套“完整”的应用开发流程，坏处亦然。它“过于”完整，提供了“过多”方便，以至于在灵活性上被降级了。我前面提到了，在亚马逊内部，或许我个人见识短浅，但是很少见到工程师讨论Amplify。原因正是它简化了太多在企业应用中需要复杂的部分。
@@ -262,64 +263,65 @@ Amplify在这一点做了很多作为一个框架该做的事，比如提供方�
   * 因此我希望同为软件工程从业者的你，如果你的工作也与AWS有交集，Amplify绝对是不可多得的瑞士军刀。你或许不能用它做木工活，但帮你完成一些小东西是不在话下的。
 
 ### 二、尽我所能，提升Amplify社区影响力
-Amplify是有非常多的竞争者的。倒不是无脑吹，但是Amplify在一些情况下是非常有优势的选项，但有的时候却单纯因为“不够熟悉”而被放弃。前面提到，我是用Amplify在工作中获得过方便，所以我也想用力所能及的方式，回馈这个社区，增强它的影响力。
+Amplify是有非常多的竞争者的。倒不是无脑吹，Amplify在一些情况下是非常有优势的选项，但有的时候却单纯因为“不够熟悉”而被放弃。前面提到，我是用Amplify在工作中获得过方便，所以我也想用力所能及的方式，回馈这个社区，增强它的影响力。
 
-## 复行数十步：技术摘要
+## **复行数十步**：技术摘要
+### 开发理念：前端驱动
+Amplify简化后端的创建与配置，设计阶段由软件面向用户的需求驱动。因此，这是所谓“方便前端”的框架。（尽管我并不认同这种说法，因为对于大部分工作岗位，前后端两手抓是常态。）
 
-## 也为外人道也：缺陷
-1. 中国区功能缺失
-2. 学习曲线略陡峭
-3. 活跃的开源社区、快速迭代带来的麻烦
-4. 价格劣势
-5. 有扩展性，但也有极限
+### 收费政策：[pay-as-you-go](https://aws.amazon.com/pricing/)
+Amplfiy框架本身是开源免费的，但是因为后端是部署在AWS上，而这些后端设施是有收费标准的，所以Amplify的收费采用AWS常用的“Pay-as-you-go”模式，即按使用量收费。作为个人用户或者是小规模的应用，因为流量低，大部分服务都可以享受AWS的Free Tier，即免费额度。但如果是大规模应用，AWS为你**提供了多少方便**，就会向你**多收多少费用**。以diode为例，按照估算，当用户量达到千万级别，会产生DynamoDB的存储收费；DAU（单日活跃用户）达到1k，每人每日执行10次“通断转换”行为，会产生AppSync的费用。
 
+> **陷阱**： Amplify提供的“搜索”服务（[@searchable](https://docs.amplify.aws/cli-legacy/graphql-transformer/searchable/)）由AWS OpenSearch提供，其并非“无服务”属性，会产生每个月的固定开支，即便是少量食用，也至少需要每月10美元的开支。这一点，在Amplify的官方文档中也以“Billing warning”提及。
 
-## Drafting
-[AWS Amplify](https://aws.amazon.com/amplify/)是亚马逊云2018年推出，且当下正在蓬勃发展的[开源项目](https://github.com/aws-amplify/amplify-js)。实质上是一个加速后端搭建并交互各种常见前端的**全栈**框架。它提供了命令行工具链，用以快速地创建后端设施并创建配置模版文件；它维护了一组前端库，方便各种前端与其创建的后端设施进行交互；它还原生提供了前端组件，方便一些常用需求（比如Authentication）的UI创建；最后，它还提供了项目的building和hosting的方案，一行命令部署上线，实现[CI/CD](https://www.redhat.com/en/topics/devops/what-is-ci-cd)。
+### 需求覆盖：一家之言
 
-作为一个[“后端即服务(BaaS)”](https://www.hitechnectar.com/blogs/top-14-backend-as-a-service-providers/)解决方案，Amplify支持的前端框架基本涵盖了我个人目力之所及。应用于Web，它提供了对React、Angular、Vue等的支持；应用于native，它也支持iOS、Andriod原生开发。除此以外，笔者执笔之时，已距离我过去的Amplify使用经验一年有余，再次打开[它的文档](https://docs.amplify.aws/start/)（下图），挠头于“当时确实只有4、5个选项吧。”开源社区其活跃的程度，可见一斑。
-
-![官网中支持的前端技术](images/f3b5ce785ada9cbfb7a9e596b867c58f5c754e0ede3dfb6fe1af961172842a16.png)
-
-OK，[前端，你是有的。后端呢？我凭什么相信（停顿）你能剿了“全栈”？](https://zhuanlan.zhihu.com/p/382399510?ivk_sa=1024320u#:~:text=%E8%83%86%E5%AD%90%E4%BD%A0%E6%98%AF%E6%9C%89%E7%9A%84%EF%BC%8C%E6%9C%AC%E4%BA%8B%E5%91%A2%EF%BC%8C%E6%88%91%E5%87%AD%E4%BB%80%E4%B9%88%E7%9B%B8%E4%BF%A1%E4%BD%A0%E8%83%BD%E5%89%BF%E4%BA%86%E5%BC%A0%E9%BA%BB%E5%AD%90)。
-
-Amplify对后端的管理是对于[AWS Infrastructure as Code(IoC)理念](https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-aws/infrastructure-as-code.html)的一层从功能出发的抽象。简单说，当你上手AWS上眼花缭乱的服务的时候（下图），官方的教程通常是让你去AWS的控制台，也就是在网站上使用鼠标点击完成服务的创建和使用。而在实际工程中，一个应用需要你如同组合乐高积木一样组合多个AWS服务，其中涉及了大量的配置，自动化就显得格为重要。于是AWS提供了[Cloud Formation](https://aws.amazon.com/cloudformation/)，一种描述性的模版，来定义你需要的后端设施。你可以理解为你是乐高的设计师，你设计了一个房子，其中“地板”需要2*16的棕色积木，编号是“b-772”（我不玩乐高，我瞎编的），32个，逐行错开排拼在第一层。于是，你只需要制作说明书，把上面的信息记下，玩家（AWS）就能按照你的说明书（模版）搭建房子（应用）。用“模版（代码）”定义后端的设施，便是IoC。
-
-![浩如烟海的AWS服务](images/03af09d2960fe4664e84ee5a1bf9b60b0875bc5d7b504ec1a81845fdd85e37a0.png)  
-
-Amplify则更进一步，它做的工作是“设计常见的模块说明书以方便其他乐高设计师”。依然用上面的例子，拥有了Amplify，你的说明书将可以从“32个棕色的b-277逐行错开拼在第一层”简化成“棕色地板:32*32的面积”。怎么拼，以及积木标号，都被抽象成了“地板”这个名词，随Amplify设计去吧，我们只关心这里需要的是地板就足够了！
-
-有了这样的概念，我们便可以理解Amplify在后端的构建上实质是通过一定程度上牺牲灵活性，以换取便利度，方便新手入门AWS、或老手构建“常见需求”和”复杂项目的Demo“。幸运的是，AWS在设计Amplify的时候，事实上依然保留了相当的灵活性，Amplify应用可以作为一个组件，嵌在复杂的项目当中并[发挥一定作用](https://github.com/ZzzGin/cold-start-severless-backend-cdk)。当然那就是后话了。
-
-正如这篇blog标题所讲的，Amplify是AWS这个手游的新手大礼包。相当合适的学习成本，你就能上手一众AWS的明星产品。从新手的角度来说，”大礼包“功能强大，能迅速拉开与不充值玩家实力的差距；而对于老玩家，”大礼包“也物超所值，你会发现总有一些小东西，用Amplify实现能做得很漂亮，很方便。而怎么拉开差距，怎么漂亮，怎么方便，且听我下面慢慢道来。
-
-
-| 底层需求 | 比如 | Amplify提供方便了吗 | AWS提供了吗 |
+| 底层需求 | 比如 | Amplify | AWS |
 | ----------- | ----------- | ----------- | ----------- |
-| 数据存储 | 商品信息/博客文章/数据表怎么存？存在哪儿？| 是 | AppSync (DynamoDB/Aurora/AES) |
-| 数据同步 | 微信聊天，我发消息如何**同步**给其他用户？| 是 | AppSync (DynamoDB) |
-| 数据搜索 | 搜索框输入商品名，索引提供结果。怎么**索引**？| 是 | AppSync (AES) |
-| 文件存储 | 用户上传的照片，怎么存？存在哪儿？| 是 | S3 |
-| 逻辑控制与计算 | 我想自定义API功能 | 是 | Appsync/API Gateway (Lambda/ECS/EC2) |
+| 数据存储 | 商品信息/博客文章/数据表怎么存？存在哪儿？| [API组件](https://docs.amplify.aws/lib/graphqlapi/getting-started/q/platform/js/) | AppSync (DynamoDB/Aurora/AES) |
+| 数据同步 | 微信聊天，我发消息如何**同步**给其他用户？| [API组件](https://docs.amplify.aws/lib/graphqlapi/getting-started/q/platform/js/) | AppSync (DynamoDB) |
+| 数据搜索 | 搜索框输入商品名，索引提供结果。怎么**索引**？| [API组件](https://docs.amplify.aws/lib/graphqlapi/getting-started/q/platform/js/) | AppSync (AES) |
+| 文件存储 | 用户上传的照片，怎么存？存在哪儿？| [Storage组件](https://docs.amplify.aws/lib/storage/getting-started/q/platform/js/) | S3 |
+| 逻辑控制与计算 | 我想自定义API功能 | [API组件](https://docs.amplify.aws/lib/restapi/getting-started/q/platform/js/) | Appsync/API Gateway (Lambda/ECS/EC2) |
 
-| 中层需求 | 比如 | Amplify提供方便了吗 | AWS提供了吗 |
+| 中层需求 | 比如 | Amplify | AWS |
 | ----------- | ------ | ----------- | ----------- |
-| CI/CD 持续开发持续部署| 我push了代码，希望构建-测试-部署自动化 | 是 | CodeCommit, CodePipeline|
-| IaC 设施即代码 | 我想自动化设施搭建 | 是 | CDK, CF |
-| Availability 可用性 | 服务的提供会因为各种原因中断吗？ | 是 | AWS的立身之本 |
-| Scalability 伸缩性 | 今天就10个用户，未来10万用户的时候我不希望重构 | 是 | 带无服务(Serverless)属性的服务都具备 |
-| Durability 耐受性 | 墨菲定律，但是最坏情况下，我不希望数据丢失 | 是 | 带无服务(Serverless)属性的服务都具备 |
-| 内部安全认证 | 只有我自己的Lambda才能调用我的ES | 否（据我所知） | 
-| DNS与认证 | 用户如何抵达我的网站，并认证我的网站的真实性？| 部分 | Certificate Manager, Route 53 |
+| CI/CD 持续开发持续部署| 我push了代码，希望构建-测试-部署自动化 | 默认提供 | CodeCommit, CodePipeline|
+| IaC 设施即代码 | 我想自动化设施搭建 | 默认提供 | CDK, CF |
+| Availability 可用性 | 服务的提供会因为各种原因中断吗？ | 默认提供 | AWS的立身之本 |
+| Scalability 伸缩性 | 今天就10个用户，未来10万用户的时候我不希望重构 | 默认提供 | 带无服务(Serverless)属性的服务都具备 |
+| Durability 耐受性 | 墨菲定律，但是最坏情况下，我不希望数据丢失 | 默认提供 | 带无服务(Serverless)属性的服务都具备 |
+| 内部安全认证 | 只有我自己的Lambda才能调用我的ES | 默认提供 | IAM |
+| DNS与认证 | 用户如何抵达我的网站，并认证我的网站的真实性？| 支持 | Certificate Manager, Route 53 |
 
-| 高层需求 | 比如 | Amplify提供方便了吗 | AWS Provider |
+| 高层需求 | 比如 | Amplify | AWS |
 | ------- | -------- | -------- | -------- |
-| 用户认证 | 用户注册、登陆 | 是 | Cognito |
-| 用户行为分析 | 用户从哪儿来，到哪儿去，家里几口人，共有几亩地 | 是 | Pinpoint |
-| 消息推送 | 你中奖了 | 是 | SNS, SMS, Pinpoint |
-| 流数据 | 直播 | 否 | Firehose |
-| ... | ... | ... | ...|
+| 用户认证 | 用户注册、登陆 | [Auth组件](https://docs.amplify.aws/lib/auth/getting-started/q/platform/js/) | Cognito |
+| 用户行为分析 | 用户从哪儿来，到哪儿去，家里几口人，共有几亩地 | [analytics组件](https://docs.amplify.aws/lib/analytics/getting-started/q/platform/js/) | Pinpoint |
+| 消息推送 | 你中奖了 | [notifications组件](https://docs.amplify.aws/lib/push-notifications/getting-started/q/platform/js/) | SNS, SMS, Pinpoint |
+| 地图服务 | 与地理位置相关的需求，快递小哥位置 | [geo组件](https://docs.amplify.aws/lib/geo/getting-started/q/platform/js/) | Amazon Location Service |
+| 机器学习 | 翻译、语音识别、ORC、物体识别…… | [predictions组件](https://docs.amplify.aws/lib/geo/getting-started/q/platform/js/) | SageMaker|
+| 流数据 | 直播 | 不原生支持 | Firehose |
+| 消息队列 | 万人抢购一台手机 | 不原生支持 | SQS |
 
-## More readings
-1. [awesome-aws-amplify](https://github.com/dabit3/awesome-aws-amplify)
-2. 
+## **也为外人道也**：缺陷
+1. 中国区功能缺失
+    * 出于众所周知的原因，AWS在CN区并未提供“全球区”的功能。阅读文章[《在中国区 AWS 上使用 Amplify 开发离线应用的使用心得》](https://aws.amazon.com/cn/blogs/china/experience-in-using-amplify-developing-offline-applications-on-aws-in-china/)获得更多信息
+2. 学习曲线不够线性
+    * Amplify的学习曲线先快后慢，当你的项目从后端的角度看很复杂、或者一些需求没有被原生覆盖时，你会发现前期Amplify为你省去的时间全都还了回去；你需要阅读大量的文档和示例来深入学习；
+    ![picture 54](images/2fe751495bd2270591aef3531e1b9cdf83e82eff1d2bcb06446c52f3b0de34d4.png)
+3. 活跃的开源社区、快速迭代带来的麻烦
+    * Amplify是2018年AWS推出的方案，因为它年轻并具备开源属性，版本迭代非常迅速。这有好处，但是因为会造成一定困扰
+    * 对于新手，你会时常发现自己找到的视频教程并不能成功复现结果，要花时间去解决因为版本迭代产生的差别
+    * 对于老手，当你过一段时间重新需要Amplify，回头捡起来的时候，要花时间阅读文档了解新的变化
+4. 价格劣势
+    * 正如我之前所提及，“AWS为你提供了多少方便，就需要支付多少钱”
+    * 对于大型应用，相比使用服务器搭建功能，Amplify背后的AWS服务价格更高
+    * 当然，对于个人应用，AWS仅按照你的使用量付费，你会支付比自己搭建服务器更少的价格
+5. 不透明性
+    * Amplify的设计思路是将后端各种技术打包成为功能供用户选择。它已经做得很好了，但是当项目存在一些不常见的需求时，不求甚解的用户可能会因为这种不透明性而做出错误的选择
+
+## **仙人之路**：更多阅读
+> 我不是仙人，这些文章、项目的作者是仙人，他们为你指路。
+1. [awesome-aws-amplify](https://github.com/dabit3/awesome-aws-amplify)：列举了非常多适合Amplify开发者阅读的项目、文章
+2. [官方文档](https://docs.amplify.aws/)

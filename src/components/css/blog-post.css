@@ -92,6 +92,16 @@ li > p {
     .blog-post-content > ol {
         font-size: 1.3rem;
     }
+
+    .blog-post-content > ul {
+        font-size: 1.3rem;
+    }
+
+    blockquote > p {
+        font-size: 1.4rem;
+        font-family: "Noto Serif", "Noto Serif SC", serif;
+        padding-top: 0.5rem;
+    }
 }
 
 @media (min-width: 1425px) {
@@ -113,6 +123,16 @@ li > p {
     }
 
     .blog-post-content > ol {
+        font-size: 1.1rem;
+    }
+
+    blockquote > p {
+        font-size: 1.5rem;
+        font-family: "Noto Serif", "Noto Serif SC", serif;
+        padding-top: 0.3rem;
+    }
+
+    .blog-post-content > ul {
         font-size: 1.1rem;
     }
 }
