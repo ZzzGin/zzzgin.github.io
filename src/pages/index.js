@@ -22,7 +22,7 @@ const IndexPage = () => {
     }
 
     React.useEffect(() => {
-        if (y === 0) {
+        if (y <= 0) {
             setBackward("Backwards");
             return;
         }
