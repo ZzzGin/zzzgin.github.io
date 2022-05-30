@@ -31,34 +31,36 @@ const ZzzLogoAnimation = () => {
             endDelay: 3000
         }).add({
             scale: 0.8,
+            translateX: (el, i) => anime.random(-5, 5),
+            translateY: (el, i) => anime.random(-10, 10),
         }).add({
             scale: 1,
-            translateX: (el, i) => 5+anime.random(-10, 10),
-            translateY: (el, i) => 5+anime.random(-10, 10),
+            translateX: (el, i) => anime.random(-10, 10),
+            translateY: (el, i) => anime.random(-20, 20),
         }).add({
             scale: 0.8,
-            translateX: (el, i) => 5+anime.random(-30, 30),
-            translateY: (el, i) => 5+anime.random(-30, 30),
+            translateX: (el, i) => anime.random(-50, 50),
+            translateY: (el, i) => anime.random(-100, 100),
         }).add({
             scale: 1,
-            translateX: (el, i) => 5+anime.random(-75, 75),
-            translateY: (el, i) => 5+anime.random(-75, 75),
+            translateX: (el, i) => anime.random(-100, 100),
+            translateY: (el, i) => anime.random(-200, 200),
         }).add({
             scale: 0.8,
-            translateX: (el, i) => 5+anime.random(-150, 150),
-            translateY: (el, i) => 5+anime.random(-150, 150),
+            translateX: (el, i) => anime.random(-200, 200),
+            translateY: (el, i) => anime.random(-450, 450),
         }).add({
             scale: 1,
-            translateX: (el, i) => 5+anime.random(-300, 300),
-            translateY: (el, i) => 5+anime.random(-300, 300),
+            translateX: (el, i) => anime.random(-450, 450),
+            translateY: (el, i) => anime.random(-900, 900),
         }).add({
             scale: 0.8,
-            translateX: (el, i) => 5+anime.random(-600, 600),
-            translateY: (el, i) => 5+anime.random(-600, 600),
+            translateX: (el, i) => anime.random(-900, 900),
+            translateY: (el, i) => anime.random(-1800, 1800),
         }).add({
             scale: 0,
-            translateX: (el, i) => 5+anime.random(-1200, 1200),
-            translateY: (el, i) => 5+anime.random(-1200, 1200),
+            translateX: (el, i) => anime.random(-1200, 1200),
+            translateY: (el, i) => anime.random(-2400, 2400),
         });
 
         setInterval(() => {

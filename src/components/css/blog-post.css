@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+a {
+    color: var(--blue) !important;
+}
+
 :root {
     --red: #EF476F;
     --orange: #F78C6B;

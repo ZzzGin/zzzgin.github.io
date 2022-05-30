@@ -186,4 +186,4 @@ featuredimageAlt: "Diode App"
 11. The above pipeline will be helpful when you make some futher change to the codebase. Once you push your change to Github, this pipeline will be triggered and deploy your new change to public. Try that by yourself!
 
 ## 7. Clean up
-1. To delete the app you just created, simply navigate to the same page of step-6.2. You should be able to find a button for "Actions". Click it and "Delete App". Follow the instructions and the app will be deleted. With this one click, all resources you created in this hands-on cookbook is deleted. 
+1. To delete the app you just created, simply navigate to the same page of step-6.2. You should be able to find a button for "Actions". Click it and "Delete App". Follow the instructions and the app will be deleted. With this one click, all resources you created in this hands-on cookbook will be deleted. 

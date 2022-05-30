@@ -8,8 +8,15 @@
 
 .title-container {
     margin-top: 30px;
-    display: block;
+    overflow: hidden;
+    border-bottom: 2px solid #cccccc;
+}
+
+.zzz-logo-animation-container {
     position: relative;
+    width: 60%;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .zzz-container {
@@ -25,16 +32,75 @@
 .slogan-container {
     float: right;
     clear: both;
+    margin-bottom: min(3.7vw, 36px);
 }
 
 .slogan {
     font-family: "Noto Serif", "Noto Serif SC", serif;
-    font-size: min(3.7vw, 40px);
+    font-size: min(3.7vw, 36px);
     font-weight: 400;
+    text-shadow: 1px 1px 2px #cccccc;
 }
 
 @media (max-width: 767px) {
     .index-body {
         padding: 5px;
     }
+}
+
+.selfie {
+    width: min(30vw, 30%);
+    padding-left: min(2vw, 20px);
+    float: left;
+}
+
+.self-introduction {
+    margin-top: min(2vw, 20px);
+    padding-bottom: min(2vw, 20px);
+    border-bottom: 2px solid #cccccc;
+    overflow: hidden;
+}
+
+.hello {
+    font-size: min(8vw, 80px);
+    text-align: right;
+    font-family: "Noto Serif", "Noto Serif SC", serif;
+    font-weight: 700;
+    letter-spacing: min(0.5vw, 5px);
+    line-height: 1;
+    text-shadow: 1px 1px 2px #cccccc;
+}
+
+.jing {
+    font-size: min(2vw, 20px);
+    text-align: right;
+    color: #aaaaaa;
+    transform: translate(max(-2.7vw, -27px), 0);
+}
+
+.occupation {
+    text-align: right;
+    font-size: min(2vw, 20px);
+    padding-top: min(1vw, 10px);
+    line-height: min(2vw, 20px);
+    margin-top: min(1vw, 10px);
+    opacity: 0.8;
+}
+
+.living {
+    text-align: right;
+    font-size: min(2vw, 20px);
+    padding-top: min(1vw, 10px);
+    line-height: min(1vw, 10px);
+    margin-top: min(1vw, 10px);
+    opacity: 0.8;
+}
+
+.call {
+    text-align: right;
+    font-size: min(2vw, 20px);
+    padding-top:  min(1vw, 10px);
+    line-height: min(1vw, 10px);
+    margin-top: min(1vw, 10px);
+    opacity: 0.8;
 }

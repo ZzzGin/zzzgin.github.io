@@ -272,7 +272,7 @@ Amplify简化后端的创建与配置，设计阶段由软件面向用户的需�
 ### 收费政策：[pay-as-you-go](https://aws.amazon.com/pricing/)
 Amplfiy框架本身是开源免费的，但是因为后端是部署在AWS上，而这些后端设施是有收费标准的，所以Amplify的收费采用AWS常用的“Pay-as-you-go”模式，即按使用量收费。作为个人用户或者是小规模的应用，因为流量低，大部分服务都可以享受AWS的Free Tier，即免费额度。但如果是大规模应用，AWS为你**提供了多少方便**，就会向你**多收多少费用**。以diode为例，按照估算，当用户量达到千万级别，会产生DynamoDB的存储收费；DAU（单日活跃用户）达到1k，每人每日执行10次“通断转换”行为，会产生AppSync的费用。
 
-> **陷阱**： Amplify提供的“搜索”服务（[@searchable](https://docs.amplify.aws/cli-legacy/graphql-transformer/searchable/)）由AWS OpenSearch提供，其并非“无服务”属性，会产生每个月的固定开支，即便是少量食用，也至少需要每月10美元的开支。这一点，在Amplify的官方文档中也以“Billing warning”提及。
+> **陷阱**： Amplify提供的“搜索”服务（[@searchable](https://docs.amplify.aws/cli-legacy/graphql-transformer/searchable/)）由AWS OpenSearch提供，其并非“无服务”属性，会产生每个月的固定开支，即便是少使用，也至少需要每月10美元的开支。这一点，在Amplify的官方文档中也以“Billing warning”提及。
 
 ### 需求覆盖：一家之言
 
@@ -311,7 +311,7 @@ Amplfiy框架本身是开源免费的，但是因为后端是部署在AWS上，�
     * Amplify的学习曲线先快后慢，当你的项目从后端的角度看很复杂、或者一些需求没有被原生覆盖时，你会发现前期Amplify为你省去的时间全都还了回去；你需要阅读大量的文档和示例来深入学习；
     ![picture 54](images/2fe751495bd2270591aef3531e1b9cdf83e82eff1d2bcb06446c52f3b0de34d4.png)
 3. 活跃的开源社区、快速迭代带来的麻烦
-    * Amplify是2018年AWS推出的方案，因为它年轻并具备开源属性，版本迭代非常迅速。这有好处，但是因为会造成一定困扰
+    * Amplify是2018年AWS推出的方案，因为它年轻并具备开源属性，版本迭代非常迅速。这有好处，但是也会造成一定困扰
     * 对于新手，你会时常发现自己找到的视频教程并不能成功复现结果，要花时间去解决因为版本迭代产生的差别
     * 对于老手，当你过一段时间重新需要Amplify，回头捡起来的时候，要花时间阅读文档了解新的变化
 4. 价格劣势
