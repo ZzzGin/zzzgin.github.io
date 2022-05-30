@@ -12,6 +12,10 @@
     border-bottom: 2px solid #cccccc;
 }
 
+.shift-up-fifty-pixels {
+    transform: translate(0, -50px);
+}
+
 .zzz-logo-animation-container {
     position: relative;
     width: 60%;
@@ -84,7 +88,6 @@
     padding-top: min(1vw, 10px);
     line-height: min(2vw, 20px);
     margin-top: min(1vw, 10px);
-    opacity: 0.8;
 }
 
 .living {
@@ -92,8 +95,8 @@
     font-size: min(2vw, 20px);
     padding-top: min(1vw, 10px);
     line-height: min(1vw, 10px);
-    margin-top: min(1vw, 10px);
-    opacity: 0.8;
+    margin-top: min(2vw, 20px);
+    opacity: 0.7;
 }
 
 .call {
@@ -102,5 +105,5 @@
     padding-top:  min(1vw, 10px);
     line-height: min(1vw, 10px);
     margin-top: min(1vw, 10px);
-    opacity: 0.8;
+    opacity: 0.7;
 }

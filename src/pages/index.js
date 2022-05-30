@@ -42,7 +42,7 @@ const IndexPage = () => {
                 <div className="zzz-logo-animation-container">
                     <ZzzLogoAnimation />
                 </div>
-                <div className="title-container">
+                <div className="title-container shift-up-fifty-pixels">
                     <div className="zzz-container">
                         <img src={ zzzTextLogo } alt="zzz"/>
                         cubic z
@@ -51,7 +51,7 @@ const IndexPage = () => {
                         <div className="slogan">Sorting {backward}</div>
                     </div>
                 </div>
-                <div className="self-introduction">
+                <div className="self-introduction shift-up-fifty-pixels">
                     <div className="selfie">
                         <StaticImage
                             src="../images/selfie.jpeg"
@@ -68,7 +68,7 @@ const IndexPage = () => {
                         Hi, I'm 齐靖
                     </div>
                     <div className="occupation">
-                        A <span style={{color: "var(--red)"}}>Software Developer</span> &#8226; <span style={{color: "var(--green)"}}>Engineer</span> &#8226; <span style={{color: "var(--blue)"}}>Designer</span>
+                        A <span style={{color: "var(--red)", fontWeight: "bold"}}>Software Developer</span> &#8226; <span style={{color: "var(--green)", fontWeight: "bold"}}>Engineer</span> &#8226; <span style={{color: "var(--blue)", fontWeight: "bold"}}>Designer</span>
                     </div>
                     <div className="living">
                         Born in Wuxi, now based in Seattle
