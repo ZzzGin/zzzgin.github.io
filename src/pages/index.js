@@ -26,7 +26,7 @@ const IndexPage = () => {
             setBackward("Backwards");
             return;
         }
-        const l = Math.floor(y/25);
+        const l = Math.floor(y/33);
         if (l === 0) {
             setBackward(createRandomString(9));
             return;
@@ -74,7 +74,7 @@ const IndexPage = () => {
                         Born in Wuxi, now based in Seattle
                     </div>
                     <div className="call">
-                        Call me Jing, pronounced like Gin
+                        Call me Jing, pronounced like <span style={{fontStyle: "italic"}}>Gin</span>
                     </div>
                 </div>
                 <div style={{height: "1000px"}}></div>
