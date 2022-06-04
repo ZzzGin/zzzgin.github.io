@@ -1,36 +1,43 @@
 import * as React from "react"
 import "./test-vis-js.css"
-import { Timeline, DataSet } from "vis-timeline/standalone";
+import Navbar from "@components/blog-components/Navbar"
+import TimelineStory from "@components/artworks/timeline/TimelineStory";
+import { Helmet } from "react-helmet"
 
 const TestVisJs = () => {
+    const groups = [
+        {id: "g-amazon", content: "Amazon", tag: "Amazon"},
+        {id: "g-amazon-fulfillment", content: "> Fulfillment", tag: "Amazon.Fulfillment"},
+        {id: "g-amazon-kindle", content: "> Kindle", tag: "Amazon.Kindle"},
+        {id: "g-google", content: "Google", tag: "Google"},
+        {id: "g-microsoft", content: "Microsoft", tag: "Microsoft"}
+    ];
 
-    React.useEffect(() => {
-        var container = document.getElementById('visualization');
-
-        // Create a DataSet (allows two way data-binding)
-        var items = new DataSet([
-            {id: 1, content: '<div><div>hello</div><div>world</div></div>', start: '2014-04-20'},
-            {id: 2, content: 'item 2', start: '2014-04-14'},
-            {id: 3, content: 'item 3', start: '2014-04-18'},
-            {id: 4, content: 'item 4', start: '2014-04-16', end: '2014-04-19'},
-            {id: 5, content: 'item 5', start: '2014-04-25'},
-            {id: 6, content: 'item 6', start: '2014-04-27', type: 'point'}
-        ]);
-
-        // Configuration for the Timeline
-        var options = {};
-
-        // Create a Timeline
-        const timeline = new Timeline(container, items, options);
-
-        return () => {
-            timeline.destroy();
-        }
-    }, []);
+    const events = [
+        {start: '2022-04-14', end: '2022-04-15', group: 'g-amazon', title: 'title-1', desription: 'description-1', links: ['https://www.google.com', 'https://www.youtube.com'], color: 'red'},
+        {start: '2022-04-21', end: '2022-04-22', group: 'g-amazon-fulfillment', title: 'title-2', desription: 'description-2', links: ['https://www.bilibili.com', 'https://www.zhihu.com'], color: 'blue'},
+        {start: '2022-04-23', group: 'g-amazon-kindle', title: 'title-3', desription: 'This field is optional. When the group column is provided, all items with the same group are placed on one line. A vertical axis is displayed showing the groups. Grouping items can be useful for example when showing availability of multiple people, rooms, or other resources next to each other.', links: ['https://www.google.com', 'https://www.youtube.com'], color: 'green'},
+        {start: '2022-05-01', end: '2022-05-02', group: 'g-google', title: 'title-4', desription: 'description-4', links: ['https://www.bilibili.com', 'https://www.zhihu.com'], color: 'red'},
+        {start: '2022-05-03', group: 'g-microsoft', title: 'title-5', desription: 'description-5', links: ['https://www.google.com', 'https://www.youtube.com'], color: 'blue'},
+        {start: '2022-05-14', end: '2022-05-15', group: 'g-google', title: 'title-6', desription: 'description-6', links: ['https://www.google.com', 'https://www.youtube.com'], color: 'green'},
+        {start: '2022-05-16', group: 'g-google', title: 'title-7', desription: 'description-7', links: ['https://www.google.com', 'https://www.youtube.com'], color: 'red'},
+        {start: '2022-05-17', group: 'g-google', title: 'title-8', desription: 'description-8', links: ['https://www.google.com', 'https://www.youtube.com'], color: 'blue'},
+        {start: '2022-05-18', group: 'g-google', title: 'title-9', desription: 'description-9', links: ['https://www.google.com', 'https://www.youtube.com'], color: 'green'},
+        {start: '2022-05-19', group: 'g-google', title: 'title-10', desription: 'description-10', links: ['https://www.google.com', 'https://www.youtube.com'], color: 'red'},
+        {start: '2022-06-01', group: 'g-amazon-kindle', title: 'Shut Down China Kindle Store', desription: 'The e-commerce giant will discontinue the Kindle eBook store on June 30, 2023, a spokesperson said in an emailed statement. It promised to continue supporting Kindle readers or refund any device purchases made after January this year.', links: ["https://www.bloomberg.com/news/articles/2022-06-02/amazon-to-shut-kindle-store-in-china-after-years-long-struggle"], color: 'red'}
+    ];
 
     return (
         <>
-        <div id="visualization"></div>
+            <Helmet title="zzz - test vis.js"/>
+            <Navbar />
+            <div className="timeline-story-container" style={{zIndex: 10}}>
+                <TimelineStory
+                    groups={ groups }
+                    events={ events }
+                />
+            </div>
+            
         </>
     );
 }
