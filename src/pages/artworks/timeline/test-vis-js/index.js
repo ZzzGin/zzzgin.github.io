@@ -1,5 +1,5 @@
 import * as React from "react"
-import "./test-vis-js.css"
+import "@components/css/story-teller-template.css"
 import Navbar from "@components/blog-components/Navbar"
 import TimelineStory from "@components/artworks/timeline/TimelineStory";
 import { Helmet } from "react-helmet"
@@ -32,6 +32,7 @@ const TestVisJs = () => {
             <Helmet title="zzz - test vis.js"/>
             <Navbar />
             <div className="timeline-story-container" style={{zIndex: 10}}>
+                <div className="timeline-story-title">Storyteller Demo</div>
                 <TimelineStory
                     groups={ groups }
                     events={ events }

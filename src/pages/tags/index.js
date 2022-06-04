@@ -41,8 +41,6 @@ const TagsManager = (props) => {
         });
     })
         
-    console.log(sortedTags);
-
     return (
         <>
             <Helmet title="zzz - Tags" />

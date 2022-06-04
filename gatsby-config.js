@@ -5,6 +5,13 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `storytellers`,
+        path: `${__dirname}/src/pages/storytellers/`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         icon: `src/images/zzz-icon.svg`

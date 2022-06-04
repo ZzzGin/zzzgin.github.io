@@ -1,0 +1,159 @@
+{
+    "title": "Storyteller - Techs",
+    "groups": [
+        {"id": "g-amazon", "content": "Amazon", "tag": "Amazon"},
+        {"id": "g-apple", "content": "Apple", "tag": "Apple"},
+        {"id": "g-google", "content": "Google", "tag": "Google"},
+        {"id": "g-microsoft", "content": "Microsoft", "tag": "Microsoft"},
+        {"id": "g-meta", "content": "Meta", "tag": "Meta"},
+        {"id": "g-tesla", "content": "Tesla", "tag": "Tesla"},
+        {"id": "g-others", "content": "Others", "tag": "Others"}
+    ],
+    "events": [
+        {
+            "start": "2022-06-01", 
+            "group": "g-amazon", 
+            "title": "Kindle Exits CN", 
+            "desription": "The e-commerce giant will discontinue the Kindle eBook store on June 30, 2023, a spokesperson said in an emailed statement. It promised to continue supporting Kindle readers or refund any device purchases made after January this year.", 
+            "links": [
+                "https://www.bloomberg.com/news/articles/2022-06-02/amazon-to-shut-kindle-store-in-china-after-years-long-struggle"
+            ], 
+            "color": "red"
+        },
+        {
+            "start": "2022-05-28", 
+            "group": "g-others", 
+            "title": "Coinbase: Hiring Freeze", 
+            "desription": "Coinbase: \"TL;DR: In response to the current market conditions and ongoing business prioritization efforts, we will extend our hiring pause for both new and backfill roles for the foreseeable future and rescind a number of accepted offers.\"", 
+            "links": [
+                "https://blog.coinbase.com/update-on-hiring-plans-bcedfa634989",
+                "https://www.1point3acres.com/bbs/thread-900797-9-1.html"
+            ], 
+            "color": "red"
+        },
+        {
+            "start": "2022-06-01", 
+            "group": "g-meta", 
+            "title": "COO Left", 
+            "desription": "June 1 (Reuters) - Meta Platforms Inc (FB.O) Chief Operating Officer Sheryl Sandberg, whose close partnership with Chief Executive Officer Mark Zuckerberg powered the growth of the world's biggest social network, is leaving the company after 14 years, she said in a Facebook post on Wednesday.", 
+            "links": [
+                "https://www.reuters.com/technology/meta-platforms-operations-chief-sheryl-sandberg-quit-2022-06-01/",
+                "https://www.wired.com/story/plaintext-meta-new-coo-sheryl-sandberg/"
+            ], 
+            "color": "blue"
+        },
+        {
+            "start": "2022-02-07", 
+            "group": "g-amazon", 
+            "title": "Raise Base Salary Cap", 
+            "desription": "Amazon.com Inc. is more than doubling the maximum base salary it pays employees to $350,000 from $160,000.", 
+            "links": [
+                "https://www.bloomberg.com/news/articles/2022-02-07/amazon-is-raising-base-salary-cap-to-350-000-from-160-000"
+            ], 
+            "color": "green"
+        },
+        {
+            "start": "2022-05-18", 
+            "group": "g-meta", 
+            "title": "Hiring Freeze", 
+            "desription": "Meta is pulling back its investments in a number of products, including the teams it spun up early in the pandemic to compete with Zoom and build shopping features, The Verge has learned. In addition to a hiring freeze for certain engineering roles, the company also recently paused the hiring of recruiters and low-level data scientists.", 
+            "links": [
+                "https://www.theverge.com/2022/5/18/23125571/meta-hiring-freeze-commerce-messenger-kids-facebook-gaming"
+            ], 
+            "color": "red"
+        },
+        {
+            "start": "2022-05-16", 
+            "end": "2022-05-17",
+            "group": "g-amazon", 
+            "title": "Too Many Warehouses", 
+            "desription": "WIRED: Amazon Has Too Many Warehouses. Now Sellers Are Paying More sellers keep getting hit with fee increases—at a time when shelves are sitting empty.", 
+            "links": [
+                "https://www.wired.com/story/amazon-warehouse-sellers/"
+            ], 
+            "color": "blue"
+        },
+        {
+            "start": "2022-06-01",
+            "group": "g-tesla", 
+            "title": "RTO or Fired", 
+            "desription": "Tesla Inc. Chief Executive Officer Elon Musk sent an email late Tuesday to “Everybody” at his electric-car company, elaborating on an earlier missive to executive staff about the need to be in the office. Employees at numerous companies, used to working from home or hybrid policies, have revolted against \"RTO\" policies and long commutes. ", 
+            "links": [
+                "https://www.bloomberg.com/news/articles/2022-06-01/musk-s-tesla-ultimatum-return-to-office-or-work-somewhere-else"
+            ], 
+            "color": "red"
+        },
+        {
+            "start": "2022-05-26",
+            "group": "g-microsoft", 
+            "title": "Slow Hiring", 
+            "desription": "Microsoft Corp. will slow hiring in its Windows, Office and Teams chat and conferencing software groups, citing a need to realign staffing priorities as it approaches a new fiscal year in a time of global economic uncertainty.", 
+            "links": [
+                "https://www.bloomberg.com/news/articles/2022-05-26/microsoft-to-slow-hiring-in-windows-office-teams-chat-groups"
+            ], 
+            "color": "red"
+        },
+        {
+            "start": "2022-06-03",
+            "group": "g-tesla", 
+            "title": "Layoff", 
+            "desription": "Elon Musk emailed Tesla executives on Thursday, Reuters reports, telling them the company needs to pause hiring worldwide and cut its workforce by about 10 percent. At the end of 2021, Tesla said in a filing that it had 99,290 employees worldwide. In the email seen by Reuters, Musk cites his “super bad feeling” about the economy.", 
+            "links": [
+                "https://www.theverge.com/2022/6/3/23152932/elon-musk-email-orders-tesla-layoffs-hiring-freeze-bad-feeling"
+            ], 
+            "color": "red"
+        },
+        {
+            "start": "2022-05-24",
+            "group": "g-others", 
+            "title": "Lyft: Slow Hiring", 
+            "desription": "May 24 (Reuters) - Ride-hailing firm Lyft Inc (LYFT.O) said on Tuesday it would slowdown hiring and assess budget cuts in some departments, joining rival Uber Technologies Inc (UBER.N) in attempting to rein in costs.", 
+            "links": [
+                "https://www.reuters.com/business/autos-transportation/lyft-slow-hiring-assess-cut-budgets-2022-05-24/"
+            ], 
+            "color": "red"
+        },
+        {
+            "start": "2022-05-12",
+            "group": "g-others", 
+            "title": "Uber: Slow Hiring", 
+            "desription": "Uber is the latest tech giant to slow its hiring in response to current market pressures. That slowdown is part of a larger push to cut costs, and comes even as the company’s core ride-sharing business rebounds from its pandemic lows.", 
+            "links": [
+                "https://insights.dice.com/2022/05/12/uber-slows-hiring-in-response-to-market-pressures-cash-flow/"
+            ], 
+            "color": "red"
+        },
+        {
+            "start": "2022-05-25",
+            "group": "g-apple", 
+            "title": "Raise Base Salary Cap", 
+            "desription": "May 25 (Reuters) - Apple Inc (AAPL.O) will raise the starting pay for its U.S. employees, the iPhone maker said on Wednesday, as companies face a tight labor market and a surge in unionization efforts amid rising inflation.", 
+            "links": [
+                "https://www.reuters.com/technology/apple-boosts-pay-budget-us-workers-wsj-2022-05-26/#:~:text=The%20starting%20pay%20for%20the,%2C%22%20a%20company%20spokesperson%20said."
+            ], 
+            "color": "green"
+        },
+        {
+            "start": "2022-05-25", 
+            "end": "2022-05-26", 
+            "group": "g-amazon", 
+            "title": "Warehouse Challenged", 
+            "desription": "AMAZON’S ORGANIZING WAREHOUSE workers have been rattling the ecommerce giant, winning union elections, and staging walkouts to agitate for better working conditions. Now, one worker is trying a novel tack. Today, Daniel Olayiwola will become the first warehouse worker in company history to present his own resolution at Amazon’s annual shareholder meeting.", 
+            "links": [
+                "https://www.wired.com/story/amazon-warehouse-worker-shareholder-proposal/"
+            ], 
+            "color": "blue"
+        },
+        {
+            "start": "2022-06-04", 
+            "group": "g-others", 
+            "title": "Instacart: Hiring Freeze", 
+            "desription": "No official announcement.", 
+            "links": [
+                "https://www.1point3acres.com/bbs/thread-900989-1-1.html?mobile=2",
+                "https://www.teamblind.com/post/instacart-hiring-freeze-G0iiRXLr"
+            ], 
+            "color": "red"
+        }
+    ]
+}

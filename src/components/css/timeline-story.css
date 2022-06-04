@@ -59,4 +59,16 @@
 
 #visualization {
     background-color: var(--light);
+    margin-bottom: 5px;
+}
+
+button {
+    font-size: 1.5rem;
+    border: 0;
+    background: transparent;
+    color: var(--red);
+}
+
+.timeline-tools-container {
+    float: right;
 }

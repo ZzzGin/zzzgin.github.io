@@ -90,4 +90,52 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         })
     });
 
+
+    // create storytellers
+    const storytellerTemplate = path.resolve(`src/templates/storytellerTemplate.js`);
+    const fetchStorytellersResult = await graphql(`
+    query FetchStorytellers {
+        allFile(filter: {ext: {eq: ".json"}}) {
+          edges {
+            node {
+              absolutePath
+              name
+              ext
+              internal {
+                content
+              }
+            }
+          }
+        }
+      }
+      
+    `);
+    if (fetchStorytellersResult.errors) {
+        reporter.panicOnBuild(`Error while running GraphQL query.`)
+        return
+    }
+    const storytellerJsonFiles = fetchStorytellersResult.data.allFile.edges;
+
+    storytellerJsonFiles.forEach(edge => {
+        createPage({
+            path: `/storyteller/${edge.node.name}`,
+            component: storytellerTemplate,
+            context: {
+                content: edge.node.internal.content
+            }
+        })
+    })
 }
+
+exports.onCreateNode = async ({ node, loadNodeContent, actions }) => {
+    if (node.ext !== ".json") return;
+  
+    // Ensure Gatsby loads the item into memory so that its
+    // content becomes available in the GraphQL File node
+    try {
+        const nodeContent = await loadNodeContent(node);
+        actions.createNodeField({ node, name: `contentLoaded`, value: nodeContent });
+    } catch (error) {
+      console.error(error);
+    }
+  };
