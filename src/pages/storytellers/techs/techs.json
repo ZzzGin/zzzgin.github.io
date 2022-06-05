@@ -158,7 +158,7 @@
         {
             "start": "2022-06-04", 
             "group": "g-others", 
-            "title": "Clubhouse: Lays off", 
+            "title": "Clubhouse: Lay off", 
             "desription": "Clubhouse, the social audio app that became a big hit during the early days of the pandemic, laid off multiple employees this week, according to people familiar with the reductions. The layoffs are part of a broader restructuring and rethinking of the audio app’s strategy.", 
             "links": [
                 "https://www.bloomberg.com/news/articles/2022-06-03/audio-app-clubhouse-lays-off-staff-as-strategy-shifts"
@@ -168,13 +168,34 @@
         {
             "start": "2022-05-17", 
             "group": "g-others", 
-            "title": "Netflix: Lays off", 
+            "title": "Netflix: Lay off", 
             "desription": "Netflix is laying off around 150 employees across the company, CNBC confirmed Tuesday. The eliminated positions represent less than 2% of the streamer’s 11,000 staffers, with most of the cuts happening in the U.S.", 
             "links": [
                 "https://www.cnbc.com/2022/05/17/netflix-lays-off-150-employees-as-the-streaming-service-contends-with-big-subscriber-losses.html",
                 "https://www.bloomberg.com/news/articles/2022-06-04/-no-longer-sure-bets-tech-giants-are-dropping-bad-news-daily"
             ], 
             "color": "red"
+        },
+        {
+            "start": "2022-04-01", 
+            "group": "g-amazon", 
+            "title": "Unionize", 
+            "desription": "A SCRAPPY GROUP of Amazon workers in Staten Island, New York, has taken on the trillion-dollar ecommerce company and won. In a stunning victory on Friday, the Amazon Labor Union became the first group in history to unionize a US Amazon warehouse. Workers voted 2,654 to 2,131 in favor of union representation for 8,300 workers. As of Friday, 67 ballots remained challenged on grounds such as voter eligibility, too few to alter the result.", 
+            "links": [
+                "https://www.wired.com/story/staten-island-amazon-elections/"
+            ], 
+            "color": "green"
+        },
+        {
+            "start": "2022-05-16", 
+            "group": "g-microsoft", 
+            "title": "Boost Pay", 
+            "desription": "Microsoft Corp. said it plans to \"nearly double\" its budget for employee salary increases and boost the amount of stock compensation it gives some workers by at least 25 percent, in an effort to retain staff and help people cope with inflation.", 
+            "links": [
+                "https://www.cnbc.com/2022/05/16/microsoft-ceo-satya-nadella-tells-employees-pay-increases-coming.html",
+                "https://www.shrm.org/resourcesandtools/hr-topics/compensation/pages/microsoft-to-nearly-double-salary-budgets-expand-stock-compensation.aspx#:~:text=Microsoft%20Corp.%20said%20it%20plans,help%20people%20cope%20with%20inflation."
+            ], 
+            "color": "green"
         }
     ]
 }
