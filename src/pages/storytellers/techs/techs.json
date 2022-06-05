@@ -96,7 +96,7 @@
         {
             "start": "2022-06-03",
             "group": "g-tesla", 
-            "title": "Layoff", 
+            "title": "Lays off", 
             "desription": "Elon Musk emailed Tesla executives on Thursday, Reuters reports, telling them the company needs to pause hiring worldwide and cut its workforce by about 10 percent. At the end of 2021, Tesla said in a filing that it had 99,290 employees worldwide. In the email seen by Reuters, Musk cites his “super bad feeling” about the economy.", 
             "links": [
                 "https://www.theverge.com/2022/6/3/23152932/elon-musk-email-orders-tesla-layoffs-hiring-freeze-bad-feeling"
@@ -152,6 +152,27 @@
             "links": [
                 "https://www.1point3acres.com/bbs/thread-900989-1-1.html?mobile=2",
                 "https://www.teamblind.com/post/instacart-hiring-freeze-G0iiRXLr"
+            ], 
+            "color": "red"
+        },
+        {
+            "start": "2022-06-04", 
+            "group": "g-others", 
+            "title": "Clubhouse: Lays off", 
+            "desription": "Clubhouse, the social audio app that became a big hit during the early days of the pandemic, laid off multiple employees this week, according to people familiar with the reductions. The layoffs are part of a broader restructuring and rethinking of the audio app’s strategy.", 
+            "links": [
+                "https://www.bloomberg.com/news/articles/2022-06-03/audio-app-clubhouse-lays-off-staff-as-strategy-shifts"
+            ], 
+            "color": "red"
+        },
+        {
+            "start": "2022-05-17", 
+            "group": "g-others", 
+            "title": "Netflix: Lays off", 
+            "desription": "Netflix is laying off around 150 employees across the company, CNBC confirmed Tuesday. The eliminated positions represent less than 2% of the streamer’s 11,000 staffers, with most of the cuts happening in the U.S.", 
+            "links": [
+                "https://www.cnbc.com/2022/05/17/netflix-lays-off-150-employees-as-the-streaming-service-contends-with-big-subscriber-losses.html",
+                "https://www.bloomberg.com/news/articles/2022-06-04/-no-longer-sure-bets-tech-giants-are-dropping-bad-news-daily"
             ], 
             "color": "red"
         }
