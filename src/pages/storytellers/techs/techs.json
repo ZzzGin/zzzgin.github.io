@@ -148,7 +148,7 @@
             "start": "2022-06-04", 
             "group": "g-others", 
             "title": "Instacart: Hiring Freeze", 
-            "desription": "No official announcement.", 
+            "desription": "Community news. No official announcement found.", 
             "links": [
                 "https://www.1point3acres.com/bbs/thread-900989-1-1.html?mobile=2",
                 "https://www.teamblind.com/post/instacart-hiring-freeze-G0iiRXLr"
@@ -196,6 +196,39 @@
                 "https://www.shrm.org/resourcesandtools/hr-topics/compensation/pages/microsoft-to-nearly-double-salary-budgets-expand-stock-compensation.aspx#:~:text=Microsoft%20Corp.%20said%20it%20plans,help%20people%20cope%20with%20inflation."
             ], 
             "color": "green"
+        },
+        {
+            "start": "2022-06-04", 
+            "group": "g-tesla", 
+            "title": "False Alarm?", 
+            "desription": "\"Total headcount will increase, but salaried should be fairly flat\"", 
+            "links": [
+                "https://twitter.com/elonmusk/status/1533176789022957568",
+                "https://nypost.com/2022/06/04/elon-musk-says-telsa-will-increase-workforce-days-after-sending-layoff-email/"
+            ], 
+            "color": "green"
+        },
+        {
+            "start": "2022-06-06", 
+            "group": "g-apple", 
+            "title": "WWDC", 
+            "desription": "Apple Inc. unveiled the most significant overhaul to its popular MacBook Air laptop in more than a decade, bringing a fresh design, new colors and a speedier M2 processor from its homegrown chip line. ", 
+            "links": [
+                "https://www.bloomberg.com/news/articles/2022-06-06/apple-unveils-its-biggest-macbook-air-redesign-in-over-a-decade?srnd=premium",
+                "https://www.youtube.com/watch?v=q5D55G7Ejs8",
+                "https://www.wired.com/story/wwdc-2022-everything-apple-announced/"
+            ], 
+            "color": "blue"
+        },
+        {
+            "start": "2022-06-06", 
+            "group": "g-amazon", 
+            "title": "Stock Split", 
+            "desription": "Amazon, whose 20-for-1 split took effect Monday, is among companies whose stocks have tumbled since the moves were announced amid a broad market selloff that’s been especially painful for the technology sector. Shares of the e-commerce giant rose 2% in New York after the split, but shares are still down about 10% since reporting the plan in March. Alphabet, which announced a similar proposal in February, is down 17% since then.", 
+            "links": [
+                "https://www.bloomberg.com/news/articles/2022-06-06/amazon-stock-split-delivers-more-than-bargained-for-tech-watch"
+            ], 
+            "color": "blue"
         }
     ]
 }

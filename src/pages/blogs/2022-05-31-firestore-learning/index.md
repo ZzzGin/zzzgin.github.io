@@ -117,3 +117,112 @@ distances_traveled: [42, 39, 12, 42]
     ```
 
 ## Security Rules
+> Below will not cover security coming from server libraries, for example: cloud functions.
+1. A security rulle will specify: 
+    1. what specific documents you are securing
+    2. what logic you are going to secure them.
+2. here is an example of security rule, it really just an example, does not make too much sense
+    ```
+    service cloud.firestore {
+        match /databases/{database}/documents {
+            match /{document=**} {
+                // Completely locked
+                allow read, write: if false;
+            }
+            // ----------------------------------
+            match /restaurants/{restaurantID} {
+                // (i)
+            }
+            match /restaurants/{restaurantID}/reviews/{reviewID} {
+                // the rules placed here is the same as what it has in (ii)
+            }
+            // ----------------------------------
+            match /restaurants/{restaurantID} {
+                match /reviews/{reviewId} {
+                    // (ii)
+                    allow write: if reviewId == "review_234"
+                }
+            }
+            // ----------------------------------
+            match /myCollection/{docId} {
+                allow read: if request.auth.token.email.matches('.*google[.]com$');
+            }
+        }
+    }
+    ```
+3. the `{database}` in this rule is to "wild cards" all the database in firestore. 2 kinds of wildcard:
+    1. Single element wildcard - `{database}` or `restaurantID`:
+        1. it's just to say: go ahead and match a single path element, either a document or a collection, and stick it into a variable with the name that I specified here.
+        2. so at the place - (i), we will have a variable named `restaurantId` and its value is the ID of the restaurant doc
+        3. this variable will be available in nested security rule, like place (ii)
+    2. "Rest of the document path wild card" - `{document=**}`
+        1. it says: go ahead and match the rest of the path and stick it into this variable here
+        2. now the `document` will be the rest of the path
+4. **WARNING**: the security ruls for the parent document will not be cascade to the nested collection!
+5. **WARNING**: security rules will be an *ORDERED* matcher list. First will be applied and if it does not work, the second will be applied... So be careful of some "powerful" rules which can override following rules.
+6. For the rule string - `allow read: if reviewId == "review_234"`:
+    1. only `allow` keyword is provided. There is no `disallow`. If you want to "block", you can `allow read: if false`
+    2. verbs:
+        1. `read` includes `get` and `list`
+        2. `write` includes `create`, `delete` and `update`
+7. `request` is the "input" of the security rule. It contains 2 things:
+    1. auth
+        1. whether they're an actual signed-in user: `allow read: if request.auth != null`
+        2. allow people only when the email from the domain of "google.com" and verified: `allow read: if request.auth.token.email.matches( '.*google[.]com$') && request.auth.token.email_verified;`
+    2. resource
+        1. security rule can be used to "define the data restriction": `allow create: if request.resource.data.score is number && request.resource.data.score >= 1 && request.resource.data.score <= 5`
+        2. with "resource", we can also define some rules to "only let the owner to edit/read the document": `allow update: if request.resource.data.reviewerId = request.auth.uid`
+8. `resource` is another object can be used in security rules representing the existing document in database:
+    1. for example, user cannot change the score: `allow update: if request.resource.data.score == resource.data.score`
+9. **WARNING**: security rule is NOT a filter, it will block a request to a collection and any of the documents failed the security rule.
+10. `get()` function can allow you to retrieve data from another document for security rule validation:
+    1. `allow update: if get(/databases/$(database)/documents/restaurants/$(restaruantID)/ private_data/private).data.roles[request.auth.uid] in ["editor", "owner"]`
+11. Custom Auth Claim: Cloud function can be used to define some fields for security rules. The number is limited.
+12. Security Rule support functions:
+    ```
+    function doesUserHaveGoogleAccount() {
+        return request.auth.token.email.matches('.*google[.]com$') && request.auth.token.email_verified
+    }
+
+    //...
+    allow update: if doesUserHaveGoogleAccount()
+    ```
+
+## Pagination
+```javascript
+myQuery = restaurantRef.whereField("city", isEqualTo: "Tokyo")
+    .whereField("category", isEqualTo: "tempura)
+    .order(by: "rating", descending: true)
+    .limit(to: 20)
+```
+Above query Will provide the first 20 documents matches this query.
+
+To get the next batch of data:
+```javascript
+nextBatch = restaurantRef.whereField("city", isEqualTo: "Tokyo")
+    .whereField("category", isEqualTo: "tempura)
+    .order(by: "rating", descending: true)
+    .limit(to: 20)
+    .start(after: ["Tokyo", "tempura", 4.9])
+// or 
+nextBatch = myQuery.start(after: ["Tokyo", "tempura", 4.9])
+// however, this will potentially skip documents. 
+// So we can do:
+mextBatch = myQuery.start(after: previousDoc)
+// previousDoc is the LAST document of the previous batch
+```
+
+**WARNING**: if the collection is constantly updated, for example some documents are deleted and inserted, those updates might be skipped. To avoid this, in the 2nd query, you should increase the `limit(to: 40)` then `60`.
+
+## Transactions
+Batch Write is for Atomic: DB will make sure that one batch write will success for all or failed for all'
+
+Transaction is for Most-up-to-date, 5 steps to perform a transaction: 
+1. before writing to DB, it will first read the dcoument; 
+2. then, client will have some logic to update the data in the document; 
+3. the update will be performed; 
+4. then, double check the right change was made; 
+5. finally, all changes will be commited.
+
+**When we want to increment or decrement a value, we need to use transaction.**
+
