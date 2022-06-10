@@ -229,6 +229,26 @@
                 "https://www.bloomberg.com/news/articles/2022-06-06/amazon-stock-split-delivers-more-than-bargained-for-tech-watch"
             ], 
             "color": "blue"
+        },
+        {
+            "start": "2022-06-08", 
+            "group": "g-meta", 
+            "title": "Halt Project", 
+            "desription": "Meta Halts Development of Apple Watch Rival with Two Cameras. Facebook parent company Meta Platforms Inc. has halted development of a smartwatch with dual cameras and is instead working on other devices for the wrist, according to a person with knowledge of the matter.", 
+            "links": [
+                "https://www.bloomberg.com/news/articles/2022-06-09/meta-halts-development-of-apple-watch-rival-with-two-cameras"
+            ], 
+            "color": "red"
+        },
+        {
+            "start": "2022-06-09", 
+            "group": "g-microsoft", 
+            "title": "MR Manager Resigned", 
+            "desription": "Microsoft HoloLens boss Alex Kipman is out after misconduct allegations. Insider is reporting that Microsoft’s Alex Kipman, who led the teams that developed the company’s HoloLens augmented reality headset and the Kinect motion controller for Xbox and serves as one of Microsoft’s top technical fellows, has resigned after allegations of verbal abuse and sexual harassment.", 
+            "links": [
+                "https://www.theverge.com/2022/6/7/23159049/microsoft-hololens-boss-alex-kipman-leaves-resigns-misconduct-allegations"
+            ], 
+            "color": "blue"
         }
     ]
 }
