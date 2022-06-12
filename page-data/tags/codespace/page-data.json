@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tagged-blogs-template-js",
+    "path": "/tags/codespace",
+    "result": {"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"date":"June 12, 2022","featuredimage":null,"description":"Love it.","featuredimageAlt":null,"path":"/blogs/this-blog-is-written-on-i-pad","tags":["blog","codespace"],"title":"This Blog is Written On iPad, Partially, With CodeSpaces"}}}]}},"pageContext":{"tag":"codespace"}},
+    "staticQueryHashes": []}
