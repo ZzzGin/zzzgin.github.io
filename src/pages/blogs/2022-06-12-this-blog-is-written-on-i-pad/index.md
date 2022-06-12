@@ -12,3 +12,4 @@ Two days ago saw a [Youtube video](https://www.youtube.com/watch?v=vPigsZ-zk1g) 
 > **I was wrong, and right.**
 
 ## Hands on
+By navigating to my blog's github repo page, I am able to find 

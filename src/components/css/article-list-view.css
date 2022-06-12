@@ -11,6 +11,8 @@
     font-family: 'Noto Serif', "Noto Serif SC", serif;
     font-size: 2rem;
     color: #555;
+    line-height: 110%;
+    margin: 0.5rem 0;
 }
 
 .article-tile-title:hover {
