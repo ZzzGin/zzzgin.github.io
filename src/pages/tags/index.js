@@ -2,7 +2,7 @@ import * as React from "react"
 import Navbar from "@components/blog-components/Navbar"
 import { Helmet } from "react-helmet"
 import { graphql } from "gatsby"
-import StaticTag from "../../components/blog-components/StaticTag"
+import Tag from "@components/blog-components/Tag"
 import "@components/css/main.css"
 
 
@@ -58,7 +58,7 @@ const TagsManager = (props) => {
                             <div className="tags-wrapper">
                             {
                                 sortedTags[i].tags.map(t => 
-                                    <StaticTag text={t + ` (${tags[t]})`} href={"/tags/"+t.replaceAll(" ", "-")} />
+                                    <Tag text={t} href={"/tags/"+t.replaceAll(" ", "-")} count={tags[t]} />
                                 )
                             }
                             </div>

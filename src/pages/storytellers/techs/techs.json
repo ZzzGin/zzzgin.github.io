@@ -249,6 +249,16 @@
                 "https://www.theverge.com/2022/6/7/23159049/microsoft-hololens-boss-alex-kipman-leaves-resigns-misconduct-allegations"
             ], 
             "color": "blue"
+        },
+        {
+            "start": "2022-06-13", 
+            "group": "g-google", 
+            "title": "AI Sentient?", 
+            "desription": "According to an eye-opening tale in the Washington Post on Saturday, one Google engineer said that after hundreds of interactions with a cutting edge, unreleased AI system called LaMDA, he believed the program had achieved a level of consciousness.", 
+            "links": [
+                "https://www.cnn.com/2022/06/13/tech/google-ai-not-sentient/index.html"
+            ], 
+            "color": "blue"
         }
     ]
 }

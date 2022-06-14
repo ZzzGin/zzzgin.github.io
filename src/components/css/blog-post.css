@@ -8,11 +8,23 @@ a {
 
 :root {
     --red: #EF476F;
+    --light-red: #f6a2b6;
+    --dark-red: #7b415e;
     --orange: #F78C6B;
+    --light-orange: #fac4b4;
+    --dark-orange: #7f645c;
     --yellow: #FFD166;
+    --light-yellow: #fee7b1;
+    --dark-yellow: #838659;
     --green: #06d6a0;
+    --light-green: #81e9ce;
+    --dark-green: #078976;
     --blue: #118AB2;
+    --light-blue: #87c3d7;
+    --dark-blue: #0c637f;
     --purple: #960D92;
+    --light-purple: #c985c7;
+    --dark-purple: #4f246f;
     --dark: #073B4C;
     --light: #FCFCFC;
 }

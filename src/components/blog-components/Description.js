@@ -16,7 +16,11 @@ const Description = ( {description, tags} ) => {
                 (tags !== undefined && tags.length !== 0) && 
                     <div className='tag-container'>
                         {
-                            tags.map(tag => <Tag content={tag} />)
+                            tags.map(tag => 
+                                <Tag 
+                                    text={tag.trim().toLowerCase()} 
+                                    href={"/tags/"+tag.trim().toLowerCase().replaceAll(' ', '-')} />
+                            )
                         }
                     </div>
             }

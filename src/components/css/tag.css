@@ -11,9 +11,9 @@
     text-decoration: none;
     transition: color 0.2s;
     font-family: 'Noto Sans', 'Noto Sans SC', Arial, Helvetica, sans-serif;
-  }
-  
-  .tag::before {
+}
+
+.tag::before {
     background: var(--light);
     border-radius: 10px;
     box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
@@ -23,9 +23,9 @@
     position: absolute;
     width: 6px;
     top: 10px;
-  }
-  
-  .tag::after {
+}
+
+.tag::after {
     background: var(--light);
     border-bottom: 13px solid transparent;
     border-left: 10px solid #eee;
@@ -34,14 +34,104 @@
     position: absolute;
     right: 0;
     top: 0;
-  }
-  
-  .tag:hover {
-    background-color: var(--red);
+}
+
+.tag:hover {
+    background-color: var(--dark);
     color: white;
     cursor: pointer;
-  }
-  
-  .tag:hover::after {
-     border-left-color: var(--red); 
-  }
+}
+
+.tag:hover::after {
+    border-left-color: var(--dark);
+}
+
+.tag-red {
+    background-color: var(--light-red);
+    color: var(--light);
+}
+.tag-red::after {
+    border-left: 10px solid var(--light-red);
+}
+.tag-red:hover {
+    background-color: var(--red);
+    color: var(--light);
+}
+.tag-red:hover::after {
+    border-left-color: var(--red);
+}
+
+.tag-orange {
+    background-color: var(--light-orange);
+    color: white;
+}
+.tag-orange::after {
+    border-left: 10px solid var(--light-orange);
+}
+.tag-orange:hover {
+    background-color: var(--orange);
+    color: var(--light);
+}
+.tag-orange:hover::after {
+    border-left-color: var(--orange);
+}
+
+.tag-yellow {
+    background-color: var(--light-yellow);
+    color: #999;
+}
+.tag-yellow::after {
+    border-left: 10px solid var(--light-yellow);
+}
+.tag-yellow:hover {
+    background-color: var(--yellow);
+    color: var(--light);
+}
+.tag-yellow:hover::after {
+    border-left-color: var(--yellow);
+}
+
+.tag-green {
+    background-color: var(--light-green);
+    color: #999;
+}
+.tag-green::after {
+    border-left: 10px solid var(--light-green);
+}
+.tag-green:hover {
+    background-color: var(--green);
+    color: var(--light);
+}
+.tag-green:hover::after {
+    border-left-color: var(--green);
+}
+
+.tag-blue {
+    background-color: var(--light-blue);
+    color: var(--light);
+}
+.tag-blue::after {
+    border-left: 10px solid var(--light-blue);
+}
+.tag-blue:hover {
+    background-color: var(--blue);
+    color: var(--light);
+}
+.tag-blue:hover::after {
+    border-left-color: var(--blue);
+}
+
+.tag-purple {
+    background-color: var(--light-purple);
+    color: var(--light);
+}
+.tag-purple::after {
+    border-left: 10px solid var(--light-purple);
+}
+.tag-purple:hover {
+    background-color: var(--purple);
+    color: var(--light);
+}
+.tag-purple:hover::after {
+    border-left-color: var(--purple);
+}

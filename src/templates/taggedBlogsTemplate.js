@@ -20,7 +20,7 @@ const TaggedBlogsTemplate = (props) => {
                 </a>
                 
                 <div className="tagged-blogs-template-tag-name">
-                    { "Tag: " + props.pageContext.tag }
+                    { "Tag - " + props.pageContext.tag }
                 </div>
                 <ArticleListView edges={ props.data.allMarkdownRemark.edges }/>
             </div>

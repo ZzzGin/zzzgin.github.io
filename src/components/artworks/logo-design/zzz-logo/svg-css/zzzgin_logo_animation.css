@@ -20,6 +20,15 @@
     color: #404040;
 }
 
+.loss-number-404 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: min(3vw, 30px);
+    color: #404040;
+}
+
 .circle-container {
     width: 100%;
     padding-bottom: 100%;
