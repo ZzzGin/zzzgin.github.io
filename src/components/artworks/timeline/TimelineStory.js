@@ -44,7 +44,7 @@ const TimelineStory = (props) => {
             zoomKey: "ctrlKey",
             zoomMax: 1000*60*60*24*365*5,
             zoomMin: 1000*60*60*24*7,
-            maxHeight: "40vh",
+            maxHeight: "50vh",
             start: start.setDate(start.getDate()-45),
             end: end.setDate(end.getDate()+15)
         };

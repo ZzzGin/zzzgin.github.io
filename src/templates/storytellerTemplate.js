@@ -2,6 +2,7 @@ import * as React from "react"
 import "@components/css/main.css"
 import Navbar from "@components/blog-components/Navbar"
 import TimelineStory from "@components/artworks/timeline/TimelineStory";
+import Description from "../components/blog-components/Description"
 import { Helmet } from "react-helmet"
 
 const StorytellerTemplate = (props) => {
@@ -15,6 +16,7 @@ const StorytellerTemplate = (props) => {
             <Navbar />
             <div className="timeline-story-container" style={{zIndex: 10}}>
                 <div className="timeline-story-title">{content.title}</div>
+                <Description description={content.description} tags={[]}/>
                 <TimelineStory
                     groups={ content.groups }
                     events={ sorterEvents }

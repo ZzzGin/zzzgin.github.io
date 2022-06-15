@@ -118,7 +118,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
     storytellerJsonFiles.forEach(edge => {
         createPage({
-            path: `/storyteller/${edge.node.name}`,
+            path: `/timeline/${edge.node.name}`,
             component: storytellerTemplate,
             context: {
                 content: edge.node.internal.content

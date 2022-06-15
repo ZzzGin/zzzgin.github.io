@@ -7,8 +7,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `storytellers`,
-        path: `${__dirname}/src/pages/storytellers/`,
+        name: `timelines`,
+        path: `${__dirname}/src/pages/timeline/`,
       },
     },
     {

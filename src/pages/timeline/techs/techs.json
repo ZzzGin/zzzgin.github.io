@@ -1,5 +1,6 @@
 {
-    "title": "Storyteller - Techs",
+    "title": "Timeline - Techs",
+    "description": "TRACKING news of big Techs. NOTE: everything listed down are purely coincident and are limited by my own experience - they appeared in my news feeds, social media, or in a discussion with my friends or coworkers so they were noted down. Zero guarantee of authenticity. Feel free to verify by yourself by checking the sources I provided or find your own sources.",
     "groups": [
         {"id": "g-amazon", "content": "Amazon", "tag": "Amazon"},
         {"id": "g-apple", "content": "Apple", "tag": "Apple"},
@@ -261,7 +262,8 @@
             "color": "blue"
         },
         {
-            "start": "2022-06-13", 
+            "start": "2022-06-12",
+            "end": "2022-06-13", 
             "group": "g-amazon", 
             "title": "Stop Unionization", 
             "desription": "As Amazon prepares to argue that the union victory in Staten Island should be overturned, employees around the country are accusing the company of using illegal anti-union tactics", 
@@ -272,7 +274,7 @@
         },
         {
             "start": "2022-06-13", 
-            "group": "g-other", 
+            "group": "g-others", 
             "title": "Coinbase: Lay Off", 
             "desription": "The company said Tuesday it will reduce its workforce by 1,100 employees, or about 18% of its staff, as part of its efforts to manage operating expenses. In a letter to all employees, Chief Executive Brian Armstrong said “our employee costs are too high to effectively manage this uncertain market.”", 
             "links": [
@@ -283,7 +285,7 @@
         },
         {
             "start": "2022-06-14", 
-            "group": "g-other", 
+            "group": "g-others", 
             "title": "Redfin: Lay Off", 
             "desription": "Seattle-based Redfin will lay off 8% of its employees as the housing market cools off and its share price tanks. “With May demand 17% below expectations, we don’t have enough work for our agents and support staff, and fewer sales leaves us with less money for headquarters projects,” CEO Glenn Kelman wrote Thursday in a message to employees that was also posted on the company’s blog.", 
             "links": [
@@ -293,6 +295,7 @@
         },
         {
             "start": "2022-06-13", 
+            "end": "2022-06-14",
             "group": "g-amazon", 
             "title": "Buying Land", 
             "desription": "Amazon Builds Property Empire, Quietly Buying Land Across the US. The company has spent billions of dollars on real estate it plans to use for a new generation of multi-story warehouses. Now online sales growth is slowing.", 

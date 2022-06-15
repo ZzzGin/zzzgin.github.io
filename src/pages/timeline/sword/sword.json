@@ -1,0 +1,90 @@
+{
+    "title": "Timeline - Sword of Damocles",
+    "description": "INTENSE emotion in social media is the Sword of Damocles. So I want to ‘timeline’ it. NOTE: everything listed down are purely coincident and are biased because of my own limitation - they appeared in my news feeds, social media, or in a discussion with my friends or coworkers so they were noted down. Zero guarantee of authenticity. Feel free to verify by yourself by checking the sources I provided or find your own sources.",
+    "groups": [
+        {"id": "g-pek", "content": "PEK", "tag": "PEK"},
+        {"id": "g-iad", "content": "IAD", "tag": "IAD"}
+    ],
+    "events": [
+        {
+            "start": "2022-03-21", 
+            "group": "g-pek", 
+            "title": "MU5735 Crash", 
+            "desription": "China Eastern Airlines Flight 5735 crashed in Teng County, Wuzhou, Guangxi Zhuang Autonomous Region, killing all 123 passengers and 9 crew members.",
+            "links": [
+                "https://en.wikipedia.org/wiki/China_Eastern_Airlines_Flight_5735"
+            ], 
+            "color": "red"
+        },
+        {
+            "start": "2022-02-12", 
+            "group": "g-pek", 
+            "title": "Bus Explosion", 
+            "desription": "Bus No.232 exploded in Shenyang, killing 1, 2 serious injured and 40 injured.",
+            "links": [
+                "https://news.sina.com.cn/c/2022-02-12/doc-ikyakumy5607999.shtml"
+            ], 
+            "color": "red"
+        },
+        {
+            "start": "2022-04-10", 
+            "group": "g-pek", 
+            "title": "Shanghai Sound Recording", 
+            "desription": "A disturbing sound recording of a debate between a family and one epidemic prevention agent was released.",
+            "links": [
+                "https://www.youtube.com/watch?v=qQ8e4cgv5Po"
+            ], 
+            "color": "blue"
+        },
+        {
+            "start": "2022-05-11", 
+            "group": "g-pek", 
+            "title": "“The Final Generation”", 
+            "desription": "In Shanghai, a video recording was release about a debate between a young couple and epidemic prevention agents. The agent claimed that if this young couple don't obey, it would be recorded and would impact their next 3 generations in a bad way. The young couple argued: “this will be our final generation”.",
+            "links": [
+                "https://www.youtube.com/watch?v=fLJHfMGtdJQ"
+            ], 
+            "color": "blue"
+        },
+        {
+            "start": "2022-06-10", 
+            "group": "g-pek", 
+            "title": "Assault of Women at Restaurant", 
+            "desription": "CCTV footage from the restaurant showed a man making advances on a woman in the group in Tangshan, northern Hebei province, which the woman rebuffed several times. A violent brawl involving other men ensued. ",
+            "links": [
+                "https://www.abc.net.au/news/2022-06-13/china-women-assaulted-increased-police-patrols-investigations/101148298"
+            ], 
+            "color": "blue"
+        },
+        {
+            "start": "2022-06-14", 
+            "group": "g-pek", 
+            "title": "Red Health Code Abusing", 
+            "desription": "People who have arrived in Zhengzhou to withdraw money from embattled regional banks said they have found their health codes turn red — a label mostly reserved for potential COVID-19 carriers or those infected with the virus — after arriving in Henan province’s provincial capital, prohibiting them from accessing transportation networks, public services, and even going to the banks to lodge their grievances.",
+            "links": [
+                "https://www.sixthtone.com/news/1010547/henan-bank-depositors-hit-with-red-health-codes#:~:text=People%20who%20have%20arrived%20in,capital%2C%20prohibiting%20them%20from%20accessing"
+            ], 
+            "color": "blue"
+        },
+        {
+            "start": "2022-06-04", 
+            "group": "g-pek", 
+            "title": "Li Jiaqi Fall", 
+            "desription": "On June 3, Austin Li, a 30-year-old livestreamer with over 60 million followers on the Alibaba-owned e-commerce platform Taobao, abruptly cut off a stream after a tank-shaped ice cream dessert appeared on the screen. While he later posted that it was due to “technical difficulties,” most people understand it as having triggered government censors, who interpreted it as a reference to the anniversary of the June 4 Tiananmen Square protests and massacre. Li isn’t known to have been arrested, and his account remains active, but he hasn’t streamed or posted on social media since that day. Fans and observers suspect he may not be allowed to stream again. ",
+            "links": [
+                "https://www.technologyreview.com/2022/06/10/1053598/austin-li-jiaqi-china-biggest-online-influencers-fell/"
+            ], 
+            "color": "blue"
+        },
+        {
+            "start": "2022-05-24", 
+            "group": "g-iad", 
+            "title": "Texas School Shooting", 
+            "desription": "On May 24, 2022, 18-year-old Salvador Ramos fatally shot nineteen students and two teachers and wounded seventeen other people at Robb Elementary School in Uvalde, Texas United States. Earlier in the day, he shot his grandmother in the forehead at home, severely wounding her. Outside the school, he fired shots for approximately five minutes[4] before entering unobstructed with an AR-15 style rifle through an unlocked side-entrance door. He then locked himself inside two adjoining classrooms, killed nineteen students and two teachers, and remained there for more than an hour before members of a United States Border Patrol Tactical Unit (BORTAC) fatally shot him.[5] The shooting was the third-deadliest school shooting in the United States, after the Virginia Tech shooting in 2007 and the Sandy Hook Elementary School shooting in 2012,[6] and the deadliest in Texas.[7]",
+            "links": [
+                "https://en.wikipedia.org/wiki/Robb_Elementary_School_shooting"
+            ], 
+            "color": "red"
+        }
+    ]
+}
