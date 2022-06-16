@@ -226,3 +226,38 @@ Transaction is for Most-up-to-date, 5 steps to perform a transaction:
 
 **When we want to increment or decrement a value, we need to use transaction.**
 
+## Offline Support
+> On Andriod and iOS devices, offline support is enabled by default.
+### Read
+The offline mode for read works in Firestore likes following:
+1. [online] You queried Firestore for the top 30 sushi restaurants in SF sorted by price
+2. [online] You queried for the top 30 burger restaurants in SF sorted by price
+3. [offline] now you can still query for top 30 restaurants in SF sorted by rating. This query will work across the cache data.
+
+### Write
+When you make a change to a document, that data will be store on the local device and whether you are online or not, you data will immediately give you the appearence that your change has gone into effect. Any real-time listeners that are watching this data will trigger with your updated data.
+
+By the meantime Firebase will take your change and attempt to send it to the server. After you are online, Firebase library will update your data for reals, and will remove that pending write.
+
+As a summary, offline write will be queued and will be replayed when device goes online. If multiple devices are writing the same document, last write (to the server, even it actually happened before the other) will be applied.
+
+### Notes:
+1. Firebase library for web is not enabled for offline support by default
+2. The callback function of `collection.add()` will not be triggered when it's in offline mode, because your app is still waiting for the response from the server. When use Firebase, because it has a cache, we don't need to add a callback to handle the fresh data.
+3. Transaction will fail in offline mode
+4. Offline cache is not indexed so the query will take some time.
+5. The default behavior is good enough to ensure a good offline experience.
+
+## Realtime Support
+> The main takeaway here is that you should start thinking of realtime as your default behavior, then only switch to one-time fetch call only when you have a good reason to make that change.
+
+## Cloud Function
+> When an database action is fired, you can hook a cloud function to this action and execute some custom logic.
+### Why?
+1. With cloud function, "backend logic" is hosted at the backend (instead of managed by client). So you can easily update it by deploying to backend instead of updating client application;
+2. Clients are not trustworthy;
+
+### Notes:
+1. Infinite loop: when you have a cloud function executed `onChange()`, and in this function you modify the data, the same function will be triggered again.
+2. admin serverside sdk will bypass the security rules.
+3. Lazy import is preferred because otherwise all of your cloud function will load those library
