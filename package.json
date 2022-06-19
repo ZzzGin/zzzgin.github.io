@@ -14,7 +14,6 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "deploy": "npm run build && gh-pages -d public",
-    "newpost": "node npm-script-create-post.js",
     "newblog": "node ./src/automation/npm-script-newblog.js",
     "newreading": "node ./src/automation/npm-script-newreading.js",
     "newevent": "node ./src/automation/npm-script-newevent.js"

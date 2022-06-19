@@ -46,6 +46,8 @@ featuredimageAlt: ""
 \`\`\`toc
 \`\`\`
 
+## Hello
+Wow, a fresh new post!
 `;
 
     try {
