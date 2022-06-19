@@ -1,1 +1,0 @@
-{"version":3,"file":"component---src-pages-404-js-06cdb2023491fe9ab968.js","mappings":"6IAQA,UANqB,WACnB,OACE","sources":["webpack://zzzgin.github.io/./src/pages/404.js"],"sourcesContent":["import * as React from \"react\"\n\nconst NotFoundPage = () => {\n  return (\n    <div>404</div>\n  )\n}\n\nexport default NotFoundPage\n"],"names":[],"sourceRoot":""}
