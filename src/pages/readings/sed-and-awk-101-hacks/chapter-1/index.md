@@ -3,7 +3,7 @@ path: "/readings/sed-and-awk-101-hacks-chapter-1"
 date: "2022-06-17T04:44:22.163Z"
 title: "Sed and Awk 101 Hacks: CP1 - Sed Syntax and Basic Commands"
 description: "Sed Syntax and Basic Commands"
-tags: ["readings", "sed and awk 101 hacks", "bash"]
+tags: ["readings", "sed and awk 101 hacks", "bash", "sed"]
 featuredimage: images/WeChatb331b396ed023d353af549c37da62749.png
 featuredimageAlt: "Sed Flow"
 ---
