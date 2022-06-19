@@ -16,7 +16,8 @@
     "deploy": "npm run build && gh-pages -d public",
     "newpost": "node npm-script-create-post.js",
     "newblog": "node ./src/automation/npm-script-newblog.js",
-    "newreading": "node ./src/automation/npm-script-newreading.js"
+    "newreading": "node ./src/automation/npm-script-newreading.js",
+    "newevent": "node ./src/automation/npm-script-newevent.js"
   },
   "dependencies": {
     "@dschau/create-gatsby-blog-post": "^1.1.0",
@@ -51,6 +52,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-use": "^17.3.2",
+    "readline-sync": "^1.4.10",
     "vis-timeline": "^7.5.1"
   }
 }
