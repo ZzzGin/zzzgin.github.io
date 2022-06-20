@@ -351,6 +351,16 @@
 				"https://www.wired.com/story/first-apple-store-union-towson/"
 			],
 			"color": "green"
+		},
+		{
+			"start": "2022-06-19",
+			"group": "g-tesla",
+			"title": "3 Rockets in 36H",
+			"desription": "SpaceX has successfully completed three Falcon 9 launches in just over 36 hours, highlighting the company’s continuous push towards ever-higher launch cadences in 2022.",
+			"links": [
+				"https://www.teslarati.com/spacex-three-falcon-9-rocket-launches-36-hours/"
+			],
+			"color": "green"
 		}
 	]
 }
