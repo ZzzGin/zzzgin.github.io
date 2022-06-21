@@ -27,6 +27,7 @@
     "@react-icons/all-files": "^4.1.0",
     "animejs": "^3.2.1",
     "browser-monads": "^1.0.0",
+    "crypto-js": "^4.1.1",
     "gatsby": "^4.13.0",
     "gatsby-plugin-catch-links": "^4.13.0",
     "gatsby-plugin-image": "^2.13.0",
@@ -50,6 +51,7 @@
     "puppeteer": "^14.1.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-markdown": "^8.0.3",
     "react-use": "^17.3.2",
     "readline-sync": "^1.4.10",
     "vis-timeline": "^7.5.1"

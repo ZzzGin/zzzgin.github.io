@@ -10,3 +10,8 @@ featuredimageAlt: "brief"
 
 ## Idea
 ![idea](images/WeChatec11220bcea4925a002d645f78b3f876.png)
+
+## Proof of Concept
+Type "secret" in the input box to decypher the blog.
+
+https://zzzgin.github.io/artworks/playground/encrypted-blog
