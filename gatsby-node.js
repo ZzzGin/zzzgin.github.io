@@ -95,7 +95,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const storytellerTemplate = path.resolve(`src/templates/storytellerTemplate.js`);
     const fetchStorytellersResult = await graphql(`
     query FetchStorytellers {
-        allFile(filter: {ext: {eq: ".json"}}) {
+        allFile(filter: {sourceInstanceName: {eq: "timelines"}}) {
           edges {
             node {
               absolutePath

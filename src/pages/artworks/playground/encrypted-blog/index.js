@@ -37,6 +37,7 @@ What a **nice day**.`;
 
     return (
       <>
+        <div>Cipher is: "secret".</div>
         <input type="password" onChange={handleChange}></input>
         <ReactMarkdown children={md} className="blog-post-content"></ReactMarkdown>
       </>
