@@ -32,5 +32,6 @@ https://zzzgin.github.io/artworks/playground/encrypted-blog
         }
         ```
     2. An `input` element to take the user cipher
-2. change in `gatsby-node` to create pages for private blogs
-3. merge tags
+2. automation script to transfer markdown to the json, then transfer back.
+3. change in `gatsby-node` to create pages for private blogs
+4. merge tags
