@@ -109,8 +109,8 @@ Application 2 heavily depends on AWS services. Its clients push messages into SN
 * SQS: $2427.15
     * Note: one request one message
 * S3: 
-    * Amazon Simple Storage Service Requests-Tier1: $0.005 per 1,000 PUT, COPY, POST, or LIST requests1,052,492.000 Requests - $5.26
-    * Amazon Simple Storage Service Requests-Tier2: $0.004 per 10,000 GET and all other requests956,677.000 Requests - $0.38
+    * Amazon Simple Storage Service Requests-Tier1: 0.005 per 1,000 PUT, COPY, POST, or LIST requests1,052,492.000 Requests - $5.26
+    * Amazon Simple Storage Service Requests-Tier2: 0.004 per 10,000 GET and all other requests956,677.000 Requests - $0.38
     * Storage: 85,875.333 GB-Mo - $1940.46/month
 * In total: $59011.99/month
 
