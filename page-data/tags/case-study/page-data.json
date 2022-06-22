@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-tagged-blogs-template-js",
     "path": "/tags/case-study",
-    "result": {"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"date":"June 21, 2022","featuredimage":null,"description":"Case study on services previously worked on. No garantee on the accuracy.","featuredimageAlt":"","path":"/blogs/backend-services-case-study","tags":["blog","case study","software"],"title":"Backend Services Case Study"}}}]}},"pageContext":{"tag":"case study"}},
+    "result": {"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"date":"June 21, 2022","featuredimage":null,"description":"Case study on several services. No garantee on the accuracy.","featuredimageAlt":"","path":"/blogs/backend-services-case-study","tags":["blog","case study","experience"],"title":"Cases Study on Backend Services"}}}]}},"pageContext":{"tag":"case study"}},
     "staticQueryHashes": []}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tagged-blogs-template-js",
+    "path": "/tags/experience",
+    "result": {"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"date":"June 21, 2022","featuredimage":null,"description":"Case study on several services. No garantee on the accuracy.","featuredimageAlt":"","path":"/blogs/backend-services-case-study","tags":["blog","case study","experience"],"title":"Cases Study on Backend Services"}}},{"node":{"frontmatter":{"date":"June 21, 2022","featuredimage":null,"description":"When we audit a backend service, what aspects should we look at?","featuredimageAlt":"","path":"/blogs/aspects-of-software-system-auditing-backend","tags":["blog","experience","microservice"],"title":"Aspects of Software System Auditing - Backend"}}}]}},"pageContext":{"tag":"experience"}},
+    "staticQueryHashes": []}
