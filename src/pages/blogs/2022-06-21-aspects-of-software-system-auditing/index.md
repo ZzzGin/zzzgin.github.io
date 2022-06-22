@@ -3,7 +3,7 @@ path: "/blogs/aspects-of-software-system-auditing-backend"
 date: "2022-06-21T20:12:36.636Z"
 title: "Aspects of Software System Auditing - Backend"
 description: "When we audit a backend service, what aspects should we look at?"
-tags: ["blog","software","micro service"]
+tags: ["blog","experience","microservice"]
 featuredimage: 
 featuredimageAlt: ""
 ---

@@ -1,9 +1,9 @@
 ---
 path: "/blogs/backend-services-case-study"
 date: "2022-06-21T22:28:44.146Z"
-title: "Backend Services Case Study"
-description: "Case study on services previously worked on. No garantee on the accuracy."
-tags: ["blog","case study","software"]
+title: "Cases Study on Backend Services"
+description: "Case study on several services. No garantee on the accuracy."
+tags: ["blog","case study","experience"]
 featuredimage: 
 featuredimageAlt: ""
 ---
@@ -66,7 +66,7 @@ There are 3 main regions of this application.
     * RCU/s: ~0
     * Billing: $162/month
 
-## Application 2 - A AWS-Heavy Application
+## Application 2 - AWS-Heavy Application
 
 ### Overview
 Application 2 heavily depends on AWS services. Its clients push messages into SNS-SQS input buffer, then application 2 fetches messages from SQS and do aggregation on the message then push to different destination in AWS.

@@ -361,6 +361,26 @@
 				"https://www.teslarati.com/spacex-three-falcon-9-rocket-launches-36-hours/"
 			],
 			"color": "green"
+		},
+		{
+			"start": "2022-06-21",
+			"group": "g-microsoft",
+			"title": "Copilot Goes Public",
+			"desription": "Do you want to start using GitHub Copilot today? Get started with a 60-day free trial, and check out our pricing plans. It’s free to use for verified students and maintainers of popular open source software.",
+			"links": [
+				"https://github.blog/2022-06-21-github-copilot-is-generally-available-to-all-developers/"
+			],
+			"color": "green"
+		},
+		{
+			"start": "2022-06-22",
+			"group": "g-google",
+			"title": "Health Care",
+			"desription": "Alphabet is spending billions to become a force in health care. Yet it is Alphabet, Google’s corporate parent, whose health-care ambitions seem to be the most vaulting. Between 2019 and 2021 Alphabet’s venture-capital arms, Google Ventures and Gradient Ventures, and its private-equity unit, CapitalG, made about 100 deals, a quarter of Alphabet’s combined total, in life sciences and health care.",
+			"links": [
+				"https://www.economist.com/business/2022/06/20/alphabet-is-spending-billions-to-become-a-force-in-health-care"
+			],
+			"color": "blue"
 		}
 	]
 }
