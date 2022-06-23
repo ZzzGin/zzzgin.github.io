@@ -1,25 +1,59 @@
 {
-    "title": "Timeline - Curiosity",
-    "description": "Interesting things. Take a note here for future read.",
-    "groups": [
-        {"id": "g-hn", "content": "Hacker News", "tag": "Hacker News"},
-        {"id": "g-eco", "content": "Economist", "tag": "Economist"},
-        {"id": "g-wired", "content": "Wired", "tag": "Wired"},
-        {"id": "g-bb", "content": "Bloomberg", "tag": "Bloomberg"},
-        {"id": "g-mtr", "content": "MIT", "tag": "MIT Technology Review"},
-        {"id": "g-others", "content": "Others", "tag": "Others"}
-    ],
-    "events": [
-        {
-            "start": "2022-06-18", 
-            "group": "g-hn", 
-            "title": "SIM CB", 
-            "desription": "You are the top banker in charge of the central bank. Your role is to maximize economic potential by putting the right amount of money in circulation, to increase the GDP of your village: the number of apples it produces. Your only lever changes the central bank interest rate. Good luck!",
-            "links": [
-                "https://benoitessiambre.com/macro.html",
-                "https://benoitessiambre.com/simcb.html"
-            ], 
-            "color": "blue"
-        }
-    ]
+	"title": "Timeline - Curiosity",
+	"description": "Interesting things. Take a note here for future read.",
+	"groups": [
+		{
+			"id": "g-hn",
+			"content": "Hacker News",
+			"tag": "Hacker News"
+		},
+		{
+			"id": "g-eco",
+			"content": "Economist",
+			"tag": "Economist"
+		},
+		{
+			"id": "g-wired",
+			"content": "Wired",
+			"tag": "Wired"
+		},
+		{
+			"id": "g-bb",
+			"content": "Bloomberg",
+			"tag": "Bloomberg"
+		},
+		{
+			"id": "g-mtr",
+			"content": "MIT",
+			"tag": "MIT Technology Review"
+		},
+		{
+			"id": "g-others",
+			"content": "Others",
+			"tag": "Others"
+		}
+	],
+	"events": [
+		{
+			"start": "2022-06-18",
+			"group": "g-hn",
+			"title": "SIM CB",
+			"desription": "You are the top banker in charge of the central bank. Your role is to maximize economic potential by putting the right amount of money in circulation, to increase the GDP of your village: the number of apples it produces. Your only lever changes the central bank interest rate. Good luck!",
+			"links": [
+				"https://benoitessiambre.com/macro.html",
+				"https://benoitessiambre.com/simcb.html"
+			],
+			"color": "blue"
+		},
+		{
+			"start": "2022-06-23",
+			"group": "g-hn",
+			"title": "Stack Overflow Dev Servey 2022",
+			"desription": "The questions we ask in our annual survey help us improve the Stack Overflow community and the platform that serves them. The challenge and opportunity for us is to continue expanding and improving our ability to help all developers and to make them feel welcome in our community. Read on for more great insights about the attitudes, tools, and environments that are shaping the art and practice of software today.",
+			"links": [
+				"https://survey.stackoverflow.co/2022/"
+			],
+			"color": "green"
+		}
+	]
 }

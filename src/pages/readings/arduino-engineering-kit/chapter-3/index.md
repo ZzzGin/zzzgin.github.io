@@ -1,9 +1,9 @@
 ---
-path: "/readings/arduino-engineering-kit-chapter-3"
+path: "/readings/arduino-engineering-kit-chapter-3-1"
 date: "2022-06-23T04:23:22.825Z"
-title: "Arduino Engineering Kit: CP3 - MECHATRONICS"
-description: "Go through a detailed explanation about the various electronic components such as DC Motors IMU Sensors, Servo motors PWM signals, Li-Po batteries and key mechatronic concepts such as motor characteristization and designing a control system."
-tags: ["readings","arduino engineering kit"]
+title: "Arduino Engineering Kit: CP3.1 - MECHATRONICS: DC Motors"
+description: "DC motors are an integral component in all the projects included in this Kit and therefore its good to know the technical details of the subcomponents and the underlying electronic concepts used to run the DC motor."
+tags: ["readings","arduino engineering kit", "dc motor"]
 featuredimage: images/WeChat516bdf43af2c57bd52e4b4e56c01f31c.png
 featuredimageAlt: "kit components"
 ---
