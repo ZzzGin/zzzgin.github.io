@@ -381,6 +381,16 @@
 				"https://www.economist.com/business/2022/06/20/alphabet-is-spending-billions-to-become-a-force-in-health-care"
 			],
 			"color": "blue"
+		},
+		{
+			"start": "2022-06-24",
+			"group": "g-amazon",
+			"title": "CodeWhisperer",
+			"desription": "Amazon CodeWhisperer is a machine learning (ML)–powered service that helps improve developer productivity by generating code recommendations based on their comments in natural language and code in the integrated development environment (IDE).",
+			"links": [
+				"https://aws.amazon.com/codewhisperer/"
+			],
+			"color": "green"
 		}
 	]
 }
