@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tagged-blogs-template-js",
+    "path": "/tags/bash",
+    "result": {"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"date":"June 11, 2022","featuredimage":null,"description":"TO track the current status of my case in USCIS, here is the command I used for curl USCIS static website every 5 mins and print in CLI.","featuredimageAlt":null,"path":"/blogs/bash-shortcut-for-uscis-curling","tags":["blog","bash"],"title":"Bash Shortcut For Static Website Curling"}}}]}},"pageContext":{"tag":"bash"}},
+    "staticQueryHashes": []}

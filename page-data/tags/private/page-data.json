@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tagged-blogs-template-js",
+    "path": "/tags/private",
+    "result": {"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"date":"June 25, 2022","featuredimage":null,"description":"How to use password to protect blogs in a static website framework, like Gatsby? The cypher of this blog is \"secret\".","featuredimageAlt":"","path":"/private-blog/password-protected-blog-in-gatsby","tags":["blog","private","gatsby"],"title":"Password Protected Blog In Gatsby"}}}]}},"pageContext":{"tag":"private"}},
+    "staticQueryHashes": []}
