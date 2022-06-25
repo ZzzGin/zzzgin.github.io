@@ -2,8 +2,9 @@ import * as React from "react"
 import { useState } from "react";
 import ReactMarkdown from 'react-markdown'
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import anime from 'animejs';
 import "@components/css/github-markdown.css";
+import "@components/css/blog-post.css";
+import anime from 'animejs';
 
 const EncryptedMarkdown = (props) => {
 
@@ -57,13 +58,11 @@ const EncryptedMarkdown = (props) => {
       <input
         style={{
           color: `var(--${color})`,
-          fontSize: "1.6rem",
-          fontWeight: 700,
-          marginBottom: "1rem",
           border: `2px solid var(--${color})`,
-          borderRadius: "4px"
         }}
-        type="password" onChange={handleChange}>
+        type="password" 
+        onChange={handleChange} 
+        className="pw-input">
       </input>
       <ReactMarkdown
         children={md}

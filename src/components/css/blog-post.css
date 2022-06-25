@@ -162,3 +162,18 @@ li > p {
 code {
     font-size: 1rem !important;
 }
+
+input.pw-input {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+input.pw-input:hover {
+    box-shadow: 0 0 6px;
+}
+
+input.pw-input:focus {
+    box-shadow: 0 0 8px;
+}
