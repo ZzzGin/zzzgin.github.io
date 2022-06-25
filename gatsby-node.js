@@ -11,9 +11,10 @@ exports.onCreateWebpackConfig = ({ actions }) => {
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
     const { createPage } = actions
-
+    var CryptoJS = require("crypto-js");
     // Create markdown posts
-    const blogPostTemplate = path.resolve(`src/templates/mdTemplate.js`)
+    const blogPostTemplate = path.resolve(`src/templates/mdTemplate.js`);
+    const encryptedBlogTemplate = path.resolve(`src/templates/privateBlogTemplate.js`);
     const result = await graphql(`
         {
         allMarkdownRemark(
@@ -21,12 +22,16 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             limit: 1000
         ) {
             edges {
-            node {
-                frontmatter {
-                path
-                tags
+                node {
+                    frontmatter {
+                        path
+                        tags
+                        password
+                    }
+                    internal {
+                        content
+                    }
                 }
-            }
             }
         }
         }
@@ -38,17 +43,32 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
     const posts = result.data.allMarkdownRemark.edges;
 
+    
+
     posts.forEach(({ node }, index) => {
-        const prev = index === 0 ? null : posts[index - 1].node;
-        const next = index === posts.length - 1 ? null : posts[index + 1].node;
-        createPage({
-            path: node.frontmatter.path,
-            component: blogPostTemplate,
-            context: {
-                prev,
-                next
-            }
-        })
+        if (node.frontmatter.tags && node.frontmatter.tags.includes("private")){
+            
+            
+            createPage({
+                path: node.frontmatter.path,
+                component: encryptedBlogTemplate,
+                context: {
+                    content: CryptoJS.AES.encrypt(node.internal.content, node.frontmatter.password).toString()
+                }
+            })
+        }
+        else {
+            const prev = index === 0 ? null : posts[index - 1].node;
+            const next = index === posts.length - 1 ? null : posts[index + 1].node;
+            createPage({
+                path: node.frontmatter.path,
+                component: blogPostTemplate,
+                context: {
+                    prev,
+                    next
+                }
+            })
+        }
     });
 
     // create tag specific pages
@@ -129,13 +149,13 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
 exports.onCreateNode = async ({ node, loadNodeContent, actions }) => {
     if (node.ext !== ".json") return;
-  
+
     // Ensure Gatsby loads the item into memory so that its
     // content becomes available in the GraphQL File node
     try {
         const nodeContent = await loadNodeContent(node);
         actions.createNodeField({ node, name: `contentLoaded`, value: nodeContent });
     } catch (error) {
-      console.error(error);
+        console.error(error);
     }
-  };
+};

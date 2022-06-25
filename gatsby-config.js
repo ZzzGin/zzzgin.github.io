@@ -7,6 +7,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `privateblogs`,
+        path: `${__dirname}/src/pages/private-blogs/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `timelines`,
         path: `${__dirname}/src/pages/timeline/`,
       },
