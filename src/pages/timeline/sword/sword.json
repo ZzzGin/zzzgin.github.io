@@ -134,6 +134,18 @@
 				"https://www.technologyreview.com/2022/06/18/1054452/china-censors-social-media-comments/"
 			],
 			"color": "blue"
+		},
+		{
+			"start": "2022-06-24",
+			"group": "g-iad",
+			"title": "Roe v. Wade Reversal",
+			"desription": "The Supreme Court has overturned Roe v. Wade, wiping out the constitutional right to an abortion in the US. Roughly 33 million child bearing women are set to lose access to the procedure in their home states.",
+			"links": [
+				"https://www.bloomberg.com/graphics/2022-supreme-court-roe-v-wade-abortion-access/",
+				"https://www.supremecourt.gov/opinions/21pdf/19-1392_6j37.pdf",
+				"https://twitter.com/michelleobama/status/1540345715616006148?"
+			],
+			"color": "blue"
 		}
 	]
 }
