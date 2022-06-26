@@ -28,33 +28,21 @@ const ZzzLogoAnimation = () => {
             }
         ).add({
             scale: [0, 1],
-            endDelay: 3000
+            endDelay: 5000
         }).add({
             scale: 0.8,
             translateX: (el, i) => anime.random(-5, 5),
             translateY: (el, i) => anime.random(-10, 10),
         }).add({
             scale: 1,
-            translateX: (el, i) => anime.random(-10, 10),
-            translateY: (el, i) => anime.random(-20, 20),
-        }).add({
-            scale: 0.8,
             translateX: (el, i) => anime.random(-50, 50),
             translateY: (el, i) => anime.random(-100, 100),
         }).add({
-            scale: 1,
-            translateX: (el, i) => anime.random(-100, 100),
-            translateY: (el, i) => anime.random(-200, 200),
-        }).add({
             scale: 0.8,
-            translateX: (el, i) => anime.random(-200, 200),
-            translateY: (el, i) => anime.random(-450, 450),
-        }).add({
-            scale: 1,
             translateX: (el, i) => anime.random(-450, 450),
             translateY: (el, i) => anime.random(-900, 900),
         }).add({
-            scale: 0.8,
+            scale: 1,
             translateX: (el, i) => anime.random(-900, 900),
             translateY: (el, i) => anime.random(-1800, 1800),
         }).add({

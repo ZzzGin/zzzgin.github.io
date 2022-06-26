@@ -391,6 +391,26 @@
 				"https://aws.amazon.com/codewhisperer/"
 			],
 			"color": "green"
+		},
+		{
+			"start": "2022-06-16",
+			"group": "g-google",
+			"title": "Cult",
+			"desription": "\"I worked for Google for about three and a half years as a video producer. I was fired because I raised alarm about a doomsday cult that dominated my former team there.\"",
+			"links": [
+				"https://medium.com/@kwilliamlloyd/the-cult-in-google-3c1a910214d1"
+			],
+			"color": "blue"
+		},
+		{
+			"start": "2022-06-22",
+			"group": "g-others",
+			"title": "MindGeek: CEO Resign",
+			"desription": "Pornhub owner MindGeek has lost two high-level executives: CEO Feras Antoon and COO David Tassillo, as first reported by Variety. Their resignation comes shortly after The New Yorker released a scathing report detailing the holes in the company’s content moderation system, which has failed to address videos depicting underage and non-consenting individuals.",
+			"links": [
+				"https://www.theverge.com/2022/6/22/23178427/pornhub-owners-ceo-coo-resign-antoon-tassillo-mindgeek"
+			],
+			"color": "red"
 		}
 	]
 }

@@ -12,6 +12,7 @@ exports.onCreateWebpackConfig = ({ actions }) => {
 exports.createPages = async ({ actions, graphql, reporter }) => {
     const { createPage } = actions
     var CryptoJS = require("crypto-js");
+
     // Create markdown posts
     const blogPostTemplate = path.resolve(`src/templates/mdTemplate.js`);
     const encryptedBlogTemplate = path.resolve(`src/templates/privateBlogTemplate.js`);
@@ -43,12 +44,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
     const posts = result.data.allMarkdownRemark.edges;
 
-    
-
     posts.forEach(({ node }, index) => {
         if (node.frontmatter.tags && node.frontmatter.tags.includes("private")){
-            
-            
             createPage({
                 path: node.frontmatter.path,
                 component: encryptedBlogTemplate,

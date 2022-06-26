@@ -16,7 +16,7 @@ const StorytellerTemplate = (props) => {
             <Navbar />
             <div className="timeline-story-container" style={{zIndex: 10}}>
                 <div className="timeline-story-title">{content.title}</div>
-                <Description description={content.description} tags={[]}/>
+                <Description description={content.description} tags={["timeline"]}/>
                 <TimelineStory
                     groups={ content.groups }
                     events={ sorterEvents }

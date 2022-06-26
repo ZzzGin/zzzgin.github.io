@@ -4,6 +4,7 @@ module.exports = {
     siteUrl: `https://www.zzzgin.com`,
   },
   plugins: [
+    'gatsby-plugin-cname',
     {
       resolve: `gatsby-source-filesystem`,
       options: {

@@ -9,7 +9,10 @@ import "@components/css/main.css"
 const TagsManager = (props) => {
 
     const edges = props.data.allMarkdownRemark.edges;
-    let tags = {};
+
+    let tags = {
+        "timeline": props.data.allFile.edges.length
+    };
     edges.forEach(edge => {
         edge.node.frontmatter.tags.forEach(tag => {
             tag = tag.trim().toLowerCase();
@@ -82,6 +85,14 @@ query MyQuery {
                 }
             }
         }
+    }
+    allFile(
+        filter: {sourceInstanceName: {eq: "timelines"}}) {
+      edges {
+        node {
+          name
+        }
+      }
     }
 }
 `

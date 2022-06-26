@@ -4,5 +4,7 @@ export const tagColorMap = {
     "checkout dash b": "yellow",
     "mymanual": "green",
     "note": "blue",
-    "sandbox": "purple"
+    "sandbox": "purple",
+    "private": "dark",
+    "timeline": "red"
 };

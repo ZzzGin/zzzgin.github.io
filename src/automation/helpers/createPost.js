@@ -26,7 +26,7 @@ const createFolder = (root, subfolder) => {
 
 
 
-const createPost = (root, subfolder, title, path, tags) => {
+const createPost = (root, subfolder, title, path, tags, password=false) => {
 
     const creationDateTime = new Date();
     
@@ -41,14 +41,9 @@ description: ""
 tags: [${tags.map(el => `\"${el}\"`)}]
 featuredimage: 
 featuredimageAlt: ""
----
-
-\`\`\`toc
-\`\`\`
-
-## Hello
-Wow, a fresh new post!
-`;
+${password ? 
+    "password: \"\"\n---\n\n## Private Blog \nHey, don't forget to assign a password.\n" : 
+    "---\n\n\`\`\`toc\n\`\`\`\n\n## Hello \nWow, a fresh new post!\n"}`;
 
     try {
         if (!fs.existsSync(newFolderPath+'/'+'index.md')) {

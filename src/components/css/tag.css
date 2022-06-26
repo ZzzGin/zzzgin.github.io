@@ -135,3 +135,18 @@
 .tag-purple:hover::after {
     border-left-color: var(--purple);
 }
+
+.tag-dark {
+    background-color: var(--light-dark);
+    color: var(--light);
+}
+.tag-dark::after {
+    border-left: 10px solid var(--light-dark);
+}
+.tag-dark:hover {
+    background-color: var(--dark);
+    color: var(--light);
+}
+.tag-dark:hover::after {
+    border-left-color: var(--dark);
+}
