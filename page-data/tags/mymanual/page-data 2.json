@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-templates-tagged-blogs-template-js",
-    "path": "/tags/mymanual",
-    "result": {"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"date":"June 01, 2022","featuredimage":null,"description":"Learning notes on Firestore","featuredimageAlt":null,"path":"/blogs/firestore-learning","tags":["blog","mymanual","firebase","firestore"],"title":"MyManual: Firestore"}}}]}},"pageContext":{"tag":"mymanual"}},
-    "staticQueryHashes": []}
