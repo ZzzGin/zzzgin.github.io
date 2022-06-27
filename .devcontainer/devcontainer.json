@@ -27,7 +27,7 @@
 		},
 		"codespaces": {
 			"repositories": {
-				"zzzgin/*":{
+				"ZzzGin/private-blogs": {
 					"permissions": "write-all"
 				}
 			}
