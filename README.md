@@ -10,7 +10,8 @@ npm run start
 ## Init Project in Code Spaces
 ```bash
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb &&
-sudo apt install ./google-chrome-stable_current_amd64.deb &&
+sudo apt --assume-yes install ./google-chrome-stable_current_amd64.deb &&
+rm google-chrome-stable_current_amd64.deb && 
 git submodule init &&
 git submodule update &&
 npm install &&
