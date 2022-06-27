@@ -54,6 +54,36 @@
 				"https://survey.stackoverflow.co/2022/"
 			],
 			"color": "green"
+		},
+		{
+			"start": "2022-06-27",
+			"group": "g-hn",
+			"title": "Glossary Page Template",
+			"desription": "A single HTML page with a built-in editor for creating a glossary that can be hosted anywhere.",
+			"links": [
+				"https://glossary.page/template/"
+			],
+			"color": "green"
+		},
+		{
+			"start": "2022-06-27",
+			"group": "g-hn",
+			"title": "Explaining Code using ASCII Art",
+			"desription": "People tend to be visual: we use pictures to understand problems. Mainstream programming languages, on the other hand, operate in an almost completely different kind of abstract space, leaving a big gap between programs and pictures. This piece is about pictures drawn using a text character set and then embedded in source code. I love these! The other day I asked around on Twitter for more examples and the responses far exceeded expectations (thanks everyone!). There are a ton of great examples in the thread; here I’ve categorized a few of them. Click on images go to the repositories.",
+			"links": [
+				"https://blog.regehr.org/archives/1653"
+			],
+			"color": "red"
+		},
+		{
+			"start": "2022-06-24",
+			"group": "g-mtr",
+			"title": "Overturned Roe v. Wade",
+			"desription": "The final decision ends weeks of speculation following the leaking of a draft opinion in May, which detailed the Supreme Court’s resolve to strike down the ruling.",
+			"links": [
+				"https://www.technologyreview.com/2022/06/24/1054828/us-supreme-court-abortion-overturned-roe-v-wade/"
+			],
+			"color": "red"
 		}
 	]
 }

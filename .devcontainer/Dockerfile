@@ -14,6 +14,3 @@ FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:0-${VARIANT}
 
 # [Optional] Uncomment if you want to install more global node modules
 # RUN su node -c "npm install -g <your-package-list-here>"
-
-RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb \
-    && sudo apt install ./google-chrome-stable_current_amd64.deb

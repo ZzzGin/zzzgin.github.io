@@ -11,6 +11,8 @@ npm run start
 ```bash
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb &&
 sudo apt install ./google-chrome-stable_current_amd64.deb &&
+git submodule init &&
+git submodule update &&
 npm install &&
 npm run clean &&
 npm run build &&
@@ -23,3 +25,4 @@ npm run start
 * `npm run newreading "<book-name>" "<chapter-number>" "<chapter-name>"`: create a note file for reading
 * `npm run newblog "<blog-name>"`: create a new blog
 * `npm run newevent`: create new event
+* `npm run newprivateblog "<blog-name>"`: create a new private blog protected by password
