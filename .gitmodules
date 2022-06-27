@@ -1,0 +1,3 @@
+[submodule "src/pages/private-blogs"]
+	path = src/pages/private-blogs
+	url = https://github.com/ZzzGin/private-blogs
