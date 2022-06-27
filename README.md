@@ -1,8 +1,18 @@
-## Init Project
+## Init Project Locally
 ```bash
 git clone --recurse-submodules https://github.com/ZzzGin/zzzgin.github.io.git && 
 cd zzzgin.github.io &&
 npm install &&
+npm run build &&
+npm run start
+```
+
+## Init Project in Code Spaces
+```bash
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb &&
+sudo apt install ./google-chrome-stable_current_amd64.deb &&
+npm install &&
+npm run clean &&
 npm run build &&
 npm run start
 ```
