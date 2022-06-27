@@ -17,7 +17,7 @@
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
 				"dbaeumer.vscode-eslint",
-				"vscodevim.vim",
+				// "vscodevim.vim",
 				"ritwickdey.LiveServer",
 				"hancel.markdown-image",
 				"shd101wyy.markdown-preview-enhanced",

@@ -14,6 +14,9 @@ sudo apt --assume-yes install ./google-chrome-stable_current_amd64.deb &&
 rm google-chrome-stable_current_amd64.deb && 
 git submodule init &&
 git submodule update &&
+cd src/pages/private-blogs &&
+git checkout main &&
+cd ../../../ &&
 npm install &&
 npm run clean &&
 npm run build &&
