@@ -1,8 +1,8 @@
 ---
 path: "/blogs/gatsby-on-codespaces"
 date: "2022-06-27T20:19:20.131Z"
-title: "Gatsby on Codespaces"
-description: "ON the homepage of Codespaces, Github markets it as a seamless switch of desktop VS Code. My blog is hosted on Github Pages with Gatsby as its framework. I use VS Code to write blogs locally. So naturally, after getting the preview opportunity to Codespaces, I try to migrate to it. Here is a note for how to set up the workspace."
+title: "My Gatsby Workspace on Codespaces"
+description: "ON the homepage of Codespaces, Github markets it as a seamless switch of desktop VS Code. My blog is hosted on Github Pages with Gatsby as its framework. I use VS Code to write blogs locally. So naturally, after getting the preview opportunity to Codespaces, I try to migrate to it. Here is a note for some problems I met and how I fix them for the migration."
 tags: ["blog","gatsby", "codespace"]
 featuredimage: 
 featuredimageAlt: ""
@@ -69,4 +69,4 @@ sudo apt --assume-yes install ./google-chrome-stable_current_amd64.deb
 ```
 
 ## VIM Plugin Doesn't Work
-Pending investigation.
+Don't put Vim plugin in the extention list inside of `devcontainer.json`. Not sure why but after removing it out and install it manually, Vim will work properly.
