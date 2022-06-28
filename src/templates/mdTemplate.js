@@ -1,6 +1,5 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-import { graphql } from "gatsby"
 import Navbar from '../components/blog-components/Navbar'
 import Description from "../components/blog-components/Description"
 import "@components/css/main.css"
@@ -11,59 +10,28 @@ require("prismjs/themes/prism-okaidia.css")
 
 export default function Template(props) {
 
-  // const { data, pageContext } = props;
-  const { data } = props;
-  const { markdownRemark: post } = data;
-  // const { next, prev } = pageContext;
+  const { pageContext } = props;
 
   return (
     <>
     <Navbar />
     <div className="blog-post-container markdown-body">
-      <Helmet title={ `zzz - ${post.frontmatter.title}`} />
+      <Helmet title={ `zzz - ${pageContext.title}`} />
       <article className="blog-post">
 
-        <div className="title">{post.frontmatter.title}</div>
+        <div className="title">{pageContext.title}</div>
 
-        <div className="date">{post.frontmatter.date}</div>
+        <div className="date">{pageContext.date}</div>
 
-        <Description description={post.frontmatter.description} tags={post.frontmatter.tags || []}/>
+        <Description description={pageContext.description} tags={pageContext.tags || []}/>
         
         <div
           className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: post.html }}
+          dangerouslySetInnerHTML={{ __html: pageContext.html }}
         />
-
-        {/* <Tags list={post.frontmatter.tags || []} /> */}
-
-        {/* <div className="navigation">
-            {prev &&
-              <Link className="link prev" to={prev.frontmatter.path}>
-                <BiChevronLeft /> {prev.frontmatter.title}
-              </Link>}
-            {next &&
-              <Link className="link next" to={next.frontmatter.path}>
-                {next.frontmatter.title} <BiChevronRight />
-              </Link>}
-          </div> */}
 
       </article>
     </div>
     </>
   )
 }
-
-export const pageQuery = graphql`
-  query BlogPostByPath($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
-      html
-      frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        path
-        tags
-        title
-        description
-      }
-    }
-  }
-`;

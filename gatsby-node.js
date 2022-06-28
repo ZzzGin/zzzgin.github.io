@@ -11,7 +11,6 @@ exports.onCreateWebpackConfig = ({ actions }) => {
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
     const { createPage } = actions
-    var CryptoJS = require("crypto-js");
 
     // Create markdown posts
     const blogPostTemplate = path.resolve(`src/templates/mdTemplate.js`);
@@ -24,13 +23,14 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         ) {
             edges {
                 node {
+                    html
                     frontmatter {
+                        date(formatString: "MMMM DD, YYYY")
                         path
                         tags
+                        title
+                        description
                         password
-                    }
-                    internal {
-                        content
                     }
                 }
             }
@@ -41,78 +41,22 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         reporter.panicOnBuild(`Error while running GraphQL query.`)
         return
     }
+    const createMarkdownPosts = require("./src/templates/gatsby-node-createPages/createMarkDownPages");
+    createMarkdownPosts(blogPostTemplate, encryptedBlogTemplate, createPage, result);
 
-    const posts = result.data.allMarkdownRemark.edges;
-
-    posts.forEach(({ node }, index) => {
-        if (node.frontmatter.tags && node.frontmatter.tags.includes("private")){
-            createPage({
-                path: node.frontmatter.path,
-                component: encryptedBlogTemplate,
-                context: {
-                    content: CryptoJS.AES.encrypt(node.internal.content, node.frontmatter.password).toString()
-                }
-            })
-        }
-        else {
-            const prev = index === 0 ? null : posts[index - 1].node;
-            const next = index === posts.length - 1 ? null : posts[index + 1].node;
-            createPage({
-                path: node.frontmatter.path,
-                component: blogPostTemplate,
-                context: {
-                    prev,
-                    next
-                }
-            })
-        }
-    });
-
-    // create tag specific pages
+    // create tag pages
     const taggedBlogsTemplate = path.resolve(`src/templates/taggedBlogsTemplate.js`);
-    const getTagsQueryResult = await graphql(`
-        query MyQuery {
-            allMarkdownRemark {
-                edges {
-                    node {
-                        frontmatter {
-                            tags
-                        }
-                    }
-                }
-            }
-        }
-    `);
-    if (getTagsQueryResult.errors) {
-        reporter.panicOnBuild(`Error while running GraphQL query.`)
-        return
-    }
-
-    const tagEdges = result.data.allMarkdownRemark.edges;
-
-    let tags = new Set();
-    tagEdges.forEach(edge => {
-        edge.node.frontmatter.tags.forEach(tag => {
-            tags.add(tag)
-        });
-    });
-
-    tags.forEach(tag => {
-        createPage({
-            path: `/tags/${tag.trim().replaceAll(" ", "-")}`,
-            component: taggedBlogsTemplate,
-            context: {
-                tag: tag
-            }
-        })
-    });
+    const createTagPages = require("./src/templates/gatsby-node-createPages/createTagPages");
+    createTagPages(taggedBlogsTemplate, createPage, result);
 
 
-    // create storytellers
-    const storytellerTemplate = path.resolve(`src/templates/storytellerTemplate.js`);
-    const fetchStorytellersResult = await graphql(`
+    // create timelines
+    const timelineTemplate = path.resolve(`src/templates/timelineTemplate.js`);
+    const fetchTimelinesResult = await graphql(`
     query FetchStorytellers {
-        allFile(filter: {sourceInstanceName: {eq: "timelines"}}) {
+        allFile(
+            filter: {sourceInstanceName: {eq: "timelines"}}
+            sort: {fields: modifiedTime, order: DESC}) {
           edges {
             node {
               absolutePath
@@ -121,27 +65,25 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
               internal {
                 content
               }
+              modifiedTime
             }
           }
         }
       }
       
     `);
-    if (fetchStorytellersResult.errors) {
+    if (fetchTimelinesResult.errors) {
         reporter.panicOnBuild(`Error while running GraphQL query.`)
         return
     }
-    const storytellerJsonFiles = fetchStorytellersResult.data.allFile.edges;
+    const createTimelinePages = require("./src/templates/gatsby-node-createPages/createTimelinePages");
+    createTimelinePages(timelineTemplate, createPage, fetchTimelinesResult);
 
-    storytellerJsonFiles.forEach(edge => {
-        createPage({
-            path: `/timeline/${edge.node.name}`,
-            component: storytellerTemplate,
-            context: {
-                content: edge.node.internal.content
-            }
-        })
-    })
+    // Create "tags/timeline" page
+    const tagsTimelineTemplate = path.resolve("src/templates/tagTimelineTemplate.js");
+    const createTagsTimelinePage = require("./src/templates/gatsby-node-createPages/createTagsTimelinePage");
+    createTagsTimelinePage(tagsTimelineTemplate, createPage, fetchTimelinesResult);
+
 }
 
 exports.onCreateNode = async ({ node, loadNodeContent, actions }) => {

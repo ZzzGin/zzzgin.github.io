@@ -1,7 +1,5 @@
 import * as React from "react"
 import { useState } from "react";
-import ReactMarkdown from 'react-markdown'
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import "@components/css/github-markdown.css";
 import "@components/css/blog-post.css";
 import anime from 'animejs';
@@ -64,28 +62,10 @@ const EncryptedMarkdown = (props) => {
         onChange={handleChange} 
         className="pw-input">
       </input>
-      <ReactMarkdown
-        children={md}
-        className="blog-post-content"
-        components={{
-          code({ node, inline, className, children, ...props }) {
-            const match = /language-(\w+)/.exec(className || "");
-            return !inline && match ? (
-              <SyntaxHighlighter
-                children={String(children).replace(/\n$/, "")}
-                // style={dark}
-                language={match[1]}
-                PreTag="div"
-                {...props}
-              />
-            ) : (
-              <code className={className} {...props}>
-                {children}
-              </code>
-            );
-          }
-        }}
-      />
+      <div
+          className="blog-post-content"
+          dangerouslySetInnerHTML={{ __html: md }}
+        /> 
     </>
   )
 }
