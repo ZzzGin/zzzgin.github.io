@@ -146,6 +146,37 @@
 				"https://twitter.com/michelleobama/status/1540345715616006148?"
 			],
 			"color": "blue"
+		},
+		{
+			"start": "2022-06-26",
+			"group": "g-pek",
+			"title": "Elder Assaults Police",
+			"desription": "A statement from local police in Dandong, Northeast China's Liaoning province, which announced punishments levied on a woman and her father for their alleged refusal to follow epidemic control measures and attacking the police, has triggered public controversy after video clips were made public on Thursday.",
+			"links": [
+				"https://www.163.com/dy/article/HAQT3C4J0552QLGZ.html",
+				"https://www.chinadaily.com.cn/a/202206/23/WS62b46fdda310fd2b29e682d0.html"
+			],
+			"color": "blue"
+		},
+		{
+			"start": "2022-06-29",
+			"group": "g-pek",
+			"title": "Downgrade Quarantine",
+			"desription": "China reduced quarantine times for inbound travelers by half, the biggest shift yet in a Covid-19 policy that has left the world’s second-largest economy isolated as it continues to try and eliminate the virus.",
+			"links": [
+				"https://www.bloomberg.com/news/articles/2022-06-28/china-cuts-quarantine-in-half-for-travelers-and-close-contacts"
+			],
+			"color": "green"
+		},
+		{
+			"start": "2022-06-27",
+			"group": "g-iad",
+			"title": "50 Deaths: MIGRANT TRAGEDY",
+			"desription": "The authorities said the tragedy appeared to be the deadliest migrant-smuggling operation in memory. Sixteen people were taken to hospitals.",
+			"links": [
+				"https://www.texastribune.org/2022/06/27/bodies-18-wheeler-san-antonio-lackland/"
+			],
+			"color": "red"
 		}
 	]
 }

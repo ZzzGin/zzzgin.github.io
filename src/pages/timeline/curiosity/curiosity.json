@@ -84,6 +84,16 @@
 				"https://www.technologyreview.com/2022/06/24/1054828/us-supreme-court-abortion-overturned-roe-v-wade/"
 			],
 			"color": "red"
+		},
+		{
+			"start": "2022-06-29",
+			"group": "g-hn",
+			"title": "How IC Gets Stuck",
+			"desription": "How to find data points to support your constructive feedback on your peers? - Pay attention to how they get stuck.",
+			"links": [
+				"https://www.elidedbranches.com/2017/01/how-do-individual-contributors-get.html"
+			],
+			"color": "green"
 		}
 	]
 }
