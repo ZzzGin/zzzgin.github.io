@@ -411,6 +411,16 @@
 				"https://www.theverge.com/2022/6/22/23178427/pornhub-owners-ceo-coo-resign-antoon-tassillo-mindgeek"
 			],
 			"color": "red"
+		},
+		{
+			"start": "2022-06-28",
+			"group": "g-tesla",
+			"title": "200 Layoffs in AP",
+			"desription": "Tesla Inc. laid off hundreds of workers on its Autopilot team as the electric-vehicle maker shuttered a California facility, according to people familiar with the matter.",
+			"links": [
+				"https://www.bloomberg.com/news/articles/2022-06-28/tesla-lays-off-hundreds-of-autopilot-workers-in-latest-staff-cut"
+			],
+			"color": "red"
 		}
 	]
 }
