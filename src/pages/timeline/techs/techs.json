@@ -421,6 +421,16 @@
 				"https://www.bloomberg.com/news/articles/2022-06-28/tesla-lays-off-hundreds-of-autopilot-workers-in-latest-staff-cut"
 			],
 			"color": "red"
+		},
+		{
+			"start": "2022-06-30",
+			"group": "g-google",
+			"title": "Unofficial: Hiring Freeze",
+			"desription": "Blind: \"My recruiter just informed me that they're holding off on scheduling onsites for the next two weeks until they get a confirmed headcount from the execs. Also from other posts it seems like this is the case.\"",
+			"links": [
+				"https://www.teamblind.com/post/Hiring-Freeze-@-Google-7TOU1XUj"
+			],
+			"color": "red"
 		}
 	]
 }
