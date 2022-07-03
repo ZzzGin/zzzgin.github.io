@@ -177,6 +177,16 @@
 				"https://www.texastribune.org/2022/06/27/bodies-18-wheeler-san-antonio-lackland/"
 			],
 			"color": "red"
+		},
+		{
+			"start": "2022-07-02",
+			"group": "g-pek",
+			"title": "Data Leakage",
+			"desription": "Shanghai gov leaked 1B data about citizen's personal info, including ID, address, name, sex and even police reporting cases. Size of the data is 23TB. It is sold for 10BTC.",
+			"links": [
+				"https://breached.to/Thread-Selling-2022-SHGA-Shanghai-Gov-National-Police-database"
+			],
+			"color": "blue"
 		}
 	]
 }

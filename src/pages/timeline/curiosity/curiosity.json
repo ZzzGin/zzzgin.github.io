@@ -94,6 +94,26 @@
 				"https://www.elidedbranches.com/2017/01/how-do-individual-contributors-get.html"
 			],
 			"color": "green"
+		},
+		{
+			"start": "2022-07-03",
+			"group": "g-hn",
+			"title": "Red Engine: Python Scheduler",
+			"desription": "Red Engine is a modern scheduling framework for Python applications. It is simple, clean and extensive.",
+			"links": [
+				"https://red-engine.readthedocs.io/en/stable/tutorial/basic.html"
+			],
+			"color": "green"
+		},
+		{
+			"start": "2022-07-03",
+			"group": "g-hn",
+			"title": "Good Exp of Reading Blogs",
+			"desription": "This is a good example of how to write blog after reading a book. Check the structure and learn from it.",
+			"links": [
+				"https://markgreville.ie/2022/06/22/book-summary-how-to-know-everything-by-elke-wiss/"
+			],
+			"color": "green"
 		}
 	]
 }

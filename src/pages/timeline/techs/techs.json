@@ -431,6 +431,16 @@
 				"https://www.teamblind.com/post/Hiring-Freeze-@-Google-7TOU1XUj"
 			],
 			"color": "red"
+		},
+		{
+			"start": "2022-06-30",
+			"group": "g-others",
+			"title": "Unity: Lay Off",
+			"desription": "Unity, a software development firm behind the famous game engine has reportedly removed hundreds of employees, the recent report says.",
+			"links": [
+				"https://www.techtimes.com/articles/277407/20220630/unity-another-tech-firm-lay-hundreds-workers-mass-exodus.htm"
+			],
+			"color": "red"
 		}
 	]
 }
