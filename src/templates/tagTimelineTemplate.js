@@ -1,6 +1,7 @@
 import * as React from "react"
 import Navbar from "@components/blog-components/Navbar";
 import TimelineDescription from "@components/artworks/timeline/TimelineDescription";
+import Footer from "@components/blog-components/Footer"
 import { Helmet } from "react-helmet"
 import "@components/css/main.css"
 
@@ -25,6 +26,7 @@ const TagsTimeline = (props) => {
                     nodes.map(node => <TimelineDescription node={node.node}/>)
                 }
             </div>
+            <Footer />
         </>
     )
 }

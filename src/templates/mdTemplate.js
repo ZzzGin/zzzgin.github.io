@@ -2,6 +2,7 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import Navbar from '../components/blog-components/Navbar'
 import Description from "../components/blog-components/Description"
+import Footer from "@components/blog-components/Footer"
 import "@components/css/main.css"
 require(`katex/dist/katex.min.css`)
 require("prismjs/themes/prism-okaidia.css")
@@ -32,6 +33,7 @@ export default function Template(props) {
 
       </article>
     </div>
+    <Footer />
     </>
   )
 }

@@ -6,5 +6,5 @@ export const tagColorMap = {
     "note": "blue",
     "sandbox": "purple",
     "private": "dark",
-    "timeline": "red"
+    "timeline": "green"
 };

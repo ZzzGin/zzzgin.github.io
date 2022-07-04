@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet"
 import EncryptedMarkdown from "@components/blog-components/EncryptedMarkdown";
 import Navbar from '../components/blog-components/Navbar'
 import Description from "../components/blog-components/Description"
+import Footer from "@components/blog-components/Footer"
 import "@components/css/main.css"
 
 export default function PrivateBlogTemplate(props) {
@@ -28,6 +29,7 @@ export default function PrivateBlogTemplate(props) {
                     <EncryptedMarkdown encrypted={encrypted} />
                 </article>
             </div>
+            <Footer />
         </>
     )
 }

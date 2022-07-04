@@ -93,7 +93,7 @@
 
 .tag-green {
     background-color: var(--light-green);
-    color: #999;
+    color: var(--light);
 }
 .tag-green::after {
     border-left: 10px solid var(--light-green);

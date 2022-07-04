@@ -4,35 +4,14 @@ import ZzzLogoAnimation from "../components/artworks/logo-design/zzz-logo/svg-co
 import zzzTextLogo from "../images/zzz.svg"
 import { Helmet } from "react-helmet"
 import { StaticImage } from "gatsby-plugin-image"
-import { useWindowScroll } from 'react-use';
-import "@components/css/main.css"
+import { graphql } from "gatsby";
+import ArticleListView from "@components/blog-components/ArticleListView"
+import TimelineDescription from "@components/artworks/timeline/TimelineDescription";
+import "@components/css/main.css";
+import Tag from "@components/blog-components/Tag"
+import Footer from "@components/blog-components/Footer"
 
-const IndexPage = () => {
-
-    const { x, y } = useWindowScroll();
-    
-    const [backward, setBackward] = React.useState("Backwards");
-
-    const createRandomString = (l) => {
-        var text = "";
-        var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-        for (var i = 0; i < l; i++)
-            text += possible.charAt(Math.floor(Math.random() * possible.length));
-        return text;
-    }
-
-    React.useEffect(() => {
-        if (y <= 0) {
-            setBackward("Backwards");
-            return;
-        }
-        const l = Math.floor(y/33);
-        if (l === 0) {
-            setBackward(createRandomString(9));
-            return;
-        }
-        setBackward(createRandomString(9-l)+"Backwards".slice(-l));
-    }, [x, y])
+const IndexPage = (props) => {
 
     return (
         <>
@@ -48,7 +27,7 @@ const IndexPage = () => {
                         cubic z
                     </div>
                     <div className="slogan-container">
-                        <div className="slogan">Sorting {backward}</div>
+                        <div className="slogan">Sorting Backwards</div>
                     </div>
                 </div>
                 <div className="self-introduction shift-up-fifty-pixels">
@@ -59,6 +38,7 @@ const IndexPage = () => {
                             imgStyle={{ 
                                 borderRadius: '100%'
                             }}
+                            placeholder="none"
                         />
                     </div>
                     <div className="jing">
@@ -77,10 +57,79 @@ const IndexPage = () => {
                         Call me Jing, pronounced like <span style={{fontStyle: "italic"}}>Gin</span>
                     </div>
                 </div>
-                <div style={{height: "1000px"}}></div>
+                
+                <div className="feed-section-title">
+                    <span className="feed-section-title-text" style={{color: "var(--red)"}}>●</span>
+                    <span className="feed-section-title-text">Articles</span>
+                    <span className="feed-section-tag-container">
+                        <Tag text="blog" href="/tags/blog" className="feed-section-tag"/>
+                        <Tag text="readings" href="/tags/readings" className="feed-section-tag"/>
+                        <Tag text="private" href="/tags/private" className="feed-section-tag"/>
+                    </span>
+                </div>
+                <ArticleListView edges={ props.data.allMarkdownRemark.edges }/>
+
+                <div className="feed-section-title">
+                    <span className="feed-section-title-text" style={{color: "var(--green)"}}>●</span>
+                    <span className="feed-section-title-text">Timelines</span>
+                    <span className="feed-section-tag-container">
+                        <Tag text="timeline" href="/tags/timeline" className="feed-section-tag"/>
+                    </span>
+                </div>
+                {
+                    props.data.allFile.edges.map(node => <TimelineDescription node={node.node}/>)
+                }
+
+                
             </div>
+            <Footer/>
         </>
     )
 }
 
-export default IndexPage
+export default IndexPage;
+
+
+export const query = graphql`
+query indexQuery {
+    allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date] }
+        limit: 3
+    ) {
+        edges {
+            node {
+            frontmatter {
+                date(formatString: "MMMM DD, YYYY")
+                featuredimage {
+                childImageSharp {
+                    gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+                }
+                }
+                description
+                featuredimageAlt
+                path
+                tags
+                title
+            }
+            }
+        }
+    }
+    allFile(
+        filter: {sourceInstanceName: {eq: "timelines"}}
+        sort: {fields: modifiedTime, order: DESC}
+        limit: 3
+    ) {
+      edges {
+        node {
+          absolutePath
+          name
+          ext
+          internal {
+            content
+          }
+          modifiedTime
+        }
+      }
+    }
+}
+`

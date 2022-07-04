@@ -3,6 +3,7 @@ import Navbar from "@components/blog-components/Navbar"
 import { Helmet } from "react-helmet"
 import { graphql } from "gatsby"
 import Tag from "@components/blog-components/Tag"
+import Footer from "@components/blog-components/Footer"
 import "@components/css/main.css"
 
 
@@ -69,6 +70,7 @@ const TagsManager = (props) => {
                     )
                 }
             </div>
+            <Footer />
         </>
     )
 }

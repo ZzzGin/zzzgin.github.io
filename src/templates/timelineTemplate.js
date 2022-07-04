@@ -2,7 +2,8 @@ import * as React from "react"
 import "@components/css/main.css"
 import Navbar from "@components/blog-components/Navbar"
 import TimelineStory from "@components/artworks/timeline/TimelineStory";
-import Description from "../components/blog-components/Description"
+import Description from "../components/blog-components/Description";
+import Footer from "@components/blog-components/Footer";
 import { Helmet } from "react-helmet"
 
 const StorytellerTemplate = (props) => {
@@ -22,6 +23,7 @@ const StorytellerTemplate = (props) => {
                     events={ sorterEvents }
                 />
             </div>
+            <Footer />
         </>
     );
 }

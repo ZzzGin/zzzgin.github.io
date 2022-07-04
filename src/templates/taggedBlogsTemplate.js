@@ -3,6 +3,7 @@ import Navbar from "@components/blog-components/Navbar"
 import { Helmet } from "react-helmet"
 import ArticleListView from "@components/blog-components/ArticleListView"
 import { graphql } from "gatsby"
+import Footer from "@components/blog-components/Footer"
 import "@components/css/main.css"
 
 
@@ -24,6 +25,7 @@ const TaggedBlogsTemplate = (props) => {
                 </div>
                 <ArticleListView edges={ props.data.allMarkdownRemark.edges }/>
             </div>
+            <Footer />
          </>
     )
 }

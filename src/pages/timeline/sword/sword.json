@@ -187,6 +187,16 @@
 				"https://breached.to/Thread-Selling-2022-SHGA-Shanghai-Gov-National-Police-database"
 			],
 			"color": "blue"
+		},
+		{
+			"start": "2022-07-04",
+			"group": "g-iad",
+			"title": "Jul-4 Mass Shooting",
+			"desription": "Highland Park, Ill. (AP) -- At least five people are dead and 19 were taken to hospitals after a shooting at a July Fourth parade in a Chicago suburb, and officers are searching for a suspect, police said Monday.",
+			"links": [
+				"https://www.bloomberg.com/news/articles/2022-07-04/police-respond-to-july-4-parade-amid-reports-of-shooting?srnd=premium"
+			],
+			"color": "red"
 		}
 	]
 }
