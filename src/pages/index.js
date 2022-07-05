@@ -64,7 +64,6 @@ const IndexPage = (props) => {
                     <span className="feed-section-tag-container">
                         <Tag text="blog" href="/tags/blog" className="feed-section-tag"/>
                         <Tag text="readings" href="/tags/readings" className="feed-section-tag"/>
-                        <Tag text="private" href="/tags/private" className="feed-section-tag"/>
                     </span>
                 </div>
                 <ArticleListView edges={ props.data.allMarkdownRemark.edges }/>
