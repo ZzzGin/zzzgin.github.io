@@ -3,7 +3,7 @@ path: "/readings/arduino-engineering-kit-chapter-2"
 date: "2022-06-19T20:39:41.849Z"
 title: "Arduino Engineering Kit: CP2 - ARDUINO, MATLAB & SIMULINK"
 description: "Learn the basics of the Arduino IDE, the MATLAB® IDE, the programming language, and the Simulink® models. You will discover how these three tools can be connected to each other while making practical exercises."
-tags: ["readings","arduino engineering kit"]
+tags: ["readings","arduino engineering kit","matlab","simulink"]
 featuredimage: images/1592989162-aek-ch2-sc2-1-nano-family.jpeg
 featuredimageAlt: "nano family"
 ---
