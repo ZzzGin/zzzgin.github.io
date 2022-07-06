@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tagged-blogs-template-js",
+    "path": "/tags/seo",
+    "result": {"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"date":"July 06, 2022","featuredimage":null,"description":"SEO stands for Search Engine Optimization. Natually, Gatsby as a Server Side Rendering (SSR) framework, it works better than React itself with search engine. This blog is a note about how I make my personal blog \"online\" to Google.","featuredimageAlt":"","path":"/blogs/seo-in-gatsby","tags":["blog","gatsby","seo"],"title":"SEO in Gatsby"}}}]}},"pageContext":{"tag":"seo"}},
+    "staticQueryHashes": []}
