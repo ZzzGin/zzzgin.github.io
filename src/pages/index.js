@@ -15,7 +15,10 @@ const IndexPage = (props) => {
 
     return (
         <>
-            <Helmet title="zzz" />
+            <Helmet>
+                <title>zzz - Home</title>
+                <meta name="description" content="Jing's personal blog - Sorting Backwards"></meta>
+            </Helmet>
             <Navbar />
             <div className="index-body">
                 <div className="zzz-logo-animation-container">

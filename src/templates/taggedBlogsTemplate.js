@@ -11,7 +11,10 @@ const TaggedBlogsTemplate = (props) => {
 
     return (
         <>
-            <Helmet title={"zzz - Tag: "+ props.pageContext.tag}/>
+            <Helmet>
+                <title>{"zzz - Tag: " + props.pageContext.tag}</title>
+                <meta name="description" content={`Tag: ${props.pageContext.tag}`} />
+            </Helmet>
             <Navbar />
             <div className="tagged-blogs-template-body">
                 <a href="/tags">

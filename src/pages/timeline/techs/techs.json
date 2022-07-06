@@ -441,6 +441,16 @@
 				"https://www.techtimes.com/articles/277407/20220630/unity-another-tech-firm-lay-hundreds-workers-mass-exodus.htm"
 			],
 			"color": "red"
+		},
+		{
+			"start": "2022-07-01",
+			"group": "g-others",
+			"title": "FedEx Moves To Cloud",
+			"desription": "FedEx is to close its data centers and retire all of its remaining mainframes within the next two years.",
+			"links": [
+				"https://www.datacenterdynamics.com/en/news/fedex-to-close-data-centers-retire-all-mainframes-by-2024-saving-400m/"
+			],
+			"color": "green"
 		}
 	]
 }

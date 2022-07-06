@@ -47,7 +47,10 @@ const TagsManager = (props) => {
         
     return (
         <>
-            <Helmet title="zzz - Tags" />
+            <Helmet>
+                <title>zzz - Tags</title>
+                <meta name="description" content="All tags of Jing's personal blog." />
+            </Helmet>
             <Navbar />
             <div className="tags-manager-body">
                 <div className="tags-manager-title">

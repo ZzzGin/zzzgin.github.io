@@ -19,7 +19,10 @@ export default function PrivateBlogTemplate(props) {
     return (
         <>
             <Navbar />
-            <Helmet title={`zzz - Private: ${title}`} />
+            <Helmet>
+                <title>{`zzz - Private: ${title}`}</title>
+                <meta name="description" content={description}/>
+            </Helmet>
 
             <div className="blog-post-container markdown-body">
                 <article className="blog-post">

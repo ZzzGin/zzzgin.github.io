@@ -17,7 +17,10 @@ export default function Template(props) {
     <>
     <Navbar />
     <div className="blog-post-container markdown-body">
-      <Helmet title={ `zzz - ${pageContext.title}`} />
+      <Helmet>
+        <title>{`zzz - ${pageContext.title}`}</title>
+        <meta name="description" content={pageContext.description}/>
+      </Helmet>
       <article className="blog-post">
 
         <div className="title">{pageContext.title}</div>

@@ -11,7 +11,11 @@ const TagsTimeline = (props) => {
 
     return (
         <>
-            <Helmet title="zzz - Tags: timeline" />
+            <Helmet>
+                    <title>zzz - Tags: timeline</title>
+                    <meta name="description" content="Tag: timeline" />
+            </Helmet>
+
             <Navbar />
             <div className="tagged-blogs-template-body">
                 <a href="/tags">

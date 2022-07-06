@@ -13,7 +13,10 @@ const StorytellerTemplate = (props) => {
 
     return (
         <>
-            <Helmet title={`zzz - ${content.title}`}/>
+            <Helmet>
+                <title>{`zzz - ${content.title}`}</title>
+                <meta name="description" content={content.description} />
+            </Helmet>
             <Navbar />
             <div className="timeline-story-container" style={{zIndex: 10}}>
                 <div className="timeline-story-title">{content.title}</div>
