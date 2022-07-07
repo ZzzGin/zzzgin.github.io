@@ -109,6 +109,27 @@
 				"https://markgreville.ie/2022/06/22/book-summary-how-to-know-everything-by-elke-wiss/"
 			],
 			"color": "green"
+		},
+		{
+			"start": "2022-07-07",
+			"group": "g-hn",
+			"title": "Cursor Animation",
+			"desription": "Smoothly rendering live cursors is more difficult than it sounds when real‑world conditions are taken into account—here’s a quick introduction to a few different methods, plus some React snippets.",
+			"links": [
+				"https://liveblocks.io/blog/how-to-animate-multiplayer-cursors"
+			],
+			"color": "green"
+		},
+		{
+			"start": "2022-07-07",
+			"group": "g-hn",
+			"title": "Defensive CSS",
+			"desription": "Defensive CSS is a collection of snippets that can help you in writing CSS that is protected. In other words, you will have fewer issues in the future.",
+			"links": [
+				"https://ishadeed.com/article/defensive-css/",
+				"https://defensivecss.dev/"
+			],
+			"color": "green"
 		}
 	]
 }
