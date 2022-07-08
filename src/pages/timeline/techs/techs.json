@@ -451,6 +451,16 @@
 				"https://www.datacenterdynamics.com/en/news/fedex-to-close-data-centers-retire-all-mainframes-by-2024-saving-400m/"
 			],
 			"color": "green"
+		},
+		{
+			"start": "2022-07-07",
+			"group": "g-meta",
+			"title": "Rumor: No Intern Return Offer",
+			"desription": "RUMOR: Meta stops giving return offer to interns who completed internship",
+			"links": [
+				"https://www.1point3acres.com/bbs/thread-909573-1-1.html"
+			],
+			"color": "red"
 		}
 	]
 }

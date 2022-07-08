@@ -11,6 +11,16 @@
 			"id": "g-iad",
 			"content": "IAD",
 			"tag": "IAD"
+		},
+		{
+			"id": "g-dub",
+			"content": "DUB",
+			"tag": "DUB"
+		},
+		{
+			"id": "g-nrt",
+			"content": "NRT",
+			"tag": "NRT"
 		}
 	],
 	"events": [
@@ -196,6 +206,26 @@
 			"desription": "Highland Park, Ill. (AP) -- At least five people are dead and 19 were taken to hospitals after a shooting at a July Fourth parade in a Chicago suburb, and officers are searching for a suspect, police said Monday.",
 			"links": [
 				"https://www.bloomberg.com/news/articles/2022-07-04/police-respond-to-july-4-parade-amid-reports-of-shooting?srnd=premium"
+			],
+			"color": "red"
+		},
+		{
+			"start": "2022-07-07",
+			"group": "g-dub",
+			"title": "Boris Resigned",
+			"desription": "Boris Johnson announced his intention to resign as UK prime minister, bringing the curtain down on a tempestuous three years in office marred by a succession of scandals that culminated in the rebellion of his own cabinet and parliamentary group.",
+			"links": [
+				"https://www.bloomberg.com/news/articles/2022-07-07/boris-johnson-quits-after-months-of-scandals-hammer-uk-tories"
+			],
+			"color": "blue"
+		},
+		{
+			"start": "2022-07-08",
+			"group": "g-nrt",
+			"title": "Formor JP PM Abe Got Shot",
+			"desription": "Former Japanese Prime Minister Shinzo Abe was unconscious and unresponsive after he was apparently shot in the chest during a political event in the western city of Nara on Friday, national broadcaster NHK and local media reports said.",
+			"links": [
+				"https://www.bloomberg.com/news/articles/2022-07-08/former-japan-pm-abe-collapses-after-shots-heard-man-in-custody"
 			],
 			"color": "red"
 		}
