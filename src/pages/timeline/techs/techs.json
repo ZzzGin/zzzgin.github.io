@@ -471,6 +471,16 @@
 				"https://www.reuters.com/technology/elon-musk-terminating-twitter-deal-2022-07-08/"
 			],
 			"color": "blue"
+		},
+		{
+			"start": "2022-07-08",
+			"group": "g-meta",
+			"title": "Rumor: Large-Scale PIP",
+			"desription": "RUMOR: Meta manager is sent a note to \"figure out how in the team needs 'performance support' and label in the tool\". The note also said \"Every manager needs to think about each person on their team and the value they are adding to Meta. If a direct report is coasting or a low performer, they are not who we need; they are failing this company.\"",
+			"links": [
+				"https://www.1point3acres.com/bbs/thread-910017-1-1.html?mobile=2"
+			],
+			"color": "red"
 		}
 	]
 }
