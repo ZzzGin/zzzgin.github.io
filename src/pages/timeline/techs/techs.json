@@ -461,6 +461,16 @@
 				"https://www.1point3acres.com/bbs/thread-909573-1-1.html"
 			],
 			"color": "red"
+		},
+		{
+			"start": "2022-07-08",
+			"group": "g-tesla",
+			"title": "Terminate Deal",
+			"desription": "July 8 (Reuters) - Elon Musk, the chief executive officer of Tesla (TSLA.O) and the world's richest person, said on Friday he was terminating his $44 billion deal to buy Twitter (TWTR.N) because the social media company had breached multiple provisions of the merger agreement.",
+			"links": [
+				"https://www.reuters.com/technology/elon-musk-terminating-twitter-deal-2022-07-08/"
+			],
+			"color": "blue"
 		}
 	]
 }
