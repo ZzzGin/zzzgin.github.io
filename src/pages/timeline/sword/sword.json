@@ -228,6 +228,16 @@
 				"https://www.bloomberg.com/news/articles/2022-07-08/former-japan-pm-abe-collapses-after-shots-heard-man-in-custody"
 			],
 			"color": "red"
+		},
+		{
+			"start": "2022-07-10",
+			"group": "g-pek",
+			"title": "Henan Depositors Protest",
+			"desription": "Beijing (AP) -- A large crowd of angry Chinese bank depositors faced off with police Sunday, some roughed up as they were taken away, in a case that has drawn attention because of earlier attempts to use a COVID-19 tracking app to prevent them from mobilizing.",
+			"links": [
+				"https://www.bloomberg.com/news/articles/2022-07-10/chinese-bank-depositors-face-police-in-angry-protest"
+			],
+			"color": "blue"
 		}
 	]
 }

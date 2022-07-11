@@ -30,3 +30,8 @@ featuredimageAlt: "mt fremont"
 
 ## Webcams
 [npm.gov](https://www.nps.gov/mora/learn/photosmultimedia/webcams.htm)
+
+## Notes:
+1. Check Snow. 2022-07-10 we went with 5% snow cover. The trail was slippery. [Spike Snow Grips for boots](https://www.amazon.com/Traction-Crampons-Stainless-Climbing-Mountaineering/dp/B07H4BL4KL/ref=asc_df_B07H4BL4KL/?tag=hyprod-20&linkCode=df0&hvadid=312150312625&hvpos=&hvnetw=g&hvrand=14403156537278769546&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9061301&hvtargid=pla-569225128440&psc=1) is recommended.
+2. Temp 10C. It feels hot during climbing. But it will be cold if there is wind.
+3. High UV. Need sun protenction.
