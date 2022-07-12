@@ -489,6 +489,14 @@
 			"desription": "Microsoft Corp. cut some jobs on Monday as it realigned business groups and roles after the close of its fiscal year on June 30. It said it plans to keep hiring for other roles and finish the current fiscal year with increased headcount.",
 			"links": [],
 			"color": "red"
+		},
+		{
+			"start": "2022-07-12",
+			"group": "g-google",
+			"title": "Slow Hire",
+			"desription": "Sundar email: because of the hiring progress acjoeved sp far tjos uear. we'll be slowing the pase of hiring for the rest of the year, while still supporting our most important opportunities. For the balance of 2022 and 2023, we'll focus our hiring on engineering, technical and other critical roles, and make sure the great talent we do hire is aligned with our long-term priorities.",
+			"links": [],
+			"color": "red"
 		}
 	]
 }
