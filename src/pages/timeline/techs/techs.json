@@ -125,7 +125,7 @@
 		{
 			"start": "2022-06-03",
 			"group": "g-tesla",
-			"title": "Lay off",
+			"title": "Lay Off",
 			"desription": "Elon Musk emailed Tesla executives on Thursday, Reuters reports, telling them the company needs to pause hiring worldwide and cut its workforce by about 10 percent. At the end of 2021, Tesla said in a filing that it had 99,290 employees worldwide. In the email seen by Reuters, Musk cites his “super bad feeling” about the economy.",
 			"links": [
 				"https://www.theverge.com/2022/6/3/23152932/elon-musk-email-orders-tesla-layoffs-hiring-freeze-bad-feeling"
@@ -465,7 +465,7 @@
 		{
 			"start": "2022-07-08",
 			"group": "g-tesla",
-			"title": "Terminate Deal",
+			"title": "Terminate Twitter Deal",
 			"desription": "July 8 (Reuters) - Elon Musk, the chief executive officer of Tesla (TSLA.O) and the world's richest person, said on Friday he was terminating his $44 billion deal to buy Twitter (TWTR.N) because the social media company had breached multiple provisions of the merger agreement.",
 			"links": [
 				"https://www.reuters.com/technology/elon-musk-terminating-twitter-deal-2022-07-08/"
@@ -487,7 +487,9 @@
 			"group": "g-microsoft",
 			"title": "Lay Off",
 			"desription": "Microsoft Corp. cut some jobs on Monday as it realigned business groups and roles after the close of its fiscal year on June 30. It said it plans to keep hiring for other roles and finish the current fiscal year with increased headcount.",
-			"links": [],
+			"links": [
+				"https://www.bloomberg.com/news/articles/2022-07-12/microsoft-cuts-jobs-but-plans-increased-headcount-this-year"
+			],
 			"color": "red"
 		},
 		{
@@ -495,7 +497,9 @@
 			"group": "g-google",
 			"title": "Slow Hire",
 			"desription": "Sundar email: because of the hiring progress acjoeved sp far tjos uear. we'll be slowing the pase of hiring for the rest of the year, while still supporting our most important opportunities. For the balance of 2022 and 2023, we'll focus our hiring on engineering, technical and other critical roles, and make sure the great talent we do hire is aligned with our long-term priorities.",
-			"links": [],
+			"links": [
+				"https://www.bloomberg.com/news/articles/2022-07-12/google-ceo-says-company-plans-to-slow-hiring-for-rest-of-year"
+			],
 			"color": "red"
 		}
 	]
