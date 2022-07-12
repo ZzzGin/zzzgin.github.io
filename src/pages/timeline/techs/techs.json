@@ -481,6 +481,14 @@
 				"https://www.1point3acres.com/bbs/thread-910017-1-1.html?mobile=2"
 			],
 			"color": "red"
+		},
+		{
+			"start": "2022-07-11",
+			"group": "g-microsoft",
+			"title": "Lay Off",
+			"desription": "Microsoft Corp. cut some jobs on Monday as it realigned business groups and roles after the close of its fiscal year on June 30. It said it plans to keep hiring for other roles and finish the current fiscal year with increased headcount.",
+			"links": [],
+			"color": "red"
 		}
 	]
 }

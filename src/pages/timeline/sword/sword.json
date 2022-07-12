@@ -238,6 +238,26 @@
 				"https://www.bloomberg.com/news/articles/2022-07-10/chinese-bank-depositors-face-police-in-angry-protest"
 			],
 			"color": "blue"
+		},
+		{
+			"start": "2022-07-12",
+			"group": "g-pek",
+			"title": "Stop Paying Mortgage",
+			"desription": "Buyers in multiple places in China sent notices to builder companies that they will stop paying mortgage if the builder continues to pause the development.",
+			"links": [
+				"https://finance.sina.com.cn/chanjing/cyxw/2022-07-12/doc-imizmscv1233278.shtml"
+			],
+			"color": "blue"
+		},
+		{
+			"start": "2022-07-12",
+			"group": "g-dub",
+			"title": "1:1",
+			"desription": "For the first time in 20 years, the exchange rate between the euro (EUU) and the US dollar has reached parity -- meaning the two currencies are worth the same.",
+			"links": [
+				"https://www.cnn.com/2022/07/12/investing/euro-dollar-parity/index.html"
+			],
+			"color": "blue"
 		}
 	]
 }
