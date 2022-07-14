@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tagged-blogs-template-js",
+    "path": "/tags/effective-java",
+    "result": {"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"date":"July 14, 2022","featuredimage":null,"description":"This chapter concerns creating and destroying objects: when and how to create them, when and how to avoid creating them, how to ensure they are destroyed in a timely manner, and how to manage any cleanup actions that must precede their destruction.","featuredimageAlt":"","path":"/readings/effective-java-chapter-2","tags":["readings","effective java"],"title":"Effective Java: CP2 - Creating and Destroying Objects (1-9)"}}}]}},"pageContext":{"tag":"effective java"}},
+    "staticQueryHashes": []}
