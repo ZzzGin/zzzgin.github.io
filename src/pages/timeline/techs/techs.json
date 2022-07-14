@@ -475,12 +475,12 @@
 		{
 			"start": "2022-07-08",
 			"group": "g-meta",
-			"title": "Rumor: Large-Scale PIP",
+			"title": "Rumor (busted): Large-Scale PIP",
 			"desription": "RUMOR: Meta manager is sent a note to \"figure out how in the team needs 'performance support' and label in the tool\". The note also said \"Every manager needs to think about each person on their team and the value they are adding to Meta. If a direct report is coasting or a low performer, they are not who we need; they are failing this company.\"",
 			"links": [
 				"https://www.1point3acres.com/bbs/thread-910017-1-1.html?mobile=2"
 			],
-			"color": "red"
+			"color": "blue"
 		},
 		{
 			"start": "2022-07-11",
@@ -496,11 +496,31 @@
 			"start": "2022-07-12",
 			"group": "g-google",
 			"title": "Slow Hire",
-			"desription": "Sundar email: because of the hiring progress acjoeved sp far tjos uear. we'll be slowing the pase of hiring for the rest of the year, while still supporting our most important opportunities. For the balance of 2022 and 2023, we'll focus our hiring on engineering, technical and other critical roles, and make sure the great talent we do hire is aligned with our long-term priorities.",
+			"desription": "Sundar's email: because of the hiring progress achieved so far this year. we'll be slowing the pase of hiring for the rest of the year, while still supporting our most important opportunities. For the balance of 2022 and 2023, we'll focus our hiring on engineering, technical and other critical roles, and make sure the great talent we do hire is aligned with our long-term priorities.",
 			"links": [
 				"https://www.bloomberg.com/news/articles/2022-07-12/google-ceo-says-company-plans-to-slow-hiring-for-rest-of-year"
 			],
 			"color": "red"
+		},
+		{
+			"start": "2022-07-13",
+			"group": "g-others",
+			"title": "Niantic: Lay Off",
+			"desription": "Gaming company Niantic Inc., which has struggled to find another big hit following its 2016 game Pokémon Go, canceled four projects and will cut about 85 to 90 jobs, whish is 8% of stuff.",
+			"links": [
+				"https://www.bloomberg.com/news/articles/2022-06-29/pokemon-go-creator-niantic-cancels-four-projects-cuts-jobs"
+			],
+			"color": "red"
+		},
+		{
+			"start": "2022-07-13",
+			"group": "g-amazon",
+			"title": "Share Ring Footage with Police",
+			"desription": "RING, AMAZON’S PERENNIALLY controversial and police-friendly surveillance subsidiary, has long defended its cozy relationship with law enforcement by pointing out that cops can only get access to a camera owner’s recordings with their express permission or a court order. But in response to recent questions from Sen. Ed Markey, D-Mass., the company stated that it has provided police with user footage 11 times this year alone without either.",
+			"links": [
+				"https://theintercept.com/2022/07/13/amazon-ring-camera-footage-police-ed-markey/"
+			],
+			"color": "blue"
 		}
 	]
 }
