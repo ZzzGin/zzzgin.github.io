@@ -119,3 +119,125 @@ public class NutritionFacts {
 ### Trade off: Disadvantages of builder pattern...
 1. ...extra cost for the builder creation.
 2. ...more verbose than constructor. Trade off the pros and cons.
+
+## Item 3: Enforce the singleton property with a private constructor or an enum type
+> Making a class a singleton can make it difficult to test its clients because it's impossible to substitue a mock implementation for a singleton unless it implements an interface that serves as its type.
+
+### First way of singleton...
+...with public static final field:
+```java
+public class Singleton {
+    public static final Singleton INSTANCE = new Singleton();
+    private Singleton() {/*...*/}
+
+    public void publicMethod() { /*...*/}
+}
+```
+
+### Second way of singleton...
+...with static factory
+```java
+public class Singleton {
+    priavte static final Singleton INSTANCE = new Singleton();
+    private Singleton() {/*...*/}
+    
+    public static Singleton getInstance() { return INSTANCE; }
+
+    public void publicMethod() { /*...*/ }
+}
+```
+
+### Pros and Cons
+* Pros of public static final field:
+    * the API makes it clear that the class is a singleton
+    * it's simple
+* Pros of static factory:
+    * flexibility to change your mind about whether the class is a singleton without changing its API. Ex. it could be modified to return a separate instance for eah thread that invokes it.
+    * possible to write generic singleton factory (item 30)
+    * `Singleton.getInstance()` can be used as a supplier - `Supplier<Singleton>`
+
+### Serialization - Enum singleton
+Add `readResolve` method to preserve singleton property. More to {E.J. p.18}.
+```java
+public enum Singleton {
+    INSTANCE;
+
+    public void publicMethod() { /*...*/ }
+}
+```
+* similar to public static final field, but more consice
+* provides the serialization machinery for free
+
+## Item 4: Enforece noninstantiability with a private constructor
+> To write a class that is just a grouping of **static** methods and **static** fields (utility class), we want to enforce noninstantiability.
+
+### Don't...
+```java
+public abstract class UtilityClass {
+    // static methods, fields
+}
+```
+**It does not work.** Because the abstract class can be subclassed and the subclass instantiated. And misleads user to think this class was designed for inheritance.
+
+### Do...
+```java
+public class UtilityClass {
+    // Suppress default constructor for noninstantiability
+    private UtilityClass() {
+        throw new AssertionError();
+    }
+}
+```
+
+## Item 5: Prefer dependency injection to hardwiring resources
+### Do...
+```java
+public class ClientClass {
+    private final DependencyClass dependency;
+
+    public ClientClass(DependencyClass dependency) {
+        this.dependency = dependency;
+    }
+
+    // ...
+}
+```
+
+### Advantages of DI...
+1. ...preserves immutability, multiple clients can share dependent objects.
+2. ...improves flexibility and testability
+
+### Inject factory
+```java
+Mosaic create(Supplier<? extends Tile> tileFactory) {/*...*/}
+```
+
+## Item 6: Avoid creating unnecessary objects
+### Don't...
+```java
+String s = new String("some string");
+```
+
+### Do...
+```java
+String s = "some string";
+```
+
+### Why?
+In a big loop, the first way will create lots of unnecessary objects. The second way can reuse the same object.
+
+**When an object is immutable, it is obvious it can be reused safely, but there are other situations where it is far less obvious, even counterintuitive.**
+
+### Autoboxing: Long - long
+> Autoboxing blurs but does not erase the distinction between primitive and boxed primitive types.
+```java
+// Super slow! Because everytime do sum += i, am unnecessary Long object is created.
+private static long sum() {
+    Long sum = 0L;
+    for (long i = 0; i <= Integer.MAX_VALUE; i++)
+        sum += i;
+    
+    return sum;
+}
+```
+**Prefer primitives to boxed primitives, and watch out for unintentional autoboxing.**
