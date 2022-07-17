@@ -130,6 +130,26 @@
 				"https://defensivecss.dev/"
 			],
 			"color": "green"
+		},
+		{
+			"start": "2022-07-11",
+			"group": "g-others",
+			"title": "Book: Algorithms for Decision Making",
+			"desription": "This book provides a broad introduction to algorithms for decision making under uncertainty. We cover a wide variety of topics related to decision making, introducing the underlying mathematical problem formulations and the algorithms for solving them. Figures, examples, and exercises are provided to convey the intuition behind the various approaches.",
+			"links": [
+				"https://algorithmsbook.com/files/dm.pdf"
+			],
+			"color": "red"
+		},
+		{
+			"start": "2022-07-15",
+			"group": "g-hn",
+			"title": "Tech Writing",
+			"desription": "The way we write about and around code is arguably as important as the code itself. And despite where you fall on that line, we can all agree that our words have the potential to both help and hurt code’s effectiveness.",
+			"links": [
+				"https://css-tricks.com/technical-writing-for-developers/"
+			],
+			"color": "red"
 		}
 	]
 }

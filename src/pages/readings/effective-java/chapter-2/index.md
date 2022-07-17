@@ -241,3 +241,54 @@ private static long sum() {
 }
 ```
 **Prefer primitives to boxed primitives, and watch out for unintentional autoboxing.**
+
+## Item 7: Eliminate obsolete object references
+### To prevent memory leak in Java
+> Whenever a class manages its own memory, the programmer should be alert for memory leaks. 
+
+> The second common source of memory leaks is caches. `WeakHashMap` is one solution, read more at {E.J. P.28}
+
+> A third common source of memory leaks is leisteners and other callbacks.
+
+## Item 8: Avoid finalizers and cleaners
+**Don't use finalizers and cleaners in Java.**
+
+
+## Item 9: Prefer try-with-resources to try-finally
+### Don't...
+```java
+static String copy(String src, String dst) throws IOException {
+    InputStream in = new FileInputStream(src);
+    try {
+        OutputStream out = new FileOutputStream(dst);
+        try {
+            byte[] buf = new byte[BUFFER_SIZW];
+            int n;
+            while ((n = in.read(buf)) >= 0)
+                out.write(buf, 0, n);
+        } finally {
+            out.close();
+        }
+    } finally {
+        in.close();
+    }
+}
+```
+
+### Do...
+```java
+static String copy(String src, String dst) throws IOException {
+    try (InputStream in = new FileInputStream(src);
+        OutputStream out = new FileOutputStream(dst)
+    ) {
+        byte[] buf = new byte[BUFFER_SIZE];
+        int n;
+        while ((n = in.read(buf)) >= 0)
+            out.write(buf, 0, n);
+    }
+}
+```
+
+### Why?
+1. Look bad;
+2. in `try-finally` block, if finally block throw exception, the exception in try block will be obliterated.

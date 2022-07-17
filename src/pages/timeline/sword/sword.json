@@ -268,6 +268,16 @@
 				"https://www.bloomberg.com/news/articles/2022-07-13/us-inflation-accelerates-to-9-1-once-again-exceeding-forecasts"
 			],
 			"color": "blue"
+		},
+		{
+			"start": "2022-07-15",
+			"group": "g-pek",
+			"title": "Followup: Gov Pays 50k To Depositors",
+			"desription": "As a follow up of Henan depositors protest, Chinese Goverment pays 50k RMB \"on behalf of the bank\" in advance to depositors who owns 50k or less than 50k RMB in the bank.",
+			"links": [
+				"https://finance.sina.com.cn/money/bank/bank_hydt/2022-07-15/doc-imizmscv1648252.shtml"
+			],
+			"color": "blue"
 		}
 	]
 }
