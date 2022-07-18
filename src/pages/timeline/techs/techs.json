@@ -521,6 +521,16 @@
 				"https://theintercept.com/2022/07/13/amazon-ring-camera-footage-police-ed-markey/"
 			],
 			"color": "blue"
+		},
+		{
+			"start": "2022-07-18",
+			"group": "g-apple",
+			"title": "Slow Hiring",
+			"desription": "Apple Inc. plans to slow hiring and spending growth next year in some divisions to cope with a potential economic downturn, according to people with knowledge of the matter, Bloomberg News reports.",
+			"links": [
+				"https://www.bloomberg.com/news/articles/2022-07-18/apple-aapl-plans-to-slow-hiring-and-spending-for-some-teams-next-year"
+			],
+			"color": "red"
 		}
 	]
 }
