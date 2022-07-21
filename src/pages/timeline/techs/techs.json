@@ -531,6 +531,26 @@
 				"https://www.bloomberg.com/news/articles/2022-07-18/apple-aapl-plans-to-slow-hiring-and-spending-for-some-teams-next-year"
 			],
 			"color": "red"
+		},
+		{
+			"start": "2022-07-20",
+			"group": "g-google",
+			"title": "Hiring Freeze",
+			"desription": "Alphabet's (NASDAQ:GOOGL) Google reportedly announced a hiring pause on Wednesday, stating it will stop hiring for two weeks, not long after announcing it would slow the pace of hiring.",
+			"links": [
+				"https://www.investing.com/news/stock-market-news/alphabets-google-to-halt-hiring-for-2-weeks--the-information-432SI-2849893"
+			],
+			"color": "red"
+		},
+		{
+			"start": "2022-07-20",
+			"group": "g-microsoft",
+			"title": "Slow Hiring",
+			"desription": "Microsoft Corp. is eliminating many open jobs, including in its Azure cloud business and its security software unit, as the economy continues to weaken.",
+			"links": [
+				"https://www.bloomberg.com/news/articles/2022-07-20/microsoft-cuts-many-open-job-listings-in-weakening-economy?cmpid=socialflow-twitter-business&utm_campaign=socialflow-organic&utm_content=business&utm_medium=social&utm_source=twitter"
+			],
+			"color": "red"
 		}
 	]
 }
