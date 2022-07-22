@@ -150,6 +150,26 @@
 				"https://css-tricks.com/technical-writing-for-developers/"
 			],
 			"color": "red"
+		},
+		{
+			"start": "2022-07-22",
+			"group": "g-hn",
+			"title": "Regret Web Redesign",
+			"desription": "A blog about a bad experience of hiring designer to do redesign for a business website.",
+			"links": [
+				"https://mtlynch.io/tinypilot-redesign/"
+			],
+			"color": "green"
+		},
+		{
+			"start": "2022-07-19",
+			"group": "g-hn",
+			"title": "GPU Compute on Web",
+			"desription": "This post explores the experimental WebGPU API through examples and helps you get started with performing data-parallel computations using the GPU.",
+			"links": [
+				"https://web.dev/gpu-compute/"
+			],
+			"color": "red"
 		}
 	]
 }

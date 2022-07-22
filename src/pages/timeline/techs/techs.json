@@ -551,6 +551,16 @@
 				"https://www.bloomberg.com/news/articles/2022-07-20/microsoft-cuts-many-open-job-listings-in-weakening-economy?cmpid=socialflow-twitter-business&utm_campaign=socialflow-organic&utm_content=business&utm_medium=social&utm_source=twitter"
 			],
 			"color": "red"
+		},
+		{
+			"start": "2022-07-21",
+			"group": "g-others",
+			"title": "Didi: 1.2B Fine",
+			"desription": "In slapping China’s ride-hailing giant, Didi Global, with a record $1.2 billion fine for data breaches, Beijing made clear to the country’s internet companies that their freewheeling days were over.",
+			"links": [
+				"https://www.nytimes.com/2022/07/21/business/china-fines-didi.html"
+			],
+			"color": "blue"
 		}
 	]
 }
