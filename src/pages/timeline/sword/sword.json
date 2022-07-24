@@ -278,6 +278,16 @@
 				"https://finance.sina.com.cn/money/bank/bank_hydt/2022-07-15/doc-imizmscv1648252.shtml"
 			],
 			"color": "blue"
+		},
+		{
+			"start": "2022-07-22",
+			"group": "g-pek",
+			"title": "Japanese War Criminals in Nanjing Temple",
+			"desription": "The government of Nanjing, capital of East China’s Jiangsu Province, on Saturday vowed thorough investigation and zero tolerance in a case where some memorial tablets of Japanese war criminals were found in a local temple and triggered public outrage in China.",
+			"links": [
+				"https://www.globaltimes.cn/page/202207/1271200.shtml"
+			],
+			"color": "blue"
 		}
 	]
 }
