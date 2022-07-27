@@ -561,6 +561,26 @@
 				"https://www.nytimes.com/2022/07/21/business/china-fines-didi.html"
 			],
 			"color": "blue"
+		},
+		{
+			"start": "2022-07-26",
+			"group": "g-google",
+			"title": "Q2 Missed Exp.",
+			"desription": "Google parent Alphabet Inc. reported 2nd quarter revenue and missed the market expectation. However, the revenue of Ad shows resiliency.",
+			"links": [
+				"https://www.bloomberg.com/news/articles/2022-07-26/google-earnings-meet-estimates-on-strong-advertiser-demand"
+			],
+			"color": "blue"
+		},
+		{
+			"start": "2022-07-26",
+			"group": "g-microsoft",
+			"title": "Q2 Missed Exp.",
+			"desription": "Revenue 51.87B, expects 52.43B. Net profit 16.74B, expects 17.345B.",
+			"links": [
+				"https://www.microsoft.com/en-us/investor/earnings/fy-2022-q2/press-release-webcast"
+			],
+			"color": "blue"
 		}
 	]
 }
