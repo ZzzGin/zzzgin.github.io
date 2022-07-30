@@ -581,6 +581,26 @@
 				"https://www.microsoft.com/en-us/investor/earnings/fy-2022-q2/press-release-webcast"
 			],
 			"color": "blue"
+		},
+		{
+			"start": "2022-07-21",
+			"group": "g-amazon",
+			"title": "Rivian Van Rollout",
+			"desription": "Amazon and Rivian plan to bring thousands of custom electric delivery vehicles to more than 100 cities by the end of this year, and 100,000 across the U.S. by 2030.",
+			"links": [
+				"https://www.aboutamazon.com/news/transportation/amazons-electric-delivery-vehicles-from-rivian-roll-out-across-the-u-s"
+			],
+			"color": "green"
+		},
+		{
+			"start": "2022-07-29",
+			"group": "g-others",
+			"title": "Alibaba Facing Delisting",
+			"desription": "Move comes after Alibaba applied for primary listing in Hong Kong; its ADRs fell 11% on Friday",
+			"links": [
+				"https://www.wsj.com/articles/sec-adds-alibaba-to-list-of-chinese-companies-facing-delisting-11659130698"
+			],
+			"color": "red"
 		}
 	]
 }
