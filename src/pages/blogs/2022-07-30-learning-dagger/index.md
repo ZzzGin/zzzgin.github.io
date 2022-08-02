@@ -1,9 +1,9 @@
 ---
 path: "/blogs/learning-dagger"
 date: "2022-07-30T05:35:29.273Z"
-title: "Learning Dagger"
-description: "Notes for Dagger."
-tags: ["blog", "dagger", "di"]
+title: "MyManual: Dagger"
+description: "Learning notes about Dagger."
+tags: ["blog", "mymanual", "dagger", "di"]
 featuredimage: 
 featuredimageAlt: ""
 ---

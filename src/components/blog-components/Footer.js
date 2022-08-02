@@ -11,7 +11,7 @@ const Footer = () => {
                         <a href="/">
                             <img src={ZzzHomeIcon} alt="home" style={{ height: "2em" }} />
                         </a>
-                        <div className='footer-copyright'>© 2022 Jing Qi's Blog</div>
+                        <div className='footer-copyright'>© 2022 zzz</div>
                     </div>
                 </div>
             </div>

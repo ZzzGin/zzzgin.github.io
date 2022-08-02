@@ -288,6 +288,27 @@
 				"https://www.globaltimes.cn/page/202207/1271200.shtml"
 			],
 			"color": "blue"
+		},
+		{
+			"start": "2022-07-27",
+			"group": "g-pek",
+			"title": "Erjiu: The Short Film in Trend",
+			"desription": "A short film about the struggles of a 66-year-old disabled carpenter has become one of the most popular videos in China this week after the story inspired millions for its portrayal of how to deal with miseries in life.",
+			"links": [
+				"https://www.scmp.com/news/people-culture/trending-china/article/3186772/ordinary-great-short-film-about-disabled-man"
+			],
+			"color": "blue"
+		},
+		{
+			"start": "2022-08-01",
+			"group": "g-iad",
+			"title": "Pelosi's Trip to Taiwan",
+			"desription": "Pelosi is expected to visit Taiwan as part of her ongoing tour of Asia, according to a senior Taiwanese government official and a US official. That's despite warnings from Biden administration officials, who are worried about China's response to such a high-profile visit. The stop -- the first for a US House speaker in 25 years -- is not currently on Pelosi's public itinerary and comes at a time when US-China relations are already at a low point.",
+			"links": [
+				"https://www.cnn.com/2022/08/01/politics/biden-administration-pelosi-china-taiwan/index.html",
+				"https://www.bloomberg.com/news/articles/2022-08-01/white-house-urges-calm-in-beijing-with-pelosi-headed-for-taiwan?srnd=premium"
+			],
+			"color": "blue"
 		}
 	]
 }
