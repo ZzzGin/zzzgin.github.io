@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-tagged-blogs-template-js",
     "path": "/tags/di",
-    "result": {"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"date":"July 30, 2022","featuredimage":null,"description":"Notes for Dagger.","featuredimageAlt":"","path":"/blogs/learning-dagger","tags":["blog","dagger","di"],"title":"Learning Dagger"}}}]}},"pageContext":{"tag":"di"}},
+    "result": {"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"date":"July 30, 2022","featuredimage":null,"description":"Learning notes about Dagger.","featuredimageAlt":"","path":"/blogs/learning-dagger","tags":["blog","mymanual","dagger","di"],"title":"MyManual: Dagger"}}}]}},"pageContext":{"tag":"di"}},
     "staticQueryHashes": []}

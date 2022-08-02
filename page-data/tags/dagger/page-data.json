@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-tagged-blogs-template-js",
     "path": "/tags/dagger",
-    "result": {"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"date":"July 30, 2022","featuredimage":null,"description":"Notes for Dagger.","featuredimageAlt":"","path":"/blogs/learning-dagger","tags":["blog","dagger","di"],"title":"Learning Dagger"}}}]}},"pageContext":{"tag":"dagger"}},
+    "result": {"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"date":"August 02, 2022","featuredimage":null,"description":"Dagger is a cool tool to me about dependency injection. This blog notes down some useful tricks of Dagger.","featuredimageAlt":"","path":"/blogs/dagger-tricks","tags":["blog","dagger"],"title":"Dagger Tricks"}}},{"node":{"frontmatter":{"date":"July 30, 2022","featuredimage":null,"description":"Learning notes about Dagger.","featuredimageAlt":"","path":"/blogs/learning-dagger","tags":["blog","mymanual","dagger","di"],"title":"MyManual: Dagger"}}}]}},"pageContext":{"tag":"dagger"}},
     "staticQueryHashes": []}
