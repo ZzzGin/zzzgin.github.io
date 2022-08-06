@@ -601,6 +601,16 @@
 				"https://www.wsj.com/articles/sec-adds-alibaba-to-list-of-chinese-companies-facing-delisting-11659130698"
 			],
 			"color": "red"
+		},
+		{
+			"start": "2022-08-06",
+			"group": "g-amazon",
+			"title": "Buy iRobot",
+			"desription": "Amazon to Buy Roomba-Maker IRobot for $1.65B.",
+			"links": [
+				"https://www.bloomberg.com/news/videos/2022-08-05/amazon-to-buy-roomba-maker-irobot-for-1-65b-video"
+			],
+			"color": "blue"
 		}
 	]
 }
